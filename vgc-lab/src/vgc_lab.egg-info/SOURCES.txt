@@ -14,7 +14,9 @@ src/vgc_lab/team_features.py
 src/vgc_lab/team_pool.py
 src/vgc_lab/team_preview.py
 src/vgc_lab/team_search.py
+src/vgc_lab/team_value_model.py
 src/vgc_lab/teams.py
+src/vgc_lab/teams_vs_pool_data.py
 src/vgc_lab.egg-info/PKG-INFO
 src/vgc_lab.egg-info/SOURCES.txt
 src/vgc_lab.egg-info/dependency_links.txt

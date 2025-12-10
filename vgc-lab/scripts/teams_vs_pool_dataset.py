@@ -3,10 +3,8 @@
 
 from __future__ import annotations
 
-import json
-from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 
 import typer
 
@@ -14,7 +12,7 @@ import typer
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from vgc_lab.config import DEFAULT_FORMAT, ensure_paths, PROJECT_ROOT
+from vgc_lab.config import DEFAULT_FORMAT, ensure_paths
 from vgc_lab.set_catalog import SetCatalog
 from vgc_lab.team_pool import TeamPool, TEAMS_CATALOG_PATH
 from vgc_lab.team_search import (
@@ -22,58 +20,10 @@ from vgc_lab.team_search import (
     evaluate_team_against_pool,
     random_search_over_pool,
 )
-
-# Dataset location
-DATASET_DIR = PROJECT_ROOT / "data" / "datasets" / "teams_vs_pool"
-DATASET_PATH = DATASET_DIR / "teams_vs_pool.jsonl"
-
-
-def ensure_dataset_dir() -> None:
-    """Ensure the dataset directory exists."""
-    DATASET_DIR.mkdir(parents=True, exist_ok=True)
-
-
-def append_result_to_dataset(
-    result: CandidateTeamResult,
-    *,
-    source: str = "random",
-    team_id: Optional[str] = None,
-) -> None:
-    """
-    Append one CandidateTeamResult as a JSON line to the dataset.
-
-    Args:
-        result: CandidateTeamResult to serialize and append.
-        source: Source of the team ("random" or "catalog").
-        team_id: Optional team ID (for catalog teams).
-    """
-    ensure_dataset_dir()
-
-    summary = result.pool_summary
-    win_rate = result.win_rate
-
-    record = {
-        "team_set_ids": result.team_set_ids,
-        "format_id": summary.format_id,
-        "n_opponents": summary.n_opponents,
-        "n_battles_per_opponent": summary.n_battles_per_opponent,
-        "n_battles_total": summary.n_battles_total,
-        "n_wins": summary.n_wins,
-        "n_losses": summary.n_losses,
-        "n_ties": summary.n_ties,
-        "win_rate": win_rate,
-        "avg_turns": summary.avg_turns,
-        "opponent_counts": summary.opponent_counts,
-        "source": source,
-        "created_at": datetime.now(timezone.utc).isoformat(),
-    }
-
-    if team_id is not None:
-        record["team_id"] = team_id
-
-    with DATASET_PATH.open("a", encoding="utf-8") as f:
-        json.dump(record, f, ensure_ascii=False)
-        f.write("\n")
+from vgc_lab.teams_vs_pool_data import (
+    append_result_to_dataset,
+    TEAMS_VS_POOL_JSONL_PATH,
+)
 
 
 app = typer.Typer()
@@ -123,7 +73,6 @@ def main(
     """
     try:
         ensure_paths()
-        ensure_dataset_dir()
 
         catalog = SetCatalog.from_yaml()
         pool = TeamPool.from_yaml(Path(teams_yaml))
@@ -191,11 +140,11 @@ def main(
 
         # Count total records in file
         total_records = 0
-        if DATASET_PATH.exists():
-            with DATASET_PATH.open("r", encoding="utf-8") as f:
+        if TEAMS_VS_POOL_JSONL_PATH.exists():
+            with TEAMS_VS_POOL_JSONL_PATH.open("r", encoding="utf-8") as f:
                 total_records = sum(1 for line in f if line.strip())
 
-        typer.echo(f"\nDataset written to: {DATASET_PATH}")
+        typer.echo(f"\nDataset written to: {TEAMS_VS_POOL_JSONL_PATH}")
         typer.echo(f"Random samples written: {n_random_written}")
         if include_catalog_teams:
             typer.echo(f"Catalog teams evaluated: {n_catalog_written}")

@@ -34,6 +34,20 @@ class SetIdVocab:
 
         return cls(id_to_idx=id_to_idx, idx_to_id=idx_to_id)
 
+    @classmethod
+    def from_idx_to_id(cls, idx_to_id: List[str]) -> "SetIdVocab":
+        """
+        Build a vocabulary from a list of set IDs (by index order).
+
+        Args:
+            idx_to_id: List of set ID strings, where index i corresponds to the ID at position i.
+
+        Returns:
+            SetIdVocab instance.
+        """
+        id_to_idx = {set_id: idx for idx, set_id in enumerate(idx_to_id)}
+        return cls(id_to_idx=id_to_idx, idx_to_id=idx_to_id.copy())
+
     def encode_ids(self, set_ids: Sequence[str]) -> List[int]:
         """
         Encode a sequence of set IDs to integer indices.
