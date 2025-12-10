@@ -1,0 +1,400 @@
+|t:|1765335667
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Garganacl, L50, M|
+|poke|p1|Tinkaton, L50, F|
+|poke|p1|Clefable, L50, F|
+|poke|p1|Weezing, L50, M|
+|poke|p1|Exeggutor-Alola, L50, M|
+|poke|p1|Great Tusk, L50|
+|poke|p2|Great Tusk, L50|
+|poke|p2|Palossand, L50, M|
+|poke|p2|Sneasler, L50, F|
+|poke|p2|Revavroom, L50, F|
+|poke|p2|Electrode, L50|
+|poke|p2|Porygon2, L50|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765335667
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Garganacl|Garganacl, L50, M|186/186
+|switch|p1b: Tinkaton|Tinkaton, L50, F|171/171
+|switch|p2a: Great Tusk|Great Tusk, L50|201/201
+|switch|p2b: Palossand|Palossand, L50, M|171/171
+|-ability|p1b: Tinkaton|Mold Breaker
+|turn|1
+|
+|t:|1765335667
+|move|p1a: Garganacl|Wide Guard|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Wide Guard
+|move|p1b: Tinkaton|Play Rough|p2a: Great Tusk
+|-supereffective|p2a: Great Tusk
+|-damage|p2a: Great Tusk|123/201
+|move|p2a: Great Tusk|Headlong Rush|p1b: Tinkaton
+|-supereffective|p1b: Tinkaton
+|-damage|p1b: Tinkaton|0 fnt
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|faint|p1b: Tinkaton
+|move|p2b: Palossand|Shadow Ball|p1a: Garganacl
+|-damage|p1a: Garganacl|161/186
+|
+|-heal|p1a: Garganacl|172/186|[from] item: Leftovers
+|upkeep
+|
+|t:|1765335667
+|switch|p1b: Clefable|Clefable, L50, F|181/181
+|turn|2
+|
+|t:|1765335667
+|move|p2a: Great Tusk|Protect|p2a: Great Tusk
+|-singleturn|p2a: Great Tusk|Protect
+|move|p2b: Palossand|Protect|p2b: Palossand
+|-singleturn|p2b: Palossand|Protect
+|move|p1a: Garganacl|Protect||[still]
+|-fail|p1a: Garganacl
+|move|p1b: Clefable|Moonblast|p2b: Palossand
+|-activate|p2b: Palossand|move: Protect
+|
+|-heal|p1a: Garganacl|183/186|[from] item: Leftovers
+|upkeep
+|turn|3
+|
+|t:|1765335667
+|move|p2a: Great Tusk|Close Combat|p1a: Garganacl
+|-supereffective|p1a: Garganacl
+|-damage|p1a: Garganacl|39/186
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|move|p1b: Clefable|Thunder Wave|p2a: Great Tusk
+|-immune|p2a: Great Tusk
+|move|p2b: Palossand|Shore Up|p2b: Palossand
+|-fail|p2b: Palossand|heal
+|move|p1a: Garganacl|Recover|p1a: Garganacl
+|-heal|p1a: Garganacl|132/186
+|
+|-heal|p1a: Garganacl|143/186|[from] item: Leftovers
+|upkeep
+|turn|4
+|
+|t:|1765335667
+|move|p2b: Palossand|Protect|p2b: Palossand
+|-singleturn|p2b: Palossand|Protect
+|move|p2a: Great Tusk|Close Combat|p1b: Clefable
+|-resisted|p1b: Clefable
+|-damage|p1b: Clefable|128/181
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|move|p1b: Clefable|Moonblast|p2b: Palossand
+|-activate|p2b: Palossand|move: Protect
+|move|p1a: Garganacl|Salt Cure|p2a: Great Tusk
+|-resisted|p2a: Great Tusk
+|-damage|p2a: Great Tusk|110/201
+|-start|p2a: Great Tusk|Salt Cure
+|
+|-heal|p1a: Garganacl|154/186|[from] item: Leftovers
+|-damage|p2a: Great Tusk|85/201|[from] Salt Cure
+|upkeep
+|-enditem|p2a: Great Tusk|Sitrus Berry|[eat]
+|-heal|p2a: Great Tusk|135/201|[from] item: Sitrus Berry
+|turn|5
+|
+|t:|1765335667
+|move|p1a: Garganacl|Wide Guard|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Wide Guard
+|move|p2a: Great Tusk|Close Combat|p1b: Clefable
+|-resisted|p1b: Clefable
+|-damage|p1b: Clefable|68/181
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|move|p1b: Clefable|Thunder Wave|p2a: Great Tusk
+|-immune|p2a: Great Tusk
+|move|p2b: Palossand|Earth Power|p1b: Clefable
+|-damage|p1b: Clefable|10/181
+|
+|-heal|p1a: Garganacl|165/186|[from] item: Leftovers
+|-damage|p2a: Great Tusk|110/201|[from] Salt Cure
+|upkeep
+|turn|6
+|
+|t:|1765335667
+|move|p1a: Garganacl|Wide Guard|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Wide Guard
+|move|p2a: Great Tusk|Close Combat|p1b: Clefable
+|-resisted|p1b: Clefable
+|-damage|p1b: Clefable|0 fnt
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|faint|p1b: Clefable
+|move|p2b: Palossand|Shore Up|p2b: Palossand
+|-fail|p2b: Palossand|heal
+|
+|-heal|p1a: Garganacl|176/186|[from] item: Leftovers
+|-damage|p2a: Great Tusk|85/201|[from] Salt Cure
+|upkeep
+|
+|t:|1765335667
+|switch|p1b: Weezing|Weezing, L50, M|151/151
+|turn|7
+|
+|t:|1765335667
+|move|p2a: Great Tusk|Headlong Rush|p1a: Garganacl
+|-supereffective|p1a: Garganacl
+|-damage|p1a: Garganacl|26/186
+|-unboost|p2a: Great Tusk|def|1
+|-unboost|p2a: Great Tusk|spd|1
+|move|p1b: Weezing|Gunk Shot|p2a: Great Tusk|[miss]
+|-miss|p1b: Weezing|p2a: Great Tusk
+|move|p2b: Palossand|Shore Up|p2b: Palossand
+|-fail|p2b: Palossand|heal
+|move|p1a: Garganacl|Salt Cure|p2b: Palossand
+|-resisted|p2b: Palossand
+|-damage|p2b: Palossand|160/171
+|-start|p2b: Palossand|Salt Cure
+|
+|-heal|p2b: Palossand|170/171|[from] item: Leftovers
+|-heal|p1a: Garganacl|37/186|[from] item: Leftovers
+|-damage|p2a: Great Tusk|60/201|[from] Salt Cure
+|-damage|p2b: Palossand|149/171|[from] Salt Cure
+|upkeep
+|turn|8
+|
+|t:|1765335667
+|move|p2b: Palossand|Protect|p2b: Palossand
+|-singleturn|p2b: Palossand|Protect
+|move|p2a: Great Tusk|Headlong Rush|p1b: Weezing
+|-immune|p1b: Weezing|[from] ability: Levitate
+|move|p1b: Weezing|Gunk Shot|p2a: Great Tusk
+|-resisted|p2a: Great Tusk
+|-damage|p2a: Great Tusk|0 fnt
+|faint|p2a: Great Tusk
+|-end|p2a: Great Tusk|Protosynthesis|[silent]
+|move|p1a: Garganacl|Salt Cure|p2b: Palossand
+|-activate|p2b: Palossand|move: Protect
+|
+|-heal|p1a: Garganacl|48/186|[from] item: Leftovers
+|-heal|p2b: Palossand|159/171|[from] item: Leftovers
+|-damage|p2b: Palossand|138/171|[from] Salt Cure
+|upkeep
+|
+|t:|1765335667
+|switch|p2a: Revavroom|Revavroom, L50, F|166/166
+|turn|9
+|
+|t:|1765335667
+|move|p2a: Revavroom|Gunk Shot|p1a: Garganacl|[miss]
+|-miss|p2a: Revavroom|p1a: Garganacl
+|move|p1b: Weezing|Will-O-Wisp|p2b: Palossand
+|-status|p2b: Palossand|brn
+|move|p1a: Garganacl|Recover|p1a: Garganacl
+|-heal|p1a: Garganacl|141/186
+|move|p2b: Palossand|Shadow Ball|p1a: Garganacl
+|-damage|p1a: Garganacl|116/186
+|
+|-heal|p1a: Garganacl|127/186|[from] item: Leftovers
+|-heal|p2b: Palossand|148/171 brn|[from] item: Leftovers
+|-damage|p2b: Palossand|138/171 brn|[from] brn
+|-damage|p2b: Palossand|117/171 brn|[from] Salt Cure
+|upkeep
+|turn|10
+|
+|t:|1765335667
+|move|p2a: Revavroom|Protect|p2a: Revavroom
+|-singleturn|p2a: Revavroom|Protect
+|move|p1b: Weezing|Protect|p1b: Weezing
+|-singleturn|p1b: Weezing|Protect
+|move|p1a: Garganacl|Recover|p1a: Garganacl
+|-heal|p1a: Garganacl|186/186
+|move|p2b: Palossand|Earth Power|p1a: Garganacl
+|-supereffective|p1a: Garganacl
+|-damage|p1a: Garganacl|76/186
+|
+|-heal|p1a: Garganacl|87/186|[from] item: Leftovers
+|-heal|p2b: Palossand|127/171 brn|[from] item: Leftovers
+|-damage|p2b: Palossand|117/171 brn|[from] brn
+|-damage|p2b: Palossand|96/171 brn|[from] Salt Cure
+|upkeep
+|turn|11
+|
+|t:|1765335667
+|move|p2a: Revavroom|Protect||[still]
+|-fail|p2a: Revavroom
+|move|p1b: Weezing|Will-O-Wisp|p2b: Palossand
+|-fail|p2b: Palossand|brn
+|move|p2b: Palossand|Shadow Ball|p1a: Garganacl
+|-damage|p1a: Garganacl|62/186
+|move|p1a: Garganacl|Recover|p1a: Garganacl
+|-heal|p1a: Garganacl|155/186
+|
+|-heal|p2b: Palossand|106/171 brn|[from] item: Leftovers
+|-heal|p1a: Garganacl|166/186|[from] item: Leftovers
+|-damage|p2b: Palossand|96/171 brn|[from] brn
+|-damage|p2b: Palossand|75/171 brn|[from] Salt Cure
+|upkeep
+|turn|12
+|
+|t:|1765335667
+|move|p2a: Revavroom|Protect|p2a: Revavroom
+|-singleturn|p2a: Revavroom|Protect
+|move|p2b: Palossand|Protect|p2b: Palossand
+|-singleturn|p2b: Palossand|Protect
+|move|p1b: Weezing|Gunk Shot|p2a: Revavroom
+|-activate|p2a: Revavroom|move: Protect
+|move|p1a: Garganacl|Salt Cure|p2a: Revavroom
+|-activate|p2a: Revavroom|move: Protect
+|
+|-heal|p2b: Palossand|85/171 brn|[from] item: Leftovers
+|-heal|p1a: Garganacl|177/186|[from] item: Leftovers
+|-damage|p2b: Palossand|75/171 brn|[from] brn
+|-damage|p2b: Palossand|54/171 brn|[from] Salt Cure
+|upkeep
+|turn|13
+|
+|t:|1765335667
+|move|p2a: Revavroom|Iron Head|p1a: Garganacl
+|-supereffective|p1a: Garganacl
+|-damage|p1a: Garganacl|44/186
+|-damage|p2a: Revavroom|150/166|[from] item: Life Orb
+|move|p1b: Weezing|Will-O-Wisp|p2a: Revavroom
+|-status|p2a: Revavroom|brn
+|move|p2b: Palossand|Shadow Ball|p1a: Garganacl
+|-damage|p1a: Garganacl|19/186
+|cant|p1a: Garganacl|flinch
+|
+|-heal|p2b: Palossand|64/171 brn|[from] item: Leftovers
+|-heal|p1a: Garganacl|30/186|[from] item: Leftovers
+|-damage|p2a: Revavroom|140/166 brn|[from] brn
+|-damage|p2b: Palossand|54/171 brn|[from] brn
+|-damage|p2b: Palossand|33/171 brn|[from] Salt Cure
+|upkeep
+|turn|14
+|
+|t:|1765335667
+|move|p1a: Garganacl|Protect|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Protect
+|move|p2a: Revavroom|Gunk Shot|p1b: Weezing
+|-resisted|p1b: Weezing
+|-damage|p1b: Weezing|129/151
+|-damage|p2a: Revavroom|124/166 brn|[from] item: Life Orb
+|move|p1b: Weezing|Gunk Shot|p2b: Palossand
+|-resisted|p2b: Palossand
+|-damage|p2b: Palossand|18/171 brn
+|move|p2b: Palossand|Shadow Ball|p1a: Garganacl
+|-activate|p1a: Garganacl|move: Protect
+|
+|-heal|p1a: Garganacl|41/186|[from] item: Leftovers
+|-heal|p2b: Palossand|28/171 brn|[from] item: Leftovers
+|-damage|p2a: Revavroom|114/166 brn|[from] brn
+|-damage|p2b: Palossand|18/171 brn|[from] brn
+|-damage|p2b: Palossand|0 fnt|[from] Salt Cure
+|faint|p2b: Palossand
+|upkeep
+|
+|t:|1765335667
+|switch|p2b: Sneasler|Sneasler, L50, F|166/166
+|turn|15
+|
+|t:|1765335667
+|move|p2a: Revavroom|Protect|p2a: Revavroom
+|-singleturn|p2a: Revavroom|Protect
+|move|p1a: Garganacl|Wide Guard|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Wide Guard
+|move|p2b: Sneasler|Swords Dance|p2b: Sneasler
+|-boost|p2b: Sneasler|atk|2
+|move|p1b: Weezing|Gunk Shot|p2b: Sneasler
+|-resisted|p2b: Sneasler
+|-damage|p2b: Sneasler|112/166
+|
+|-heal|p1a: Garganacl|52/186|[from] item: Leftovers
+|-damage|p2a: Revavroom|104/166 brn|[from] brn
+|upkeep
+|turn|16
+|
+|t:|1765335667
+|move|p1a: Garganacl|Protect||[still]
+|-fail|p1a: Garganacl
+|move|p2b: Sneasler|Dire Claw|p1b: Weezing
+|-resisted|p1b: Weezing
+|-damage|p1b: Weezing|77/151
+|-status|p1b: Weezing|par
+|move|p2a: Revavroom|Gunk Shot|p1a: Garganacl
+|-resisted|p1a: Garganacl
+|-damage|p1a: Garganacl|31/186
+|-damage|p2a: Revavroom|88/166 brn|[from] item: Life Orb
+|move|p1b: Weezing|Gunk Shot|p2b: Sneasler
+|-resisted|p2b: Sneasler
+|-damage|p2b: Sneasler|59/166
+|
+|-heal|p1a: Garganacl|42/186|[from] item: Leftovers
+|-damage|p2a: Revavroom|78/166 brn|[from] brn
+|upkeep
+|turn|17
+|
+|t:|1765335667
+|move|p1a: Garganacl|Protect|p1a: Garganacl
+|-singleturn|p1a: Garganacl|Protect
+|move|p2b: Sneasler|Close Combat|p1a: Garganacl
+|-activate|p1a: Garganacl|move: Protect
+|move|p2a: Revavroom|Iron Head|p1b: Weezing
+|-damage|p1b: Weezing|45/151 par
+|-enditem|p1b: Weezing|Sitrus Berry|[eat]
+|-heal|p1b: Weezing|82/151 par|[from] item: Sitrus Berry
+|-damage|p2a: Revavroom|62/166 brn|[from] item: Life Orb
+|cant|p1b: Weezing|flinch
+|
+|-heal|p1a: Garganacl|53/186|[from] item: Leftovers
+|-damage|p2a: Revavroom|52/166 brn|[from] brn
+|upkeep
+|turn|18
+|
+|t:|1765335667
+|move|p2b: Sneasler|Close Combat|p1a: Garganacl
+|-supereffective|p1a: Garganacl
+|-damage|p1a: Garganacl|0 fnt
+|-unboost|p2b: Sneasler|def|1
+|-unboost|p2b: Sneasler|spd|1
+|faint|p1a: Garganacl
+|-enditem|p2b: Sneasler|White Herb
+|-clearnegativeboost|p2b: Sneasler|[silent]
+|move|p2a: Revavroom|Iron Head|p1b: Weezing
+|-damage|p1b: Weezing|50/151 par
+|-damage|p2a: Revavroom|36/166 brn|[from] item: Life Orb
+|cant|p1b: Weezing|par
+|
+|-damage|p2a: Revavroom|26/166 brn|[from] brn
+|upkeep
+|turn|19
+|
+|t:|1765335667
+|move|p2b: Sneasler|Protect|p2b: Sneasler
+|-singleturn|p2b: Sneasler|Protect
+|move|p2a: Revavroom|Protect|p2a: Revavroom
+|-singleturn|p2a: Revavroom|Protect
+|move|p1b: Weezing|Gunk Shot|p2b: Sneasler
+|-activate|p2b: Sneasler|move: Protect
+|
+|-damage|p2a: Revavroom|16/166 brn|[from] brn
+|upkeep
+|turn|20
+|
+|t:|1765335667
+|move|p2b: Sneasler|Close Combat|p1b: Weezing
+|-resisted|p1b: Weezing
+|-damage|p1b: Weezing|0 fnt
+|-unboost|p2b: Sneasler|def|1
+|-unboost|p2b: Sneasler|spd|1
+|faint|p1b: Weezing
+|
+|win|Bot2

@@ -1,0 +1,138 @@
+|t:|1765330476
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Ursaluna, L50, F|
+|poke|p1|Hypno, L50, F|
+|poke|p1|Kyogre, L50|
+|poke|p1|Krookodile, L50, M|
+|poke|p1|Shiftry, L50, M|
+|poke|p1|Clefairy, L50, F|
+|poke|p2|Chi-Yu, L50|
+|poke|p2|Bombirdier, L50, F|
+|poke|p2|Ninetales, L50, F|
+|poke|p2|Gumshoos, L50, F|
+|poke|p2|Mienshao, L50, F|
+|poke|p2|Cyclizar, L50, M|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765330476
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Ursaluna|Ursaluna, L50, F|216/216
+|switch|p1b: Hypno|Hypno, L50, F|171/171
+|switch|p2a: Chi-Yu|Chi-Yu, L50|141/141
+|switch|p2b: Bombirdier|Bombirdier, L50, F|156/156
+|-ability|p2a: Chi-Yu|Beads of Ruin
+|turn|1
+|
+|t:|1765330476
+|move|p2a: Chi-Yu|Dark Pulse|p1b: Hypno
+|-supereffective|p1b: Hypno
+|-damage|p1b: Hypno|0 fnt
+|faint|p1b: Hypno
+|move|p2b: Bombirdier|Brave Bird|p1a: Ursaluna
+|-damage|p1a: Ursaluna|113/216
+|-damage|p2b: Bombirdier|122/156|[from] Recoil
+|-damage|p2b: Bombirdier|107/156|[from] item: Life Orb
+|move|p1a: Ursaluna|Headlong Rush|p2a: Chi-Yu
+|-supereffective|p2a: Chi-Yu
+|-damage|p2a: Chi-Yu|0 fnt
+|-unboost|p1a: Ursaluna|def|1
+|-unboost|p1a: Ursaluna|spd|1
+|faint|p2a: Chi-Yu
+|
+|-status|p1a: Ursaluna|brn|[from] item: Flame Orb
+|upkeep
+|
+|t:|1765330476
+|switch|p2a: Gumshoos|Gumshoos, L50, F|174/174
+|switch|p1b: Krookodile|Krookodile, L50, M|181/181
+|-ability|p1b: Krookodile|Intimidate|boost
+|-unboost|p2a: Gumshoos|atk|1
+|-unboost|p2b: Bombirdier|atk|1
+|turn|2
+|
+|t:|1765330476
+|move|p1b: Krookodile|Knock Off|p2a: Gumshoos
+|-damage|p2a: Gumshoos|72/174
+|-enditem|p2a: Gumshoos|Choice Band|[from] move: Knock Off|[of] p1b: Krookodile
+|move|p2b: Bombirdier|Brave Bird|p1b: Krookodile
+|-damage|p1b: Krookodile|98/181
+|-damage|p2b: Bombirdier|80/156|[from] Recoil
+|-damage|p2b: Bombirdier|65/156|[from] item: Life Orb
+|move|p1a: Ursaluna|Facade|p2a: Gumshoos
+|-damage|p2a: Gumshoos|0 fnt
+|faint|p2a: Gumshoos
+|
+|-damage|p1a: Ursaluna|100/216 brn|[from] brn
+|upkeep
+|
+|t:|1765330476
+|switch|p2a: Ninetales|Ninetales, L50, F|159/159
+|-weather|SunnyDay|[from] ability: Drought|[of] p2a: Ninetales
+|turn|3
+|
+|t:|1765330476
+|move|p2a: Ninetales|Protect|p2a: Ninetales
+|-singleturn|p2a: Ninetales|Protect
+|move|p1a: Ursaluna|Protect|p1a: Ursaluna
+|-singleturn|p1a: Ursaluna|Protect
+|move|p1b: Krookodile|Knock Off|p2a: Ninetales
+|-activate|p2a: Ninetales|move: Protect
+|move|p2b: Bombirdier|Rock Slide|p1a: Ursaluna|[spread] p1b
+|-activate|p1a: Ursaluna|move: Protect
+|-resisted|p1b: Krookodile
+|-damage|p1b: Krookodile|79/181
+|-damage|p2b: Bombirdier|50/156|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|-damage|p1a: Ursaluna|87/216 brn|[from] brn
+|upkeep
+|turn|4
+|
+|t:|1765330476
+|move|p1b: Krookodile|Knock Off|p2a: Ninetales
+|-damage|p2a: Ninetales|71/159
+|-enditem|p2a: Ninetales|Life Orb|[from] move: Knock Off|[of] p1b: Krookodile
+|move|p2a: Ninetales|Solar Beam||[still]
+|-prepare|p2a: Ninetales|Solar Beam
+|-anim|p2a: Ninetales|Solar Beam|p1a: Ursaluna
+|-supereffective|p1a: Ursaluna
+|-damage|p1a: Ursaluna|0 fnt
+|faint|p1a: Ursaluna
+|move|p2b: Bombirdier|Rock Slide|p1b: Krookodile
+|-resisted|p1b: Krookodile
+|-damage|p1b: Krookodile|53/181
+|-damage|p2b: Bombirdier|35/156|[from] item: Life Orb
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+|
+|t:|1765330476
+|switch|p1a: Kyogre|Kyogre, L50|186/186
+|-weather|RainDance|[from] ability: Drizzle|[of] p1a: Kyogre
+|turn|5
+|
+|t:|1765330476
+|move|p1b: Krookodile|Knock Off|p2b: Bombirdier
+|-resisted|p2b: Bombirdier
+|-damage|p2b: Bombirdier|0 fnt
+|-enditem|p2b: Bombirdier|Life Orb|[from] move: Knock Off|[of] p1b: Krookodile
+|faint|p2b: Bombirdier
+|move|p1a: Kyogre|Water Spout|p2a: Ninetales
+|-supereffective|p2a: Ninetales
+|-damage|p2a: Ninetales|0 fnt
+|faint|p2a: Ninetales
+|
+|win|Bot1

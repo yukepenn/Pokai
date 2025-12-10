@@ -6,6 +6,7 @@ Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 Requires-Dist: pydantic>=2.0.0
 Requires-Dist: typer>=0.9.0
+Requires-Dist: pyyaml>=6.0.0
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0.0; extra == "dev"
 Requires-Dist: black>=23.0.0; extra == "dev"
@@ -65,6 +66,28 @@ This dataset is intended as the input space for future agents making team-previe
   - Dataset: `data/datasets/full_battles/full_battles.jsonl`
 
 The Node script `js/random_selfplay.js` serves as the bridge to Showdown's battle engine, running battles to completion and outputting structured JSON results.
+
+## Preview + Outcome Dataset (Random Self-Play)
+
+`vgc-lab` can generate datasets that directly tie open team sheets to battle outcomes:
+
+- **Method**: Uses Showdown's internal `RandomPlayerAI` and the same engine as `js/random_selfplay.js`
+- **Data stored**: For each battle:
+  - Both sides' 6-Pokémon public teams (from the engine, via `Teams.unpack`)
+  - The winner (`winner_side` / `winner_name`)
+  - The path to the raw battle log
+- **Generation**: The script `scripts/generate_preview_outcome_dataset.py` runs complete battles and stores preview+outcome pairs
+- **Dataset location**: `data/datasets/preview_outcome/preview_outcome.jsonl`
+- **Usage example**:
+  ```bash
+  cd Pokai/vgc-lab
+  python scripts/generate_preview_outcome_dataset.py --n 5
+  ```
+- **Data locations**:
+  - Raw logs: `data/battles_raw/` (shared with other scripts)
+  - Dataset: `data/datasets/preview_outcome/preview_outcome.jsonl`
+
+You can then load `preview_outcome.jsonl` from Python / Jupyter for analysis or model training.
 
 ## Future Extensions
 

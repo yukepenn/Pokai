@@ -1,0 +1,436 @@
+- id: my_main_team
+  format: gen9vgc2026regf
+  description: 'My main Reg F team: Amoonguss / Flutter / Tornadus / Incineroar / Landorus / Urshifu-RS'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - tornadus_main_sash
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - urshifu_rs_main_scarf
+
+# =====================================================================
+# AUTO-GENERATED TEAMS FROM SMOGON (DO NOT EDIT BY HAND)
+# Source: 2024-04 gen9vgc2024regf-1760 moveset stats
+# =====================================================================
+
+- id: flutter_mane_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Flutter Mane using its top teammates
+  set_ids:
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - rillaboom_auto_assaultvest_1
+  - incineroar_main_goggles
+  - chien_pao_auto_focussash_1
+- id: ogerpon_wellspring_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Ogerpon-Wellspring using its top teammates
+  set_ids:
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_auto_focussash_1
+  - landorus_main_lo_steel
+  - tornadus_main_sash
+- id: tornadus_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Tornadus using its top teammates
+  set_ids:
+  - tornadus_main_sash
+  - urshifu_rs_main_scarf
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - incineroar_main_goggles
+  - gholdengo_auto_leftovers_1
+- id: landorus_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Landorus using its top teammates
+  set_ids:
+  - landorus_main_lo_steel
+  - incineroar_main_goggles
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - flutter_mane_main_booster
+  - rillaboom_auto_assaultvest_1
+- id: amoonguss_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Amoonguss using its top teammates
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - urshifu_rs_main_scarf
+  - incineroar_main_goggles
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - gouging_fire_auto_boosterenergy_1
+- id: farigiraf_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Farigiraf using its top teammates
+  set_ids:
+  - farigiraf_auto_sitrus_1
+  - flutter_mane_main_booster
+  - urshifu_rs_main_scarf
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - whimsicott_auto_focussash_1
+  - urshifu_auto_focussash_1
+- id: urshifu_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Urshifu using its top teammates
+  set_ids:
+  - urshifu_auto_focussash_1
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - tornadus_main_sash
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - incineroar_main_goggles
+- id: ogerpon_hearthflame_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Ogerpon-Hearthflame using its top teammates
+  set_ids:
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - urshifu_rs_main_scarf
+  - rillaboom_auto_assaultvest_1
+  - raging_bolt_auto_boosterenergy_1
+  - chien_pao_auto_focussash_1
+  - incineroar_main_goggles
+- id: indeedee_f_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Indeedee-F using its top teammates
+  set_ids:
+  - indeedee_f_auto_rockyhelmet_1
+  - iron_crown_auto_boosterenergy_1
+  - tornadus_main_sash
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - urshifu_rs_main_scarf
+  - torkoal_auto_charcoal_1
+- id: torkoal_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Torkoal using its top teammates
+  set_ids:
+  - torkoal_auto_charcoal_1
+  - indeedee_f_auto_rockyhelmet_1
+  - ursaluna_auto_flame_1
+  - flutter_mane_main_booster
+  - hatterene_auto_life_1
+  - farigiraf_auto_sitrus_1
+- id: gholdengo_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Gholdengo using its top teammates
+  set_ids:
+  - gholdengo_auto_leftovers_1
+  - incineroar_main_goggles
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - rillaboom_auto_assaultvest_1
+  - tornadus_main_sash
+- id: archaludon_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Archaludon using its top teammates
+  set_ids:
+  - archaludon_auto_powerherb_1
+  - urshifu_rs_main_scarf
+  - flutter_mane_main_booster
+  - tornadus_main_sash
+  - amoonguss_main_water_sitrus
+  - landorus_main_lo_steel
+- id: dragonite_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Dragonite using its top teammates
+  set_ids:
+  - dragonite_auto_choiceband_1
+  - chien_pao_auto_focussash_1
+  - flutter_mane_main_booster
+  - gouging_fire_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - ting_lu_auto_assaultvest_1
+- id: ninetales_alola_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Ninetales-Alola using its top teammates
+  set_ids:
+  - ninetales_alola_auto_lightclay_1
+  - articuno_auto_choicespecs_1
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - tornadus_main_sash
+  - ogerpon_wellspring_auto_wellspringmask_1
+- id: ursaluna_bloodmoon_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Ursaluna-Bloodmoon using its top teammates
+  set_ids:
+  - ursaluna_bloodmoon_auto_life_1
+  - farigiraf_auto_sitrus_1
+  - urshifu_auto_focussash_1
+  - flutter_mane_main_booster
+  - iron_hands_auto_assaultvest_1
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+- id: iron_hands_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Iron Hands using its top teammates
+  set_ids:
+  - iron_hands_auto_assaultvest_1
+  - farigiraf_auto_sitrus_1
+  - ursaluna_bloodmoon_auto_life_1
+  - tornadus_main_sash
+  - urshifu_auto_focussash_1
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+- id: gouging_fire_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Gouging Fire using its top teammates
+  set_ids:
+  - gouging_fire_auto_boosterenergy_1
+  - raging_bolt_auto_boosterenergy_1
+  - ting_lu_auto_assaultvest_1
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - chien_pao_auto_focussash_1
+- id: arcanine_hisui_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Arcanine-Hisui using its top teammates
+  set_ids:
+  - arcanine_hisui_auto_choiceband_1
+  - raging_bolt_auto_boosterenergy_1
+  - chien_pao_auto_focussash_1
+  - urshifu_rs_main_scarf
+  - rillaboom_auto_assaultvest_1
+  - flutter_mane_main_booster
+- id: chi_yu_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Chi-Yu using its top teammates
+  set_ids:
+  - chi_yu_auto_choicespecs_1
+  - flutter_mane_main_booster
+  - tornadus_main_sash
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_auto_focussash_1
+- id: kingambit_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Kingambit using its top teammates
+  set_ids:
+  - kingambit_auto_blackglasses_1
+  - gouging_fire_auto_boosterenergy_1
+  - flutter_mane_main_booster
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - rillaboom_auto_assaultvest_1
+  - chien_pao_auto_focussash_1
+- id: annihilape_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Annihilape using its top teammates
+  set_ids:
+  - annihilape_auto_sitrus_1
+  - ting_lu_auto_assaultvest_1
+  - gouging_fire_auto_boosterenergy_1
+  - grimmsnarl_auto_lightclay_1
+  - amoonguss_main_water_sitrus
+  - raging_bolt_auto_boosterenergy_1
+- id: landorus_therian_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Landorus-Therian using its top teammates
+  set_ids:
+  - landorus_therian_auto_choiceband_1
+  - tornadus_main_sash
+  - flutter_mane_main_booster
+  - gholdengo_auto_leftovers_1
+  - urshifu_auto_focussash_1
+  - urshifu_rs_main_scarf
+- id: ursaluna_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Ursaluna using its top teammates
+  set_ids:
+  - ursaluna_auto_flame_1
+  - incineroar_main_goggles
+  - amoonguss_main_water_sitrus
+  - torkoal_auto_charcoal_1
+  - flutter_mane_main_booster
+  - porygon2_auto_eviolite_1
+- id: whimsicott_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Whimsicott using its top teammates
+  set_ids:
+  - whimsicott_auto_focussash_1
+  - flutter_mane_main_booster
+  - farigiraf_auto_sitrus_1
+  - urshifu_rs_main_scarf
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - rillaboom_auto_assaultvest_1
+- id: articuno_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Articuno using its top teammates
+  set_ids:
+  - articuno_auto_choicespecs_1
+  - ninetales_alola_auto_lightclay_1
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - tornadus_main_sash
+  - metagross_auto_life_1
+- id: pelipper_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Pelipper using its top teammates
+  set_ids:
+  - pelipper_auto_focussash_1
+  - urshifu_rs_main_scarf
+  - archaludon_auto_powerherb_1
+  - amoonguss_main_water_sitrus
+  - landorus_main_lo_steel
+  - incineroar_main_goggles
+- id: dondozo_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Dondozo using its top teammates
+  set_ids:
+  - dondozo_auto_leftovers_1
+  - tatsugiri_auto_choicescarf_1
+  - ninetales_alola_auto_lightclay_1
+  - articuno_auto_choicespecs_1
+  - dragonite_auto_choiceband_1
+  - chien_pao_auto_focussash_1
+- id: sinistcha_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Sinistcha using its top teammates
+  set_ids:
+  - sinistcha_auto_sitrus_1
+  - ting_lu_auto_assaultvest_1
+  - zapdos_galar_auto_choicescarf_1
+  - dragonite_auto_choiceband_1
+  - chien_pao_auto_focussash_1
+  - urshifu_rs_main_scarf
+- id: walking_wake_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Walking Wake using its top teammates
+  set_ids:
+  - walking_wake_auto_life_1
+  - flutter_mane_main_booster
+  - torkoal_auto_charcoal_1
+  - entei_auto_assaultvest_1
+  - raging_bolt_auto_boosterenergy_1
+  - thundurus_auto_sitrus_1
+- id: glimmora_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Glimmora using its top teammates
+  set_ids:
+  - glimmora_auto_powerherb_1
+  - dondozo_auto_leftovers_1
+  - tatsugiri_auto_choicescarf_1
+  - roaring_moon_auto_boosterenergy_1
+  - flutter_mane_main_booster
+  - ninetales_alola_auto_lightclay_1
+- id: roaring_moon_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Roaring Moon using its top teammates
+  set_ids:
+  - roaring_moon_auto_boosterenergy_1
+  - glimmora_auto_powerherb_1
+  - dondozo_auto_leftovers_1
+  - tatsugiri_auto_choicescarf_1
+  - ninetales_alola_auto_lightclay_1
+  - articuno_auto_choicespecs_1
+- id: armarouge_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Armarouge using its top teammates
+  set_ids:
+  - armarouge_auto_life_1
+  - indeedee_f_auto_rockyhelmet_1
+  - torkoal_auto_charcoal_1
+  - flutter_mane_main_booster
+  - annihilape_auto_sitrus_1
+  - kingambit_auto_blackglasses_1
+- id: hatterene_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Hatterene using its top teammates
+  set_ids:
+  - hatterene_auto_life_1
+  - indeedee_f_auto_rockyhelmet_1
+  - torkoal_auto_charcoal_1
+  - ursaluna_auto_flame_1
+  - gallade_auto_clearamulet_1
+  - lilligant_hisui_auto_focussash_1
+- id: iron_crown_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Iron Crown using its top teammates
+  set_ids:
+  - iron_crown_auto_boosterenergy_1
+  - indeedee_f_auto_rockyhelmet_1
+  - tornadus_main_sash
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - urshifu_rs_main_scarf
+  - regidrago_auto_dragonfang_1
+- id: tatsugiri_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Tatsugiri using its top teammates
+  set_ids:
+  - tatsugiri_auto_choicescarf_1
+  - dondozo_auto_leftovers_1
+  - ninetales_alola_auto_lightclay_1
+  - articuno_auto_choicespecs_1
+  - glimmora_auto_powerherb_1
+  - regigigas_auto_life_1
+- id: cresselia_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Cresselia using its top teammates
+  set_ids:
+  - cresselia_auto_mentalherb_1
+  - ursaluna_auto_flame_1
+  - incineroar_main_goggles
+  - torkoal_auto_charcoal_1
+  - flutter_mane_main_booster
+  - amoonguss_main_water_sitrus
+- id: entei_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Entei using its top teammates
+  set_ids:
+  - entei_auto_assaultvest_1
+  - flutter_mane_main_booster
+  - raging_bolt_auto_boosterenergy_1
+  - urshifu_rs_main_scarf
+  - chien_pao_auto_focussash_1
+  - rillaboom_auto_assaultvest_1
+- id: porygon2_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Porygon2 using its top teammates
+  set_ids:
+  - porygon2_auto_eviolite_1
+  - incineroar_main_goggles
+  - amoonguss_main_water_sitrus
+  - ursaluna_auto_flame_1
+  - urshifu_rs_main_scarf
+  - flutter_mane_main_booster
+- id: iron_bundle_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Iron Bundle using its top teammates
+  set_ids:
+  - iron_bundle_auto_boosterenergy_1
+  - flutter_mane_main_booster
+  - ninetales_alola_auto_lightclay_1
+  - raging_bolt_auto_boosterenergy_1
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+- id: tyranitar_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Tyranitar using its top teammates
+  set_ids:
+  - tyranitar_auto_choiceband_1
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - excadrill_auto_focussash_1
+  - salamence_auto_life_1
+  - okidogi_auto_assaultvest_1
+- id: okidogi_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Okidogi using its top teammates
+  set_ids:
+  - okidogi_auto_assaultvest_1
+  - tornadus_main_sash
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - gouging_fire_auto_boosterenergy_1
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - landorus_main_lo_steel
+- id: zapdos_galar_core_1
+  format: gen9vgc2026regf
+  description: Auto team around Zapdos-Galar using its top teammates
+  set_ids:
+  - zapdos_galar_auto_choicescarf_1
+  - ting_lu_auto_assaultvest_1
+  - sinistcha_auto_sitrus_1
+  - dragonite_auto_choiceband_1
+  - chien_pao_auto_focussash_1
+  - gouging_fire_auto_boosterenergy_1

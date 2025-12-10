@@ -1,0 +1,173 @@
+|t:|1765331985
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Emboar, L50, F|
+|poke|p1|Zekrom, L50|
+|poke|p1|Magmar, L50, M|
+|poke|p1|Hoopa, L50|
+|poke|p1|Weavile, L50, F|
+|poke|p1|Vespiquen, L50, F|
+|poke|p2|Clodsire, L50, F|
+|poke|p2|Moltres-Galar, L50|
+|poke|p2|Glimmora, L50, F|
+|poke|p2|Hitmonlee, L50, M|
+|poke|p2|Porygon-Z, L50|
+|poke|p2|Iron Bundle, L50|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765331985
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Emboar|Emboar, L50, F|196/196
+|switch|p1b: Zekrom|Zekrom, L50|186/186
+|switch|p2a: Clodsire|Clodsire, L50, F|216/216
+|switch|p2b: Moltres|Moltres-Galar, L50|176/176
+|-ability|p1b: Zekrom|Teravolt
+|turn|1
+|
+|t:|1765331985
+|move|p1a: Emboar|Knock Off|p2a: Clodsire
+|-damage|p2a: Clodsire|146/216
+|-enditem|p2a: Clodsire|Sitrus Berry|[from] move: Knock Off|[of] p1a: Emboar
+|move|p2b: Moltres|Tailwind|p2b: Moltres
+|-sidestart|p2: Bot2|move: Tailwind
+|move|p1b: Zekrom|Dragon Claw|p2b: Moltres
+|-damage|p2b: Moltres|101/176
+|move|p2a: Clodsire|Toxic Spikes|p1b: Zekrom
+|-sidestart|p1: Bot1|move: Toxic Spikes
+|
+|upkeep
+|turn|2
+|
+|t:|1765331985
+|move|p2a: Clodsire|Helping Hand|p2b: Moltres
+|-singleturn|p2b: Moltres|Helping Hand|[of] p2a: Clodsire
+|move|p2b: Moltres|Nasty Plot|p2b: Moltres
+|-boost|p2b: Moltres|spa|2
+|move|p1a: Emboar|Knock Off|p2b: Moltres
+|-resisted|p2b: Moltres
+|-damage|p2b: Moltres|78/176
+|-enditem|p2b: Moltres|Sitrus Berry|[from] move: Knock Off|[of] p1a: Emboar
+|-ability|p2b: Moltres|Berserk|boost
+|-boost|p2b: Moltres|spa|1
+|move|p1b: Zekrom|Dragon Dance|p1b: Zekrom
+|-boost|p1b: Zekrom|atk|1
+|-boost|p1b: Zekrom|spe|1
+|
+|upkeep
+|turn|3
+|
+|t:|1765331985
+|move|p2b: Moltres|Fiery Wrath|p1b: Zekrom|[spread] p1a,p1b
+|-resisted|p1a: Emboar
+|-damage|p1a: Emboar|132/196
+|-damage|p1b: Zekrom|78/186
+|move|p1b: Zekrom|Dragon Dance|p1b: Zekrom
+|-boost|p1b: Zekrom|atk|1
+|-boost|p1b: Zekrom|spe|1
+|cant|p1a: Emboar|flinch
+|move|p2a: Clodsire|High Horsepower|p1b: Zekrom
+|-supereffective|p1b: Zekrom
+|-damage|p1b: Zekrom|0 fnt
+|faint|p1b: Zekrom
+|
+|upkeep
+|
+|t:|1765331985
+|switch|p1b: Magmar|Magmar, L50, M|151/151
+|-status|p1b: Magmar|psn
+|turn|4
+|
+|t:|1765331985
+|move|p2b: Moltres|Tailwind||[still]
+|-fail|p2b: Moltres
+|move|p1a: Emboar|Knock Off|p2b: Moltres
+|-resisted|p2b: Moltres
+|-damage|p2b: Moltres|62/176
+|move|p1b: Magmar|Knock Off|p2a: Clodsire
+|-damage|p2a: Clodsire|110/216
+|move|p2a: Clodsire|High Horsepower|p1b: Magmar
+|-supereffective|p1b: Magmar
+|-damage|p1b: Magmar|55/151 psn
+|
+|-damage|p1b: Magmar|37/151 psn|[from] psn
+|-sideend|p2: Bot2|move: Tailwind
+|upkeep
+|turn|5
+|
+|t:|1765331985
+|move|p1a: Emboar|Knock Off|p2b: Moltres
+|-resisted|p2b: Moltres
+|-damage|p2b: Moltres|44/176
+|move|p1b: Magmar|Heat Wave|p2b: Moltres|[spread] p2a,p2b
+|-damage|p2a: Clodsire|65/216
+|-damage|p2b: Moltres|7/176
+|move|p2b: Moltres|Tailwind|p2b: Moltres
+|-sidestart|p2: Bot2|move: Tailwind
+|move|p2a: Clodsire|High Horsepower|p1a: Emboar
+|-supereffective|p1a: Emboar
+|-damage|p1a: Emboar|0 fnt
+|faint|p1a: Emboar
+|
+|-damage|p1b: Magmar|19/151 psn|[from] psn
+|upkeep
+|
+|t:|1765331985
+|switch|p1a: Hoopa|Hoopa, L50|166/166
+|-status|p1a: Hoopa|psn
+|turn|6
+|
+|t:|1765331985
+|move|p2b: Moltres|Tailwind||[still]
+|-fail|p2b: Moltres
+|move|p1a: Hoopa|Hyperspace Hole|p2b: Moltres
+|-immune|p2b: Moltres
+|move|p1b: Magmar|Knock Off|p2a: Clodsire
+|-damage|p2a: Clodsire|27/216
+|move|p2a: Clodsire|Toxic Spikes|p1b: Magmar
+|-sidestart|p1: Bot1|move: Toxic Spikes
+|
+|-damage|p1a: Hoopa|146/166 psn|[from] psn
+|-damage|p1b: Magmar|1/151 psn|[from] psn
+|upkeep
+|turn|7
+|
+|t:|1765331985
+|move|p1b: Magmar|Follow Me|p1b: Magmar
+|-singleturn|p1b: Magmar|move: Follow Me
+|move|p2b: Moltres|Nasty Plot|p2b: Moltres
+|-boost|p2b: Moltres|spa|2
+|move|p1a: Hoopa|Hyperspace Hole|p2a: Clodsire
+|-supereffective|p2a: Clodsire
+|-damage|p2a: Clodsire|0 fnt
+|faint|p2a: Clodsire
+|
+|-damage|p1a: Hoopa|126/166 psn|[from] psn
+|-damage|p1b: Magmar|0 fnt|[from] psn
+|faint|p1b: Magmar
+|upkeep
+|
+|t:|1765331985
+|switch|p2a: Glimmora|Glimmora, L50, F|169/169
+|turn|8
+|
+|t:|1765331985
+|move|p2a: Glimmora|Spiky Shield|p2a: Glimmora
+|-singleturn|p2a: Glimmora|move: Protect
+|move|p2b: Moltres|Fiery Wrath|p1a: Hoopa
+|-supereffective|p1a: Hoopa
+|-damage|p1a: Hoopa|0 fnt
+|faint|p1a: Hoopa
+|
+|win|Bot2

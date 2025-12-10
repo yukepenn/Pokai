@@ -1,0 +1,215 @@
+|t:|1765336019
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Comfey, L50, F|
+|poke|p1|Qwilfish, L50, M|
+|poke|p1|Iron Thorns, L50|
+|poke|p1|Mudsdale, L50, M|
+|poke|p1|Lapras, L50, M|
+|poke|p1|Vileplume, L50, F|
+|poke|p2|Ludicolo, L50, F|
+|poke|p2|Galvantula, L50, F|
+|poke|p2|Haxorus, L50, F|
+|poke|p2|Cacturne, L50, F|
+|poke|p2|Conkeldurr, L50, M|
+|poke|p2|Hatterene, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765336019
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Comfey|Comfey, L50, F|137/137
+|switch|p1b: Qwilfish|Qwilfish, L50, M|151/151
+|switch|p2a: Ludicolo|Ludicolo, L50, F|166/166
+|switch|p2b: Galvantula|Galvantula, L50, F|156/156
+|-ability|p1b: Qwilfish|Intimidate|boost
+|-unboost|p2a: Ludicolo|atk|1
+|-unboost|p2b: Galvantula|atk|1
+|turn|1
+|
+|t:|1765336019
+|move|p1a: Comfey|Helping Hand|p1b: Qwilfish
+|-singleturn|p1b: Qwilfish|Helping Hand|[of] p1a: Comfey
+|move|p2b: Galvantula|Bug Buzz|p1b: Qwilfish
+|-resisted|p1b: Qwilfish
+|-damage|p1b: Qwilfish|108/151
+|move|p1b: Qwilfish|Thunder Wave|p2a: Ludicolo
+|-status|p2a: Ludicolo|par
+|cant|p2a: Ludicolo|par
+|
+|upkeep
+|turn|2
+|
+|t:|1765336019
+|move|p1a: Comfey|Helping Hand|p1b: Qwilfish
+|-singleturn|p1b: Qwilfish|Helping Hand|[of] p1a: Comfey
+|move|p2b: Galvantula|Volt Switch|p1a: Comfey
+|-damage|p1a: Comfey|97/137
+|
+|t:|1765336019
+|switch|p2b: Cacturne|Cacturne, L50, F|156/156|[from] Volt Switch
+|move|p1b: Qwilfish|Flip Turn|p2b: Cacturne
+|-immune|p2b: Cacturne|[from] ability: Water Absorb
+|move|p2a: Ludicolo|Icy Wind|p1a: Comfey|[spread] p1a,p1b
+|-resisted|p1b: Qwilfish
+|-damage|p1a: Comfey|83/137
+|-damage|p1b: Qwilfish|95/151
+|-unboost|p1a: Comfey|spe|1
+|-unboost|p1b: Qwilfish|spe|1
+|
+|upkeep
+|turn|3
+|
+|t:|1765336019
+|move|p2b: Cacturne|Spiky Shield|p2b: Cacturne
+|-singleturn|p2b: Cacturne|move: Protect
+|move|p1a: Comfey|Floral Healing|p2a: Ludicolo
+|-fail|p2a: Ludicolo|heal
+|move|p1b: Qwilfish|Gunk Shot|p2b: Cacturne
+|-activate|p2b: Cacturne|move: Protect
+|cant|p2a: Ludicolo|par
+|
+|upkeep
+|turn|4
+|
+|t:|1765336019
+|move|p1a: Comfey|Floral Healing|p2b: Cacturne
+|-fail|p2b: Cacturne|heal
+|move|p2b: Cacturne|Leaf Storm|p1b: Qwilfish
+|-damage|p1b: Qwilfish|0 fnt
+|-unboost|p2b: Cacturne|spa|2
+|faint|p1b: Qwilfish
+|-damage|p2b: Cacturne|141/156|[from] item: Life Orb
+|move|p2a: Ludicolo|Icy Wind|p1a: Comfey
+|-damage|p1a: Comfey|64/137
+|-unboost|p1a: Comfey|spe|1
+|-enditem|p1a: Comfey|Sitrus Berry|[eat]
+|-heal|p1a: Comfey|98/137|[from] item: Sitrus Berry
+|
+|upkeep
+|
+|t:|1765336019
+|switch|p1b: Iron Thorns|Iron Thorns, L50|186/186
+|turn|5
+|
+|t:|1765336019
+|move|p1a: Comfey|Helping Hand|p1b: Iron Thorns
+|-singleturn|p1b: Iron Thorns|Helping Hand|[of] p1a: Comfey
+|cant|p2a: Ludicolo|par
+|move|p1b: Iron Thorns|Rock Slide|p2a: Ludicolo|[spread] p2a,p2b
+|-damage|p2a: Ludicolo|85/166 par
+|-damage|p2b: Cacturne|44/156
+|move|p2b: Cacturne|Leaf Storm|p1b: Iron Thorns
+|-supereffective|p1b: Iron Thorns
+|-damage|p1b: Iron Thorns|38/186
+|-unboost|p2b: Cacturne|spa|2
+|-damage|p2b: Cacturne|29/156|[from] item: Life Orb
+|
+|upkeep
+|turn|6
+|
+|t:|1765336019
+|move|p1b: Iron Thorns|High Horsepower|p2b: Cacturne
+|-resisted|p2b: Cacturne
+|-damage|p2b: Cacturne|0 fnt
+|faint|p2b: Cacturne
+|move|p1a: Comfey|Tailwind|p1a: Comfey
+|-sidestart|p1: Bot1|move: Tailwind
+|move|p2a: Ludicolo|Icy Wind|p1b: Iron Thorns|[spread] p1a,p1b
+|-damage|p1a: Comfey|84/137
+|-damage|p1b: Iron Thorns|20/186
+|-unboost|p1a: Comfey|spe|1
+|
+|upkeep
+|
+|t:|1765336019
+|switch|p2b: Galvantula|Galvantula, L50, F|156/156
+|turn|7
+|
+|t:|1765336019
+|move|p1a: Comfey|Floral Healing|p2b: Galvantula
+|-fail|p2b: Galvantula|heal
+|move|p1b: Iron Thorns|High Horsepower|p2a: Ludicolo
+|-resisted|p2a: Ludicolo
+|-damage|p2a: Ludicolo|54/166 par
+|move|p2b: Galvantula|Volt Switch|p1b: Iron Thorns
+|-resisted|p1b: Iron Thorns
+|-damage|p1b: Iron Thorns|0 fnt
+|faint|p1b: Iron Thorns
+|-end|p1b: Iron Thorns|Quark Drive|[silent]
+|
+|t:|1765336019
+|switch|p2b: Haxorus|Haxorus, L50, F|162/162|[from] Volt Switch
+|-ability|p2b: Haxorus|Unnerve
+|move|p2a: Ludicolo|Icy Wind|p1a: Comfey
+|-damage|p1a: Comfey|64/137
+|-unboost|p1a: Comfey|spe|1
+|
+|upkeep
+|
+|t:|1765336019
+|switch|p1b: Mudsdale|Mudsdale, L50, M|186/186
+|turn|8
+|
+|t:|1765336019
+|move|p2a: Ludicolo|Fake Out||[still]
+|-hint|Fake Out only works on your first turn out.
+|-fail|p2a: Ludicolo
+|move|p1b: Mudsdale|Body Press|p2a: Ludicolo
+|-damage|p2a: Ludicolo|11/166 par
+|move|p2b: Haxorus|Dragon Claw|p1b: Mudsdale
+|-damage|p1b: Mudsdale|95/186
+|-ability|p1b: Mudsdale|Stamina|boost
+|-boost|p1b: Mudsdale|def|1
+|-damage|p2b: Haxorus|146/162|[from] item: Life Orb
+|move|p1a: Comfey|Tailwind||[still]
+|-fail|p1a: Comfey
+|
+|upkeep
+|turn|9
+|
+|t:|1765336019
+|move|p1a: Comfey|Floral Healing|p2a: Ludicolo
+|-heal|p2a: Ludicolo|94/166 par
+|move|p1b: Mudsdale|Heavy Slam|p2a: Ludicolo
+|-resisted|p2a: Ludicolo
+|-damage|p2a: Ludicolo|57/166 par
+|move|p2b: Haxorus|Close Combat|p1a: Comfey
+|-resisted|p1a: Comfey
+|-damage|p1a: Comfey|20/137
+|-unboost|p2b: Haxorus|def|1
+|-unboost|p2b: Haxorus|spd|1
+|-damage|p2b: Haxorus|130/162|[from] item: Life Orb
+|move|p2a: Ludicolo|Leaf Storm|p1b: Mudsdale
+|-supereffective|p1b: Mudsdale
+|-damage|p1b: Mudsdale|0 fnt
+|-unboost|p2a: Ludicolo|spa|2
+|faint|p1b: Mudsdale
+|
+|-sideend|p1: Bot1|move: Tailwind
+|upkeep
+|turn|10
+|
+|t:|1765336019
+|move|p2b: Haxorus|Protect|p2b: Haxorus
+|-singleturn|p2b: Haxorus|Protect
+|move|p1a: Comfey|Draining Kiss|p2a: Ludicolo
+|-damage|p2a: Ludicolo|39/166 par
+|-heal|p1a: Comfey|34/137|[from] drain|[of] p2a: Ludicolo
+|move|p2a: Ludicolo|Leaf Storm|p1a: Comfey
+|-damage|p1a: Comfey|0 fnt
+|-unboost|p2a: Ludicolo|spa|2
+|faint|p1a: Comfey
+|
+|win|Bot2

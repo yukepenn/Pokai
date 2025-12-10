@@ -1,0 +1,164 @@
+|t:|1765336555
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Hitmontop, L50, M|
+|poke|p1|Empoleon, L50, M|
+|poke|p1|Phione, L50|
+|poke|p1|Sceptile, L50, M|
+|poke|p1|Meganium, L50, M|
+|poke|p1|Zekrom, L50|
+|poke|p2|Braviary-Hisui, L50, M|
+|poke|p2|Cramorant, L50, M|
+|poke|p2|Sneasler, L50, F|
+|poke|p2|Urshifu-*, L50, M|
+|poke|p2|Electrode, L50|
+|poke|p2|Florges-Blue, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765336555
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Hitmontop|Hitmontop, L50, M|136/136
+|switch|p1b: Empoleon|Empoleon, L50, M|170/170
+|switch|p2a: Braviary|Braviary-Hisui, L50, M|196/196
+|switch|p2b: Cramorant|Cramorant, L50, M|156/156
+|-ability|p1a: Hitmontop|Intimidate|boost
+|-unboost|p2a: Braviary|atk|1
+|-unboost|p2b: Cramorant|atk|1
+|turn|1
+|
+|t:|1765336555
+|move|p2b: Cramorant|Protect|p2b: Cramorant
+|-singleturn|p2b: Cramorant|Protect
+|move|p1a: Hitmontop|Close Combat|p2a: Braviary
+|-resisted|p2a: Braviary
+|-damage|p2a: Braviary|175/196
+|-unboost|p1a: Hitmontop|def|1
+|-unboost|p1a: Hitmontop|spd|1
+|move|p2a: Braviary|Heat Wave|p1a: Hitmontop|[spread] p1a,p1b
+|-damage|p1a: Hitmontop|61/136
+|-damage|p1b: Empoleon|113/170
+|-enditem|p1a: Hitmontop|Sitrus Berry|[eat]
+|-heal|p1a: Hitmontop|95/136|[from] item: Sitrus Berry
+|move|p1b: Empoleon|Icy Wind|p2b: Cramorant|[spread] p2a
+|-activate|p2b: Cramorant|move: Protect
+|-supereffective|p2a: Braviary
+|-crit|p2a: Braviary
+|-damage|p2a: Braviary|103/196
+|-unboost|p2a: Braviary|spe|1
+|
+|upkeep
+|turn|2
+|
+|t:|1765336555
+|move|p1a: Hitmontop|Wide Guard|p1a: Hitmontop
+|-singleturn|p1a: Hitmontop|Wide Guard
+|move|p2b: Cramorant|Brave Bird|p1b: Empoleon
+|-resisted|p1b: Empoleon
+|-damage|p1b: Empoleon|90/170
+|-damage|p2b: Cramorant|148/156|[from] Recoil
+|move|p1b: Empoleon|Icy Wind|p2b: Cramorant|[spread] p2a,p2b
+|-supereffective|p2a: Braviary
+|-damage|p2a: Braviary|59/196
+|-damage|p2b: Cramorant|127/156
+|-unboost|p2a: Braviary|spe|1
+|-unboost|p2b: Cramorant|spe|1
+|move|p2a: Braviary|Psychic|p1a: Hitmontop
+|-supereffective|p1a: Hitmontop
+|-damage|p1a: Hitmontop|0 fnt
+|faint|p1a: Hitmontop
+|
+|upkeep
+|
+|t:|1765336555
+|switch|p1a: Phione|Phione, L50|166/166
+|turn|3
+|
+|t:|1765336555
+|move|p1a: Phione|Ice Beam|p2b: Cramorant
+|-damage|p2b: Cramorant|93/156
+|move|p1b: Empoleon|Hydro Pump|p2b: Cramorant
+|-resisted|p2b: Cramorant
+|-damage|p2b: Cramorant|54/156
+|-enditem|p2b: Cramorant|Sitrus Berry|[eat]
+|-heal|p2b: Cramorant|93/156|[from] item: Sitrus Berry
+|move|p2b: Cramorant|Surf|p1b: Empoleon|[spread] p2a,p1a,p1b
+|-formechange|p2b: Cramorant|Cramorant-Gulping|
+|-resisted|p1a: Phione
+|-resisted|p1b: Empoleon
+|-damage|p2a: Braviary|14/196
+|-damage|p1a: Phione|144/166
+|-damage|p1b: Empoleon|72/170
+|-enditem|p1b: Empoleon|Sitrus Berry|[eat]
+|-heal|p1b: Empoleon|114/170|[from] item: Sitrus Berry
+|move|p2a: Braviary|Hurricane|p1a: Phione
+|-damage|p1a: Phione|0 fnt
+|faint|p1a: Phione
+|
+|upkeep
+|
+|t:|1765336555
+|switch|p1a: Sceptile|Sceptile, L50, M|156/156
+|turn|4
+|
+|t:|1765336555
+|move|p2b: Cramorant|Protect|p2b: Cramorant
+|-singleturn|p2b: Cramorant|Protect
+|move|p1a: Sceptile|Shed Tail|p1a: Sceptile
+|-fail|p1a: Sceptile
+|move|p1b: Empoleon|Icy Wind|p2b: Cramorant|[spread] p2a
+|-activate|p2b: Cramorant|move: Protect
+|-supereffective|p2a: Braviary
+|-crit|p2a: Braviary
+|-damage|p2a: Braviary|0 fnt
+|faint|p2a: Braviary
+|
+|upkeep
+|
+|t:|1765336555
+|switch|p2a: Urshifu|Urshifu, L50, M|186/186
+|turn|5
+|
+|t:|1765336555
+|move|p1a: Sceptile|Shed Tail|p1a: Sceptile
+|-fail|p1a: Sceptile
+|move|p2a: Urshifu|Close Combat|p1b: Empoleon
+|-supereffective|p1b: Empoleon
+|-damage|p1b: Empoleon|0 fnt
+|-unboost|p2a: Urshifu|def|1
+|-unboost|p2a: Urshifu|spd|1
+|faint|p1b: Empoleon
+|-damage|p2a: Urshifu|168/186|[from] item: Life Orb
+|move|p2b: Cramorant|Brave Bird|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-damage|p1a: Sceptile|28/156
+|-enditem|p1a: Sceptile|Sitrus Berry|[eat]
+|-heal|p1a: Sceptile|67/156|[from] item: Sitrus Berry
+|-damage|p2b: Cramorant|51/156|[from] Recoil
+|
+|upkeep
+|turn|6
+|
+|t:|1765336555
+|move|p1a: Sceptile|Focus Blast|p2a: Urshifu
+|-supereffective|p2a: Urshifu
+|-damage|p2a: Urshifu|0 fnt
+|faint|p2a: Urshifu
+|move|p2b: Cramorant|Brave Bird|p1a: Sceptile
+|-supereffective|p1a: Sceptile
+|-damage|p1a: Sceptile|0 fnt
+|faint|p1a: Sceptile
+|-damage|p2b: Cramorant|29/156|[from] Recoil
+|
+|win|Bot2

@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -255,4 +255,70 @@ def append_snapshot_to_dataset(snapshot: TeamPreviewSnapshot) -> None:
     json_line = json.dumps(data, ensure_ascii=False)
     with DATASET_PATH.open("a", encoding="utf-8") as f:
         f.write(json_line + "\n")
+
+
+class PreviewOutcomeRecord(BaseModel):
+    """
+    One open-team-sheet snapshot plus battle outcome.
+
+    Teams are stored as raw dicts coming from the Node script, so they can evolve
+    without breaking older data (they live under p1_team_public / p2_team_public).
+    """
+
+    format_id: str = Field(..., description="Format ID (e.g., gen9vgc2026regf)")
+    p1_name: str
+    p2_name: str
+
+    # Public team info from Node (list of dicts as emitted by js/random_selfplay.js)
+    p1_team_public: List[Dict[str, Any]]
+    p2_team_public: List[Dict[str, Any]]
+
+    # Indices into p1_team_public / p2_team_public
+    p1_chosen_indices: List[int] = Field(default_factory=list)
+    p2_chosen_indices: List[int] = Field(default_factory=list)
+    p1_lead_indices: List[int] = Field(default_factory=list)
+    p2_lead_indices: List[int] = Field(default_factory=list)
+
+    winner_side: str = Field(..., description='"p1" / "p2" / "tie" / "unknown"')
+    winner_name: Optional[str]
+
+    raw_log_path: Path
+    created_at: datetime
+
+    meta: Dict[str, Any] = Field(default_factory=dict)
+
+    class Config:
+        json_encoders = {
+            Path: str,
+            datetime: lambda v: v.isoformat(),
+        }
+
+
+# Preview+Outcome dataset location
+PREVIEW_OUTCOME_DATASET_DIR = PROJECT_ROOT / "data" / "datasets" / "preview_outcome"
+PREVIEW_OUTCOME_DATASET_PATH = PREVIEW_OUTCOME_DATASET_DIR / "preview_outcome.jsonl"
+
+
+def ensure_preview_outcome_dataset_dir() -> None:
+    """Ensure the preview+outcome dataset directory exists."""
+    PREVIEW_OUTCOME_DATASET_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def append_preview_outcome_record(record: PreviewOutcomeRecord) -> None:
+    """
+    Append one record as a JSON line to PREVIEW_OUTCOME_DATASET_PATH.
+
+    Args:
+        record: PreviewOutcomeRecord instance to append
+    """
+    ensure_preview_outcome_dataset_dir()
+
+    data = record.model_dump()
+    # Convert non-JSON types
+    data["raw_log_path"] = str(data["raw_log_path"])
+    data["created_at"] = data["created_at"].isoformat()
+
+    with PREVIEW_OUTCOME_DATASET_PATH.open("a", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+        f.write("\n")
 

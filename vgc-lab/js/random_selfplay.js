@@ -44,12 +44,38 @@ async function runBattle() {
         const streams = getPlayerStreams(battleStream);
 
         // Generate or use provided teams
+        // Teams.generate(formatId, ...) uses Pokemon Showdown's own format definition
+        // (banlist, clauses, etc.) for that format. Therefore, random teams produced
+        // with formatId="gen9vgc2026regf" are "legal Reg F teams" in the sense of
+        // Showdown's Reg F universe (teampreview=4, etc.).
         if (!p1Team) {
             p1Team = Teams.pack(Teams.generate(formatId));
         }
         if (!p2Team) {
             p2Team = Teams.pack(Teams.generate(formatId));
         }
+
+        // Unpack teams to get public info
+        const p1Sets = Teams.unpack(p1Team) || [];
+        const p2Sets = Teams.unpack(p2Team) || [];
+
+        // Build public team info
+        function buildPublicTeam(sets) {
+            return sets.map(set => ({
+                name: set.name || set.species || '',
+                species: set.species || '',
+                item: set.item || null,
+                ability: set.ability || null,
+                teraType: set.teraType || null,
+                moves: set.moves || [],
+                nature: set.nature || null,
+                evs: set.evs || {},
+                ivs: set.ivs || {}
+            }));
+        }
+
+        const p1TeamPublic = buildPublicTeam(p1Sets);
+        const p2TeamPublic = buildPublicTeam(p2Sets);
 
         // Create random player AIs
         const p1 = new RandomPlayerAI(streams.p1);
@@ -131,6 +157,10 @@ async function runBattle() {
             format_id: formatId,
             p1_name: p1Name,
             p2_name: p2Name,
+            p1_team_packed: p1Team,
+            p2_team_packed: p2Team,
+            p1_team_public: p1TeamPublic,
+            p2_team_public: p2TeamPublic,
             winner_side: winnerSide,
             winner_name: winnerName,
             turns: turns,

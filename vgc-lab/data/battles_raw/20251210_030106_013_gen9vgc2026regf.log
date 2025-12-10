@@ -1,0 +1,185 @@
+|t:|1765335665
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Zekrom, L50|
+|poke|p1|Farigiraf, L50, M|
+|poke|p1|Lanturn, L50, M|
+|poke|p1|Comfey, L50, M|
+|poke|p1|Mesprit, L50|
+|poke|p1|Scovillain, L50, M|
+|poke|p2|Walking Wake, L50|
+|poke|p2|Whimsicott, L50, F|
+|poke|p2|Araquanid, L50, M|
+|poke|p2|Zarude, L50|
+|poke|p2|Zoroark, L50, F|
+|poke|p2|Comfey, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765335665
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Zekrom|Zekrom, L50|186/186
+|switch|p1b: Farigiraf|Farigiraf, L50, M|206/206
+|switch|p2a: Walking Wake|Walking Wake, L50|185/185
+|switch|p2b: Whimsicott|Whimsicott, L50, F|146/146
+|-ability|p1a: Zekrom|Teravolt
+|turn|1
+|
+|t:|1765335665
+|move|p2a: Walking Wake|Protect|p2a: Walking Wake
+|-singleturn|p2a: Walking Wake|Protect
+|move|p2b: Whimsicott|Moonblast|p1b: Farigiraf
+|-damage|p1b: Farigiraf|148/206
+|move|p1a: Zekrom|Dragon Dance|p1a: Zekrom
+|-boost|p1a: Zekrom|atk|1
+|-boost|p1a: Zekrom|spe|1
+|move|p1b: Farigiraf|Trick Room|p1b: Farigiraf
+|-fieldstart|move: Trick Room|[of] p1b: Farigiraf
+|
+|upkeep
+|turn|2
+|
+|t:|1765335665
+|move|p1b: Farigiraf|Hyper Voice|p2b: Whimsicott|[spread] p2a,p2b
+|-damage|p2a: Walking Wake|125/185
+|-damage|p2b: Whimsicott|71/146
+|-enditem|p2b: Whimsicott|Sitrus Berry|[eat]
+|-heal|p2b: Whimsicott|107/146|[from] item: Sitrus Berry
+|-damage|p1b: Farigiraf|128/206|[from] item: Life Orb
+|move|p2a: Walking Wake|Hydro Pump|p1b: Farigiraf|[miss]
+|-miss|p2a: Walking Wake|p1b: Farigiraf
+|move|p2b: Whimsicott|Moonblast|p1a: Zekrom
+|-supereffective|p1a: Zekrom
+|-damage|p1a: Zekrom|88/186
+|move|p1a: Zekrom|Dragon Claw|p2a: Walking Wake
+|-supereffective|p2a: Walking Wake
+|-damage|p2a: Walking Wake|0 fnt
+|faint|p2a: Walking Wake
+|-end|p2a: Walking Wake|Protosynthesis|[silent]
+|
+|upkeep
+|
+|t:|1765335665
+|switch|p2a: Araquanid|Araquanid, L50, M|154/154
+|turn|3
+|
+|t:|1765335665
+|move|p2a: Araquanid|Wide Guard|p2a: Araquanid
+|-singleturn|p2a: Araquanid|Wide Guard
+|move|p2b: Whimsicott|Encore||[still]
+|cant|p1b: Farigiraf|ability: Armor Tail|Encore|[of] p2b: Whimsicott
+|move|p1a: Zekrom|Dragon Dance|p1a: Zekrom
+|-boost|p1a: Zekrom|atk|1
+|-boost|p1a: Zekrom|spe|1
+|move|p1b: Farigiraf|Trick Room|p1b: Farigiraf
+|-fieldend|move: Trick Room
+|
+|upkeep
+|turn|4
+|
+|t:|1765335665
+|move|p2b: Whimsicott|Tailwind|p2b: Whimsicott
+|-sidestart|p2: Bot2|move: Tailwind
+|move|p1a: Zekrom|Dragon Claw|p2b: Whimsicott
+|-immune|p2b: Whimsicott
+|move|p2a: Araquanid|Sticky Web|p1b: Farigiraf
+|-sidestart|p1: Bot1|move: Sticky Web
+|move|p1b: Farigiraf|Nasty Plot|p1b: Farigiraf
+|-boost|p1b: Farigiraf|spa|2
+|
+|upkeep
+|turn|5
+|
+|t:|1765335665
+|move|p1a: Zekrom|Protect|p1a: Zekrom
+|-singleturn|p1a: Zekrom|Protect
+|move|p2a: Araquanid|Wide Guard|p2a: Araquanid
+|-singleturn|p2a: Araquanid|Wide Guard
+|move|p2b: Whimsicott|Encore||[still]
+|cant|p1b: Farigiraf|ability: Armor Tail|Encore|[of] p2b: Whimsicott
+|move|p1b: Farigiraf|Hyper Voice|p2b: Whimsicott|[spread] 
+|-activate|p2a: Araquanid|move: Wide Guard
+|-activate|p2b: Whimsicott|move: Wide Guard
+|
+|upkeep
+|turn|6
+|
+|t:|1765335665
+|move|p2b: Whimsicott|Tailwind||[still]
+|-fail|p2b: Whimsicott
+|move|p1a: Zekrom|Bolt Strike|p2b: Whimsicott
+|-resisted|p2b: Whimsicott
+|-damage|p2b: Whimsicott|0 fnt
+|faint|p2b: Whimsicott
+|move|p2a: Araquanid|Liquidation|p1a: Zekrom
+|-resisted|p1a: Zekrom
+|-damage|p1a: Zekrom|52/186
+|move|p1b: Farigiraf|Hyper Voice|p2a: Araquanid
+|-damage|p2a: Araquanid|40/154
+|-enditem|p2a: Araquanid|Sitrus Berry|[eat]
+|-heal|p2a: Araquanid|78/154|[from] item: Sitrus Berry
+|-damage|p1b: Farigiraf|108/206|[from] item: Life Orb
+|
+|upkeep
+|
+|t:|1765335665
+|switch|p2b: Zarude|Zarude, L50|191/191
+|turn|7
+|
+|t:|1765335665
+|move|p2a: Araquanid|Wide Guard|p2a: Araquanid
+|-singleturn|p2a: Araquanid|Wide Guard
+|move|p2b: Zarude|Jungle Healing|p2b: Zarude|[spread] p2a,p2b
+|-heal|p2a: Araquanid|116/154
+|move|p1a: Zekrom|Dragon Claw|p2b: Zarude
+|-damage|p2b: Zarude|62/191
+|move|p1b: Farigiraf|Nasty Plot|p1b: Farigiraf
+|-boost|p1b: Farigiraf|spa|2
+|
+|-sideend|p2: Bot2|move: Tailwind
+|upkeep
+|turn|8
+|
+|t:|1765335665
+|move|p2b: Zarude|Protect|p2b: Zarude
+|-singleturn|p2b: Zarude|Protect
+|move|p1a: Zekrom|Dragon Dance|p1a: Zekrom
+|-boost|p1a: Zekrom|atk|1
+|-boost|p1a: Zekrom|spe|1
+|move|p2a: Araquanid|Leech Life|p1b: Farigiraf
+|-supereffective|p1b: Farigiraf
+|-damage|p1b: Farigiraf|12/206
+|-heal|p2a: Araquanid|154/154|[from] drain|[of] p1b: Farigiraf
+|move|p1b: Farigiraf|Psychic|p2b: Zarude
+|-activate|p2b: Zarude|move: Protect
+|
+|upkeep
+|turn|9
+|
+|t:|1765335665
+|move|p1a: Zekrom|Bolt Strike|p2a: Araquanid
+|-supereffective|p2a: Araquanid
+|-damage|p2a: Araquanid|0 fnt
+|faint|p2a: Araquanid
+|move|p2b: Zarude|Power Whip|p1a: Zekrom
+|-resisted|p1a: Zekrom
+|-damage|p1a: Zekrom|5/186
+|-damage|p2b: Zarude|43/191|[from] item: Life Orb
+|move|p1b: Farigiraf|Hyper Voice|p2b: Zarude
+|-damage|p2b: Zarude|0 fnt
+|faint|p2b: Zarude
+|-damage|p1b: Farigiraf|0 fnt|[from] item: Life Orb
+|faint|p1b: Farigiraf
+|
+|win|Bot1

@@ -1,0 +1,5187 @@
+- id: amoonguss_main_water_sitrus
+  format: gen9vgc2026regf
+  description: Main Amoonguss set (Water Tera, Sitrus, bulky spread)
+  import_text: |
+    Amoonguss @ Sitrus Berry
+    Ability: Regenerator
+    Level: 50
+    Tera Type: Water
+    EVs: 220 HP / 164 Def / 4 SpA / 116 SpD / 4 Spe
+    Bold Nature
+    - Protect
+    - Sludge Bomb
+    - Spore
+    - Rage Powder
+- id: flutter_mane_main_booster
+  format: gen9vgc2026regf
+  description: Main Flutter Mane set (Booster Energy, Fairy Tera)
+  import_text: |
+    Flutter Mane @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    Tera Type: Fairy
+    EVs: 116 HP / 76 Def / 116 SpA / 4 SpD / 196 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Dazzling Gleam
+- id: tornadus_main_sash
+  format: gen9vgc2026regf
+  description: Main Tornadus set (Focus Sash, Prankster support)
+  import_text: |
+    Tornadus @ Focus Sash
+    Ability: Prankster
+    Level: 50
+    Tera Type: Ghost
+    EVs: 36 HP / 12 Def / 204 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Bleakwind Storm
+    - Tailwind
+    - Rain Dance
+- id: incineroar_main_goggles
+  format: gen9vgc2026regf
+  description: Main Incineroar set (Safety Goggles, Intimidate)
+  import_text: |
+    Incineroar @ Safety Goggles
+    Ability: Intimidate
+    Level: 50
+    Tera Type: Grass
+    EVs: 252 HP / 4 Atk / 84 Def / 92 SpD / 76 Spe
+    Careful Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: landorus_main_lo_steel
+  format: gen9vgc2026regf
+  description: Main Landorus set (Life Orb, Steel Tera, Sheer Force)
+  import_text: |
+    Landorus @ Life Orb
+    Ability: Sheer Force
+    Level: 50
+    Tera Type: Steel
+    EVs: 116 HP / 12 Def / 116 SpA / 12 SpD / 252 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Earth Power
+    - Substitute
+    - Sludge Bomb
+- id: urshifu_rs_main_scarf
+  format: gen9vgc2026regf
+  description: Main Urshifu-Rapid-Strike set (Choice Scarf, Water Tera)
+  import_text: |
+    Urshifu-Rapid-Strike @ Choice Scarf
+    Ability: Unseen Fist
+    Level: 50
+    Tera Type: Water
+    EVs: 60 HP / 156 Atk / 4 Def / 124 SpD / 164 Spe
+    Adamant Nature
+    - Close Combat
+    - Surging Strikes
+    - Aqua Jet
+    - U-turn
+
+# =====================================================================
+# AUTO-GENERATED FROM SMOGON (DO NOT EDIT BY HAND)
+# Source: 2024-04 gen9vgc2024regf-1760 moveset stats
+# =====================================================================
+
+- id: flutter_mane_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Flutter Mane set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Flutter Mane @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 100 HP / 0 Atk / 60 Def / 172 SpA / 4 SpD / 172 Spe
+    Timid Nature
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Icy Wind
+- id: flutter_mane_auto_choicespecs_2
+  format: gen9vgc2026regf
+  description: Auto-generated Flutter Mane set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Flutter Mane @ Choice Specs
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 100 HP / 0 Atk / 60 Def / 172 SpA / 4 SpD / 172 Spe
+    Timid Nature
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Icy Wind
+- id: flutter_mane_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Flutter Mane set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Flutter Mane @ Sitrus Berry
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 100 HP / 0 Atk / 60 Def / 172 SpA / 4 SpD / 172 Spe
+    Timid Nature
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Icy Wind
+- id: flutter_mane_auto_focussash_4
+  format: gen9vgc2026regf
+  description: Auto-generated Flutter Mane set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Flutter Mane @ Focus Sash
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 100 HP / 0 Atk / 60 Def / 172 SpA / 4 SpD / 172 Spe
+    Timid Nature
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Icy Wind
+- id: flutter_mane_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Flutter Mane set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Flutter Mane @ Life Orb
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 100 HP / 0 Atk / 60 Def / 172 SpA / 4 SpD / 172 Spe
+    Timid Nature
+    - Protect
+    - Moonblast
+    - Shadow Ball
+    - Icy Wind
+- id: incineroar_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Incineroar set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Incineroar @ Sitrus Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 36 Atk / 148 Def / 0 SpA / 20 SpD / 52 Spe
+    Adamant Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: incineroar_auto_safetygoggles_2
+  format: gen9vgc2026regf
+  description: Auto-generated Incineroar set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Incineroar @ Safety Goggles
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 36 Atk / 148 Def / 0 SpA / 20 SpD / 52 Spe
+    Adamant Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: incineroar_auto_shuca_3
+  format: gen9vgc2026regf
+  description: Auto-generated Incineroar set from Smogon 2024-04 gen9vgc2024regf-1760 (Shuca Berry, top usage moves/spread)
+  import_text: |-
+    Incineroar @ Shuca Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 36 Atk / 148 Def / 0 SpA / 20 SpD / 52 Spe
+    Adamant Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: incineroar_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Incineroar set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Incineroar @ Rocky Helmet
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 36 Atk / 148 Def / 0 SpA / 20 SpD / 52 Spe
+    Adamant Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: incineroar_auto_assaultvest_5
+  format: gen9vgc2026regf
+  description: Auto-generated Incineroar set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Incineroar @ Assault Vest
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 36 Atk / 148 Def / 0 SpA / 20 SpD / 52 Spe
+    Adamant Nature
+    - Fake Out
+    - Parting Shot
+    - Flare Blitz
+    - Knock Off
+- id: urshifu_rapid_strike_auto_choicescarf_1
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu-Rapid-Strike set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Urshifu-Rapid-Strike @ Choice Scarf
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Surging Strikes
+    - Aqua Jet
+    - Close Combat
+- id: urshifu_rapid_strike_auto_mysticwater_2
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu-Rapid-Strike set from Smogon 2024-04 gen9vgc2024regf-1760 (Mystic Water, top usage moves/spread)
+  import_text: |-
+    Urshifu-Rapid-Strike @ Mystic Water
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Surging Strikes
+    - Aqua Jet
+    - Close Combat
+- id: urshifu_rapid_strike_auto_focussash_3
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu-Rapid-Strike set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Urshifu-Rapid-Strike @ Focus Sash
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Surging Strikes
+    - Aqua Jet
+    - Close Combat
+- id: urshifu_rapid_strike_auto_choiceband_4
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu-Rapid-Strike set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Urshifu-Rapid-Strike @ Choice Band
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Surging Strikes
+    - Aqua Jet
+    - Close Combat
+- id: urshifu_rapid_strike_auto_assaultvest_5
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu-Rapid-Strike set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Urshifu-Rapid-Strike @ Assault Vest
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Surging Strikes
+    - Aqua Jet
+    - Close Combat
+- id: raging_bolt_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Raging Bolt set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Raging Bolt @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Thunderclap
+    - Dragon Pulse
+    - Thunderbolt
+- id: raging_bolt_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Raging Bolt set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Raging Bolt @ Assault Vest
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Thunderclap
+    - Dragon Pulse
+    - Thunderbolt
+- id: raging_bolt_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Raging Bolt set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Raging Bolt @ Life Orb
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Thunderclap
+    - Dragon Pulse
+    - Thunderbolt
+- id: raging_bolt_auto_leftovers_4
+  format: gen9vgc2026regf
+  description: Auto-generated Raging Bolt set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Raging Bolt @ Leftovers
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Thunderclap
+    - Dragon Pulse
+    - Thunderbolt
+- id: raging_bolt_auto_magnet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Raging Bolt set from Smogon 2024-04 gen9vgc2024regf-1760 (Magnet, top usage moves/spread)
+  import_text: |-
+    Raging Bolt @ Magnet
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Thunderclap
+    - Dragon Pulse
+    - Thunderbolt
+- id: ogerpon_wellspring_auto_wellspringmask_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon-Wellspring set from Smogon 2024-04 gen9vgc2024regf-1760 (Wellspring Mask, top usage moves/spread)
+  import_text: |-
+    Ogerpon-Wellspring @ Wellspring Mask
+    Ability: Water Absorb
+    Level: 50
+    EVs: 236 HP / 68 Atk / 12 Def / 0 SpA / 4 SpD / 188 Spe
+    Jolly Nature
+    - Ivy Cudgel
+    - Spiky Shield
+    - Follow Me
+    - Horn Leech
+- id: rillaboom_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Rillaboom set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Rillaboom @ Assault Vest
+    Ability: Grassy Surge
+    Level: 50
+    EVs: 204 HP / 196 Atk / 4 Def / 0 SpA / 28 SpD / 76 Spe
+    Adamant Nature
+    - Grassy Glide
+    - Fake Out
+    - Wood Hammer
+    - High Horsepower
+- id: rillaboom_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Rillaboom set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Rillaboom @ Clear Amulet
+    Ability: Grassy Surge
+    Level: 50
+    EVs: 204 HP / 196 Atk / 4 Def / 0 SpA / 28 SpD / 76 Spe
+    Adamant Nature
+    - Grassy Glide
+    - Fake Out
+    - Wood Hammer
+    - High Horsepower
+- id: rillaboom_auto_miracleseed_3
+  format: gen9vgc2026regf
+  description: Auto-generated Rillaboom set from Smogon 2024-04 gen9vgc2024regf-1760 (Miracle Seed, top usage moves/spread)
+  import_text: |-
+    Rillaboom @ Miracle Seed
+    Ability: Grassy Surge
+    Level: 50
+    EVs: 204 HP / 196 Atk / 4 Def / 0 SpA / 28 SpD / 76 Spe
+    Adamant Nature
+    - Grassy Glide
+    - Fake Out
+    - Wood Hammer
+    - High Horsepower
+- id: rillaboom_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Rillaboom set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Rillaboom @ Sitrus Berry
+    Ability: Grassy Surge
+    Level: 50
+    EVs: 204 HP / 196 Atk / 4 Def / 0 SpA / 28 SpD / 76 Spe
+    Adamant Nature
+    - Grassy Glide
+    - Fake Out
+    - Wood Hammer
+    - High Horsepower
+- id: tornadus_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Tornadus set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Tornadus @ Focus Sash
+    Ability: Prankster
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Tailwind
+    - Bleakwind Storm
+    - Rain Dance
+- id: tornadus_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Tornadus set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Tornadus @ Rocky Helmet
+    Ability: Prankster
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Tailwind
+    - Bleakwind Storm
+    - Rain Dance
+- id: tornadus_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Tornadus set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Tornadus @ Covert Cloak
+    Ability: Prankster
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Tailwind
+    - Bleakwind Storm
+    - Rain Dance
+- id: tornadus_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Tornadus set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Tornadus @ Sitrus Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Tailwind
+    - Bleakwind Storm
+    - Rain Dance
+- id: tornadus_auto_wiki_5
+  format: gen9vgc2026regf
+  description: Auto-generated Tornadus set from Smogon 2024-04 gen9vgc2024regf-1760 (Wiki Berry, top usage moves/spread)
+  import_text: |-
+    Tornadus @ Wiki Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    IVs: 0 Atk
+    - Protect
+    - Tailwind
+    - Bleakwind Storm
+    - Rain Dance
+- id: landorus_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Landorus @ Life Orb
+    Ability: Sheer Force
+    Level: 50
+    EVs: 132 HP / 0 Atk / 4 Def / 116 SpA / 4 SpD / 252 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Sludge Bomb
+    - Earth Power
+    - Substitute
+- id: chien_pao_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Chien-Pao set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Chien-Pao @ Focus Sash
+    Ability: Sword of Ruin
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Sacred Sword
+    - Icicle Crash
+    - Sucker Punch
+- id: chien_pao_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Chien-Pao set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Chien-Pao @ Clear Amulet
+    Ability: Sword of Ruin
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Sacred Sword
+    - Icicle Crash
+    - Sucker Punch
+- id: chien_pao_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Chien-Pao set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Chien-Pao @ Life Orb
+    Ability: Sword of Ruin
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Sacred Sword
+    - Icicle Crash
+    - Sucker Punch
+- id: amoonguss_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Amoonguss set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Amoonguss @ Rocky Helmet
+    Ability: Regenerator
+    Level: 50
+    EVs: 252 HP / 0 Atk / 180 Def / 0 SpA / 76 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Spore
+    - Rage Powder
+    - Pollen Puff
+- id: amoonguss_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Amoonguss set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Amoonguss @ Sitrus Berry
+    Ability: Regenerator
+    Level: 50
+    EVs: 252 HP / 0 Atk / 180 Def / 0 SpA / 76 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Spore
+    - Rage Powder
+    - Pollen Puff
+- id: amoonguss_auto_mentalherb_3
+  format: gen9vgc2026regf
+  description: Auto-generated Amoonguss set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Amoonguss @ Mental Herb
+    Ability: Regenerator
+    Level: 50
+    EVs: 252 HP / 0 Atk / 180 Def / 0 SpA / 76 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Spore
+    - Rage Powder
+    - Pollen Puff
+- id: amoonguss_auto_yache_4
+  format: gen9vgc2026regf
+  description: Auto-generated Amoonguss set from Smogon 2024-04 gen9vgc2024regf-1760 (Yache Berry, top usage moves/spread)
+  import_text: |-
+    Amoonguss @ Yache Berry
+    Ability: Regenerator
+    Level: 50
+    EVs: 252 HP / 0 Atk / 180 Def / 0 SpA / 76 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Spore
+    - Rage Powder
+    - Pollen Puff
+- id: amoonguss_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Amoonguss set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Amoonguss @ Life Orb
+    Ability: Regenerator
+    Level: 50
+    EVs: 252 HP / 0 Atk / 180 Def / 0 SpA / 76 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Spore
+    - Rage Powder
+    - Pollen Puff
+- id: farigiraf_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Farigiraf set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Farigiraf @ Sitrus Berry
+    Ability: Armor Tail
+    Level: 50
+    EVs: 244 HP / 0 Atk / 0 Def / 84 SpA / 0 SpD / 180 Spe
+    Modest Nature
+    - Protect
+    - Trick Room
+    - Hyper Voice
+    - Psychic
+- id: farigiraf_auto_life_2
+  format: gen9vgc2026regf
+  description: Auto-generated Farigiraf set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Farigiraf @ Life Orb
+    Ability: Armor Tail
+    Level: 50
+    EVs: 244 HP / 0 Atk / 0 Def / 84 SpA / 0 SpD / 180 Spe
+    Modest Nature
+    - Protect
+    - Trick Room
+    - Hyper Voice
+    - Psychic
+- id: farigiraf_auto_throatspray_3
+  format: gen9vgc2026regf
+  description: Auto-generated Farigiraf set from Smogon 2024-04 gen9vgc2024regf-1760 (Throat Spray, top usage moves/spread)
+  import_text: |-
+    Farigiraf @ Throat Spray
+    Ability: Armor Tail
+    Level: 50
+    EVs: 244 HP / 0 Atk / 0 Def / 84 SpA / 0 SpD / 180 Spe
+    Modest Nature
+    - Protect
+    - Trick Room
+    - Hyper Voice
+    - Psychic
+- id: farigiraf_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Farigiraf set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Farigiraf @ Safety Goggles
+    Ability: Armor Tail
+    Level: 50
+    EVs: 244 HP / 0 Atk / 0 Def / 84 SpA / 0 SpD / 180 Spe
+    Modest Nature
+    - Protect
+    - Trick Room
+    - Hyper Voice
+    - Psychic
+- id: farigiraf_auto_silkscarf_5
+  format: gen9vgc2026regf
+  description: Auto-generated Farigiraf set from Smogon 2024-04 gen9vgc2024regf-1760 (Silk Scarf, top usage moves/spread)
+  import_text: |-
+    Farigiraf @ Silk Scarf
+    Ability: Armor Tail
+    Level: 50
+    EVs: 244 HP / 0 Atk / 0 Def / 84 SpA / 0 SpD / 180 Spe
+    Modest Nature
+    - Protect
+    - Trick Room
+    - Hyper Voice
+    - Psychic
+- id: urshifu_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Urshifu @ Focus Sash
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Wicked Blow
+    - Sucker Punch
+    - Close Combat
+- id: urshifu_auto_choiceband_2
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Urshifu @ Choice Band
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Wicked Blow
+    - Sucker Punch
+    - Close Combat
+- id: urshifu_auto_assaultvest_3
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Urshifu @ Assault Vest
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Wicked Blow
+    - Sucker Punch
+    - Close Combat
+- id: urshifu_auto_blackglasses_4
+  format: gen9vgc2026regf
+  description: Auto-generated Urshifu set from Smogon 2024-04 gen9vgc2024regf-1760 (Black Glasses, top usage moves/spread)
+  import_text: |-
+    Urshifu @ Black Glasses
+    Ability: Unseen Fist
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Wicked Blow
+    - Sucker Punch
+    - Close Combat
+- id: ogerpon_hearthflame_auto_hearthflamemask_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon-Hearthflame set from Smogon 2024-04 gen9vgc2024regf-1760 (Hearthflame Mask, top usage moves/spread)
+  import_text: |-
+    Ogerpon-Hearthflame @ Hearthflame Mask
+    Ability: Mold Breaker
+    Level: 50
+    EVs: 36 HP / 220 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Ivy Cudgel
+    - Spiky Shield
+    - Grassy Glide
+    - Stomping Tantrum
+- id: indeedee_f_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee-F set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Indeedee-F @ Rocky Helmet
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Follow Me
+    - Trick Room
+    - Helping Hand
+- id: indeedee_f_auto_psychicseed_2
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee-F set from Smogon 2024-04 gen9vgc2024regf-1760 (Psychic Seed, top usage moves/spread)
+  import_text: |-
+    Indeedee-F @ Psychic Seed
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Follow Me
+    - Trick Room
+    - Helping Hand
+- id: indeedee_f_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee-F set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Indeedee-F @ Safety Goggles
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Follow Me
+    - Trick Room
+    - Helping Hand
+- id: indeedee_f_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee-F set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Indeedee-F @ Sitrus Berry
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Follow Me
+    - Trick Room
+    - Helping Hand
+- id: torkoal_auto_charcoal_1
+  format: gen9vgc2026regf
+  description: Auto-generated Torkoal set from Smogon 2024-04 gen9vgc2024regf-1760 (Charcoal, top usage moves/spread)
+  import_text: |-
+    Torkoal @ Charcoal
+    Ability: Drought
+    Level: 50
+    EVs: 252 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Eruption
+    - Heat Wave
+    - Earth Power
+- id: torkoal_auto_choicespecs_2
+  format: gen9vgc2026regf
+  description: Auto-generated Torkoal set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Torkoal @ Choice Specs
+    Ability: Drought
+    Level: 50
+    EVs: 252 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Eruption
+    - Heat Wave
+    - Earth Power
+- id: torkoal_auto_heatrock_3
+  format: gen9vgc2026regf
+  description: Auto-generated Torkoal set from Smogon 2024-04 gen9vgc2024regf-1760 (Heat Rock, top usage moves/spread)
+  import_text: |-
+    Torkoal @ Heat Rock
+    Ability: Drought
+    Level: 50
+    EVs: 252 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Eruption
+    - Heat Wave
+    - Earth Power
+- id: torkoal_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Torkoal set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Torkoal @ Safety Goggles
+    Ability: Drought
+    Level: 50
+    EVs: 252 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Eruption
+    - Heat Wave
+    - Earth Power
+- id: torkoal_auto_ejectpack_5
+  format: gen9vgc2026regf
+  description: Auto-generated Torkoal set from Smogon 2024-04 gen9vgc2024regf-1760 (Eject Pack, top usage moves/spread)
+  import_text: |-
+    Torkoal @ Eject Pack
+    Ability: Drought
+    Level: 50
+    EVs: 252 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Eruption
+    - Heat Wave
+    - Earth Power
+- id: gholdengo_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gholdengo set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Gholdengo @ Leftovers
+    Ability: Good as Gold
+    Level: 50
+    EVs: 236 HP / 0 Atk / 84 Def / 52 SpA / 20 SpD / 116 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Make It Rain
+    - Nasty Plot
+    - Dazzling Gleam
+- id: gholdengo_auto_choicespecs_2
+  format: gen9vgc2026regf
+  description: Auto-generated Gholdengo set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Gholdengo @ Choice Specs
+    Ability: Good as Gold
+    Level: 50
+    EVs: 236 HP / 0 Atk / 84 Def / 52 SpA / 20 SpD / 116 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Make It Rain
+    - Nasty Plot
+    - Dazzling Gleam
+- id: gholdengo_auto_metalcoat_3
+  format: gen9vgc2026regf
+  description: Auto-generated Gholdengo set from Smogon 2024-04 gen9vgc2024regf-1760 (Metal Coat, top usage moves/spread)
+  import_text: |-
+    Gholdengo @ Metal Coat
+    Ability: Good as Gold
+    Level: 50
+    EVs: 236 HP / 0 Atk / 84 Def / 52 SpA / 20 SpD / 116 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Make It Rain
+    - Nasty Plot
+    - Dazzling Gleam
+- id: gholdengo_auto_life_4
+  format: gen9vgc2026regf
+  description: Auto-generated Gholdengo set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Gholdengo @ Life Orb
+    Ability: Good as Gold
+    Level: 50
+    EVs: 236 HP / 0 Atk / 84 Def / 52 SpA / 20 SpD / 116 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Make It Rain
+    - Nasty Plot
+    - Dazzling Gleam
+- id: gholdengo_auto_choicescarf_5
+  format: gen9vgc2026regf
+  description: Auto-generated Gholdengo set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Gholdengo @ Choice Scarf
+    Ability: Good as Gold
+    Level: 50
+    EVs: 236 HP / 0 Atk / 84 Def / 52 SpA / 20 SpD / 116 Spe
+    Modest Nature
+    IVs: 0 Atk
+    - Protect
+    - Make It Rain
+    - Nasty Plot
+    - Dazzling Gleam
+- id: archaludon_auto_powerherb_1
+  format: gen9vgc2026regf
+  description: Auto-generated Archaludon set from Smogon 2024-04 gen9vgc2024regf-1760 (Power Herb, top usage moves/spread)
+  import_text: |-
+    Archaludon @ Power Herb
+    Ability: Stamina
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Electro Shot
+    - Flash Cannon
+    - Draco Meteor
+- id: archaludon_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Archaludon set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Archaludon @ Assault Vest
+    Ability: Stamina
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Electro Shot
+    - Flash Cannon
+    - Draco Meteor
+- id: archaludon_auto_scopelens_3
+  format: gen9vgc2026regf
+  description: Auto-generated Archaludon set from Smogon 2024-04 gen9vgc2024regf-1760 (Scope Lens, top usage moves/spread)
+  import_text: |-
+    Archaludon @ Scope Lens
+    Ability: Stamina
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Electro Shot
+    - Flash Cannon
+    - Draco Meteor
+- id: dragonite_auto_choiceband_1
+  format: gen9vgc2026regf
+  description: Auto-generated Dragonite set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Dragonite @ Choice Band
+    Ability: Inner Focus
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Iron Head
+    - Outrage
+- id: dragonite_auto_loadeddice_2
+  format: gen9vgc2026regf
+  description: Auto-generated Dragonite set from Smogon 2024-04 gen9vgc2024regf-1760 (Loaded Dice, top usage moves/spread)
+  import_text: |-
+    Dragonite @ Loaded Dice
+    Ability: Inner Focus
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Iron Head
+    - Outrage
+- id: dragonite_auto_assaultvest_3
+  format: gen9vgc2026regf
+  description: Auto-generated Dragonite set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Dragonite @ Assault Vest
+    Ability: Inner Focus
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Iron Head
+    - Outrage
+- id: dragonite_auto_silkscarf_4
+  format: gen9vgc2026regf
+  description: Auto-generated Dragonite set from Smogon 2024-04 gen9vgc2024regf-1760 (Silk Scarf, top usage moves/spread)
+  import_text: |-
+    Dragonite @ Silk Scarf
+    Ability: Inner Focus
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Iron Head
+    - Outrage
+- id: dragonite_auto_rockyhelmet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Dragonite set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Dragonite @ Rocky Helmet
+    Ability: Inner Focus
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Iron Head
+    - Outrage
+- id: ninetales_alola_auto_lightclay_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ninetales-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Light Clay, top usage moves/spread)
+  import_text: |-
+    Ninetales-Alola @ Light Clay
+    Ability: Snow Warning
+    Level: 50
+    EVs: 84 HP / 0 Atk / 132 Def / 84 SpA / 4 SpD / 204 Spe
+    Timid Nature
+    - Aurora Veil
+    - Moonblast
+    - Blizzard
+    - Encore
+- id: ninetales_alola_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Ninetales-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Ninetales-Alola @ Covert Cloak
+    Ability: Snow Warning
+    Level: 50
+    EVs: 84 HP / 0 Atk / 132 Def / 84 SpA / 4 SpD / 204 Spe
+    Timid Nature
+    - Aurora Veil
+    - Moonblast
+    - Blizzard
+    - Encore
+- id: ninetales_alola_auto_rockyhelmet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Ninetales-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Ninetales-Alola @ Rocky Helmet
+    Ability: Snow Warning
+    Level: 50
+    EVs: 84 HP / 0 Atk / 132 Def / 84 SpA / 4 SpD / 204 Spe
+    Timid Nature
+    - Aurora Veil
+    - Moonblast
+    - Blizzard
+    - Encore
+- id: ninetales_alola_auto_choicespecs_4
+  format: gen9vgc2026regf
+  description: Auto-generated Ninetales-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Ninetales-Alola @ Choice Specs
+    Ability: Snow Warning
+    Level: 50
+    EVs: 84 HP / 0 Atk / 132 Def / 84 SpA / 4 SpD / 204 Spe
+    Timid Nature
+    - Aurora Veil
+    - Moonblast
+    - Blizzard
+    - Encore
+- id: ninetales_alola_auto_icyrock_5
+  format: gen9vgc2026regf
+  description: Auto-generated Ninetales-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Icy Rock, top usage moves/spread)
+  import_text: |-
+    Ninetales-Alola @ Icy Rock
+    Ability: Snow Warning
+    Level: 50
+    EVs: 84 HP / 0 Atk / 132 Def / 84 SpA / 4 SpD / 204 Spe
+    Timid Nature
+    - Aurora Veil
+    - Moonblast
+    - Blizzard
+    - Encore
+- id: ursaluna_bloodmoon_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna-Bloodmoon set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Ursaluna-Bloodmoon @ Life Orb
+    Ability: Mind's Eye
+    Level: 50
+    EVs: 4 HP / 0 Atk / 4 Def / 244 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Blood Moon
+    - Hyper Voice
+    - Earth Power
+- id: ursaluna_bloodmoon_auto_silkscarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna-Bloodmoon set from Smogon 2024-04 gen9vgc2024regf-1760 (Silk Scarf, top usage moves/spread)
+  import_text: |-
+    Ursaluna-Bloodmoon @ Silk Scarf
+    Ability: Mind's Eye
+    Level: 50
+    EVs: 4 HP / 0 Atk / 4 Def / 244 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Blood Moon
+    - Hyper Voice
+    - Earth Power
+- id: ursaluna_bloodmoon_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna-Bloodmoon set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Ursaluna-Bloodmoon @ Covert Cloak
+    Ability: Mind's Eye
+    Level: 50
+    EVs: 4 HP / 0 Atk / 4 Def / 244 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Blood Moon
+    - Hyper Voice
+    - Earth Power
+- id: ursaluna_bloodmoon_auto_throatspray_4
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna-Bloodmoon set from Smogon 2024-04 gen9vgc2024regf-1760 (Throat Spray, top usage moves/spread)
+  import_text: |-
+    Ursaluna-Bloodmoon @ Throat Spray
+    Ability: Mind's Eye
+    Level: 50
+    EVs: 4 HP / 0 Atk / 4 Def / 244 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Blood Moon
+    - Hyper Voice
+    - Earth Power
+- id: ursaluna_bloodmoon_auto_safetygoggles_5
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna-Bloodmoon set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Ursaluna-Bloodmoon @ Safety Goggles
+    Ability: Mind's Eye
+    Level: 50
+    EVs: 4 HP / 0 Atk / 4 Def / 244 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Blood Moon
+    - Hyper Voice
+    - Earth Power
+- id: iron_hands_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Hands set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Iron Hands @ Assault Vest
+    Ability: Quark Drive
+    Level: 50
+    EVs: 4 HP / 236 Atk / 4 Def / 0 SpA / 108 SpD / 156 Spe
+    Adamant Nature
+    - Protect
+    - Fake Out
+    - Wild Charge
+    - Heavy Slam
+- id: iron_hands_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Hands set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Iron Hands @ Clear Amulet
+    Ability: Quark Drive
+    Level: 50
+    EVs: 4 HP / 236 Atk / 4 Def / 0 SpA / 108 SpD / 156 Spe
+    Adamant Nature
+    - Protect
+    - Fake Out
+    - Wild Charge
+    - Heavy Slam
+- id: iron_hands_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Hands set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Iron Hands @ Sitrus Berry
+    Ability: Quark Drive
+    Level: 50
+    EVs: 4 HP / 236 Atk / 4 Def / 0 SpA / 108 SpD / 156 Spe
+    Adamant Nature
+    - Protect
+    - Fake Out
+    - Wild Charge
+    - Heavy Slam
+- id: iron_hands_auto_figy_4
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Hands set from Smogon 2024-04 gen9vgc2024regf-1760 (Figy Berry, top usage moves/spread)
+  import_text: |-
+    Iron Hands @ Figy Berry
+    Ability: Quark Drive
+    Level: 50
+    EVs: 4 HP / 236 Atk / 4 Def / 0 SpA / 108 SpD / 156 Spe
+    Adamant Nature
+    - Protect
+    - Fake Out
+    - Wild Charge
+    - Heavy Slam
+- id: iron_hands_auto_boosterenergy_5
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Hands set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Iron Hands @ Booster Energy
+    Ability: Quark Drive
+    Level: 50
+    EVs: 4 HP / 236 Atk / 4 Def / 0 SpA / 108 SpD / 156 Spe
+    Adamant Nature
+    - Protect
+    - Fake Out
+    - Wild Charge
+    - Heavy Slam
+- id: gouging_fire_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gouging Fire set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Gouging Fire @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 196 HP / 44 Atk / 4 Def / 0 SpA / 12 SpD / 252 Spe
+    Jolly Nature
+    - Breaking Swipe
+    - Heat Crash
+    - Howl
+    - Sunny Day
+- id: gouging_fire_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Gouging Fire set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Gouging Fire @ Clear Amulet
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 196 HP / 44 Atk / 4 Def / 0 SpA / 12 SpD / 252 Spe
+    Jolly Nature
+    - Breaking Swipe
+    - Heat Crash
+    - Howl
+    - Sunny Day
+- id: arcanine_hisui_auto_choiceband_1
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Arcanine-Hisui @ Choice Band
+    Ability: Intimidate
+    Level: 50
+    EVs: 84 HP / 228 Atk / 4 Def / 0 SpA / 4 SpD / 188 Spe
+    Adamant Nature
+    - Flare Blitz
+    - Rock Slide
+    - Extreme Speed
+    - Tera Blast
+- id: arcanine_hisui_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Arcanine-Hisui @ Clear Amulet
+    Ability: Intimidate
+    Level: 50
+    EVs: 84 HP / 228 Atk / 4 Def / 0 SpA / 4 SpD / 188 Spe
+    Adamant Nature
+    - Flare Blitz
+    - Rock Slide
+    - Extreme Speed
+    - Tera Blast
+- id: arcanine_hisui_auto_abilityshield_3
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Ability Shield, top usage moves/spread)
+  import_text: |-
+    Arcanine-Hisui @ Ability Shield
+    Ability: Intimidate
+    Level: 50
+    EVs: 84 HP / 228 Atk / 4 Def / 0 SpA / 4 SpD / 188 Spe
+    Adamant Nature
+    - Flare Blitz
+    - Rock Slide
+    - Extreme Speed
+    - Tera Blast
+- id: chi_yu_auto_choicespecs_1
+  format: gen9vgc2026regf
+  description: Auto-generated Chi-Yu set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Chi-Yu @ Choice Specs
+    Ability: Beads of Ruin
+    Level: 50
+    EVs: 176 HP / 0 Atk / 76 Def / 252 SpA / 4 SpD / 0 Spe
+    Modest Nature
+    - Protect
+    - Dark Pulse
+    - Heat Wave
+    - Overheat
+- id: chi_yu_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Chi-Yu set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Chi-Yu @ Covert Cloak
+    Ability: Beads of Ruin
+    Level: 50
+    EVs: 176 HP / 0 Atk / 76 Def / 252 SpA / 4 SpD / 0 Spe
+    Modest Nature
+    - Protect
+    - Dark Pulse
+    - Heat Wave
+    - Overheat
+- id: chi_yu_auto_focussash_3
+  format: gen9vgc2026regf
+  description: Auto-generated Chi-Yu set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Chi-Yu @ Focus Sash
+    Ability: Beads of Ruin
+    Level: 50
+    EVs: 176 HP / 0 Atk / 76 Def / 252 SpA / 4 SpD / 0 Spe
+    Modest Nature
+    - Protect
+    - Dark Pulse
+    - Heat Wave
+    - Overheat
+- id: chi_yu_auto_choicescarf_4
+  format: gen9vgc2026regf
+  description: Auto-generated Chi-Yu set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Chi-Yu @ Choice Scarf
+    Ability: Beads of Ruin
+    Level: 50
+    EVs: 176 HP / 0 Atk / 76 Def / 252 SpA / 4 SpD / 0 Spe
+    Modest Nature
+    - Protect
+    - Dark Pulse
+    - Heat Wave
+    - Overheat
+- id: chi_yu_auto_widelens_5
+  format: gen9vgc2026regf
+  description: Auto-generated Chi-Yu set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Chi-Yu @ Wide Lens
+    Ability: Beads of Ruin
+    Level: 50
+    EVs: 176 HP / 0 Atk / 76 Def / 252 SpA / 4 SpD / 0 Spe
+    Modest Nature
+    - Protect
+    - Dark Pulse
+    - Heat Wave
+    - Overheat
+- id: kingambit_auto_blackglasses_1
+  format: gen9vgc2026regf
+  description: Auto-generated Kingambit set from Smogon 2024-04 gen9vgc2024regf-1760 (Black Glasses, top usage moves/spread)
+  import_text: |-
+    Kingambit @ Black Glasses
+    Ability: Defiant
+    Level: 50
+    EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Sucker Punch
+    - Kowtow Cleave
+    - Iron Head
+- id: kingambit_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Kingambit set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Kingambit @ Assault Vest
+    Ability: Defiant
+    Level: 50
+    EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Sucker Punch
+    - Kowtow Cleave
+    - Iron Head
+- id: kingambit_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Kingambit set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Kingambit @ Safety Goggles
+    Ability: Defiant
+    Level: 50
+    EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Sucker Punch
+    - Kowtow Cleave
+    - Iron Head
+- id: kingambit_auto_dreadplate_4
+  format: gen9vgc2026regf
+  description: Auto-generated Kingambit set from Smogon 2024-04 gen9vgc2024regf-1760 (Dread Plate, top usage moves/spread)
+  import_text: |-
+    Kingambit @ Dread Plate
+    Ability: Defiant
+    Level: 50
+    EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Sucker Punch
+    - Kowtow Cleave
+    - Iron Head
+- id: annihilape_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Annihilape set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Annihilape @ Sitrus Berry
+    Ability: Defiant
+    Level: 50
+    EVs: 124 HP / 148 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Protect
+    - Rage Fist
+    - Drain Punch
+    - Bulk Up
+- id: annihilape_auto_choicescarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Annihilape set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Annihilape @ Choice Scarf
+    Ability: Defiant
+    Level: 50
+    EVs: 124 HP / 148 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Protect
+    - Rage Fist
+    - Drain Punch
+    - Bulk Up
+- id: annihilape_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Annihilape set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Annihilape @ Leftovers
+    Ability: Defiant
+    Level: 50
+    EVs: 124 HP / 148 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Protect
+    - Rage Fist
+    - Drain Punch
+    - Bulk Up
+- id: annihilape_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Annihilape set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Annihilape @ Safety Goggles
+    Ability: Defiant
+    Level: 50
+    EVs: 124 HP / 148 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Protect
+    - Rage Fist
+    - Drain Punch
+    - Bulk Up
+- id: annihilape_auto_choiceband_5
+  format: gen9vgc2026regf
+  description: Auto-generated Annihilape set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Annihilape @ Choice Band
+    Ability: Defiant
+    Level: 50
+    EVs: 124 HP / 148 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Protect
+    - Rage Fist
+    - Drain Punch
+    - Bulk Up
+- id: landorus_therian_auto_choiceband_1
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus-Therian set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Landorus-Therian @ Choice Band
+    Ability: Intimidate
+    Level: 50
+    EVs: 100 HP / 172 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Rock Slide
+    - Stomping Tantrum
+    - U-turn
+    - Earthquake
+- id: landorus_therian_auto_choicescarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus-Therian set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Landorus-Therian @ Choice Scarf
+    Ability: Intimidate
+    Level: 50
+    EVs: 100 HP / 172 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Rock Slide
+    - Stomping Tantrum
+    - U-turn
+    - Earthquake
+- id: landorus_therian_auto_earthplate_3
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus-Therian set from Smogon 2024-04 gen9vgc2024regf-1760 (Earth Plate, top usage moves/spread)
+  import_text: |-
+    Landorus-Therian @ Earth Plate
+    Ability: Intimidate
+    Level: 50
+    EVs: 100 HP / 172 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Rock Slide
+    - Stomping Tantrum
+    - U-turn
+    - Earthquake
+- id: landorus_therian_auto_assaultvest_4
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus-Therian set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Landorus-Therian @ Assault Vest
+    Ability: Intimidate
+    Level: 50
+    EVs: 100 HP / 172 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Rock Slide
+    - Stomping Tantrum
+    - U-turn
+    - Earthquake
+- id: landorus_therian_auto_abilityshield_5
+  format: gen9vgc2026regf
+  description: Auto-generated Landorus-Therian set from Smogon 2024-04 gen9vgc2024regf-1760 (Ability Shield, top usage moves/spread)
+  import_text: |-
+    Landorus-Therian @ Ability Shield
+    Ability: Intimidate
+    Level: 50
+    EVs: 100 HP / 172 Atk / 0 Def / 0 SpA / 0 SpD / 236 Spe
+    Jolly Nature
+    - Rock Slide
+    - Stomping Tantrum
+    - U-turn
+    - Earthquake
+- id: ursaluna_auto_flame_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ursaluna set from Smogon 2024-04 gen9vgc2024regf-1760 (Flame Orb, top usage moves/spread)
+  import_text: |-
+    Ursaluna @ Flame Orb
+    Ability: Guts
+    Level: 50
+    EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+    Brave Nature
+    - Protect
+    - Facade
+    - Headlong Rush
+    - Earthquake
+- id: whimsicott_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Whimsicott set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Whimsicott @ Focus Sash
+    Ability: Prankster
+    Level: 50
+    EVs: 0 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Tailwind
+    - Moonblast
+    - Encore
+- id: whimsicott_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Whimsicott set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Whimsicott @ Covert Cloak
+    Ability: Prankster
+    Level: 50
+    EVs: 0 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Tailwind
+    - Moonblast
+    - Encore
+- id: whimsicott_auto_rockyhelmet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Whimsicott set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Whimsicott @ Rocky Helmet
+    Ability: Prankster
+    Level: 50
+    EVs: 0 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Tailwind
+    - Moonblast
+    - Encore
+- id: whimsicott_auto_yache_4
+  format: gen9vgc2026regf
+  description: Auto-generated Whimsicott set from Smogon 2024-04 gen9vgc2024regf-1760 (Yache Berry, top usage moves/spread)
+  import_text: |-
+    Whimsicott @ Yache Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 0 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Tailwind
+    - Moonblast
+    - Encore
+- id: articuno_auto_choicespecs_1
+  format: gen9vgc2026regf
+  description: Auto-generated Articuno set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Articuno @ Choice Specs
+    Ability: Snow Cloak
+    Level: 50
+    EVs: 252 HP / 0 Atk / 44 Def / 196 SpA / 4 SpD / 12 Spe
+    Modest Nature
+    - Protect
+    - Blizzard
+    - Freeze-Dry
+    - Ice Beam
+- id: articuno_auto_nevermeltice_2
+  format: gen9vgc2026regf
+  description: Auto-generated Articuno set from Smogon 2024-04 gen9vgc2024regf-1760 (Never-Melt Ice, top usage moves/spread)
+  import_text: |-
+    Articuno @ Never-Melt Ice
+    Ability: Snow Cloak
+    Level: 50
+    EVs: 252 HP / 0 Atk / 44 Def / 196 SpA / 4 SpD / 12 Spe
+    Modest Nature
+    - Protect
+    - Blizzard
+    - Freeze-Dry
+    - Ice Beam
+- id: articuno_auto_icicleplate_3
+  format: gen9vgc2026regf
+  description: Auto-generated Articuno set from Smogon 2024-04 gen9vgc2024regf-1760 (Icicle Plate, top usage moves/spread)
+  import_text: |-
+    Articuno @ Icicle Plate
+    Ability: Snow Cloak
+    Level: 50
+    EVs: 252 HP / 0 Atk / 44 Def / 196 SpA / 4 SpD / 12 Spe
+    Modest Nature
+    - Protect
+    - Blizzard
+    - Freeze-Dry
+    - Ice Beam
+- id: pelipper_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Pelipper set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Pelipper @ Focus Sash
+    Ability: Drizzle
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Hurricane
+    - Wide Guard
+    - Weather Ball
+- id: pelipper_auto_damprock_2
+  format: gen9vgc2026regf
+  description: Auto-generated Pelipper set from Smogon 2024-04 gen9vgc2024regf-1760 (Damp Rock, top usage moves/spread)
+  import_text: |-
+    Pelipper @ Damp Rock
+    Ability: Drizzle
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Hurricane
+    - Wide Guard
+    - Weather Ball
+- id: pelipper_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Pelipper set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Pelipper @ Covert Cloak
+    Ability: Drizzle
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Hurricane
+    - Wide Guard
+    - Weather Ball
+- id: pelipper_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Pelipper set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Pelipper @ Rocky Helmet
+    Ability: Drizzle
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Hurricane
+    - Wide Guard
+    - Weather Ball
+- id: pelipper_auto_ironball_5
+  format: gen9vgc2026regf
+  description: Auto-generated Pelipper set from Smogon 2024-04 gen9vgc2024regf-1760 (Iron Ball, top usage moves/spread)
+  import_text: |-
+    Pelipper @ Iron Ball
+    Ability: Drizzle
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Hurricane
+    - Wide Guard
+    - Weather Ball
+- id: dondozo_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Dondozo set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Dondozo @ Leftovers
+    Ability: Unaware
+    Level: 50
+    EVs: 28 HP / 132 Atk / 36 Def / 0 SpA / 76 SpD / 236 Spe
+    Adamant Nature
+    - Protect
+    - Wave Crash
+    - Earthquake
+    - Order Up
+- id: dondozo_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Dondozo set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Dondozo @ Covert Cloak
+    Ability: Unaware
+    Level: 50
+    EVs: 28 HP / 132 Atk / 36 Def / 0 SpA / 76 SpD / 236 Spe
+    Adamant Nature
+    - Protect
+    - Wave Crash
+    - Earthquake
+    - Order Up
+- id: dondozo_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Dondozo set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Dondozo @ Sitrus Berry
+    Ability: Unaware
+    Level: 50
+    EVs: 28 HP / 132 Atk / 36 Def / 0 SpA / 76 SpD / 236 Spe
+    Adamant Nature
+    - Protect
+    - Wave Crash
+    - Earthquake
+    - Order Up
+- id: dondozo_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Dondozo set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Dondozo @ Rocky Helmet
+    Ability: Unaware
+    Level: 50
+    EVs: 28 HP / 132 Atk / 36 Def / 0 SpA / 76 SpD / 236 Spe
+    Adamant Nature
+    - Protect
+    - Wave Crash
+    - Earthquake
+    - Order Up
+- id: dondozo_auto_choiceband_5
+  format: gen9vgc2026regf
+  description: Auto-generated Dondozo set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Dondozo @ Choice Band
+    Ability: Unaware
+    Level: 50
+    EVs: 28 HP / 132 Atk / 36 Def / 0 SpA / 76 SpD / 236 Spe
+    Adamant Nature
+    - Protect
+    - Wave Crash
+    - Earthquake
+    - Order Up
+- id: ting_lu_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ting-Lu set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Ting-Lu @ Assault Vest
+    Ability: Vessel of Ruin
+    Level: 50
+    EVs: 212 HP / 236 Atk / 4 Def / 0 SpA / 52 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Tera Blast
+    - Heavy Slam
+    - Payback
+- id: ting_lu_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Ting-Lu set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Ting-Lu @ Clear Amulet
+    Ability: Vessel of Ruin
+    Level: 50
+    EVs: 212 HP / 236 Atk / 4 Def / 0 SpA / 52 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Tera Blast
+    - Heavy Slam
+    - Payback
+- id: ting_lu_auto_rockyhelmet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Ting-Lu set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Ting-Lu @ Rocky Helmet
+    Ability: Vessel of Ruin
+    Level: 50
+    EVs: 212 HP / 236 Atk / 4 Def / 0 SpA / 52 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Tera Blast
+    - Heavy Slam
+    - Payback
+- id: ting_lu_auto_leftovers_4
+  format: gen9vgc2026regf
+  description: Auto-generated Ting-Lu set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Ting-Lu @ Leftovers
+    Ability: Vessel of Ruin
+    Level: 50
+    EVs: 212 HP / 236 Atk / 4 Def / 0 SpA / 52 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Tera Blast
+    - Heavy Slam
+    - Payback
+- id: sinistcha_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Sinistcha set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Sinistcha @ Sitrus Berry
+    Ability: Hospitality
+    Level: 50
+    EVs: 236 HP / 0 Atk / 108 Def / 0 SpA / 164 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Matcha Gotcha
+    - Rage Powder
+    - Trick Room
+- id: sinistcha_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Sinistcha set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Sinistcha @ Rocky Helmet
+    Ability: Hospitality
+    Level: 50
+    EVs: 236 HP / 0 Atk / 108 Def / 0 SpA / 164 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Matcha Gotcha
+    - Rage Powder
+    - Trick Room
+- id: sinistcha_auto_ejectbutton_3
+  format: gen9vgc2026regf
+  description: Auto-generated Sinistcha set from Smogon 2024-04 gen9vgc2024regf-1760 (Eject Button, top usage moves/spread)
+  import_text: |-
+    Sinistcha @ Eject Button
+    Ability: Hospitality
+    Level: 50
+    EVs: 236 HP / 0 Atk / 108 Def / 0 SpA / 164 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Matcha Gotcha
+    - Rage Powder
+    - Trick Room
+- id: sinistcha_auto_colbur_4
+  format: gen9vgc2026regf
+  description: Auto-generated Sinistcha set from Smogon 2024-04 gen9vgc2024regf-1760 (Colbur Berry, top usage moves/spread)
+  import_text: |-
+    Sinistcha @ Colbur Berry
+    Ability: Hospitality
+    Level: 50
+    EVs: 236 HP / 0 Atk / 108 Def / 0 SpA / 164 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Matcha Gotcha
+    - Rage Powder
+    - Trick Room
+- id: sinistcha_auto_leftovers_5
+  format: gen9vgc2026regf
+  description: Auto-generated Sinistcha set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Sinistcha @ Leftovers
+    Ability: Hospitality
+    Level: 50
+    EVs: 236 HP / 0 Atk / 108 Def / 0 SpA / 164 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Matcha Gotcha
+    - Rage Powder
+    - Trick Room
+- id: walking_wake_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Walking Wake set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Walking Wake @ Life Orb
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 12 HP / 0 Atk / 0 Def / 244 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Hydro Steam
+    - Flamethrower
+    - Draco Meteor
+- id: walking_wake_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Walking Wake set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Walking Wake @ Covert Cloak
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 12 HP / 0 Atk / 0 Def / 244 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Hydro Steam
+    - Flamethrower
+    - Draco Meteor
+- id: walking_wake_auto_boosterenergy_3
+  format: gen9vgc2026regf
+  description: Auto-generated Walking Wake set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Walking Wake @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 12 HP / 0 Atk / 0 Def / 244 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Hydro Steam
+    - Flamethrower
+    - Draco Meteor
+- id: walking_wake_auto_choicespecs_4
+  format: gen9vgc2026regf
+  description: Auto-generated Walking Wake set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Walking Wake @ Choice Specs
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 12 HP / 0 Atk / 0 Def / 244 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Hydro Steam
+    - Flamethrower
+    - Draco Meteor
+- id: walking_wake_auto_focussash_5
+  format: gen9vgc2026regf
+  description: Auto-generated Walking Wake set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Walking Wake @ Focus Sash
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 12 HP / 0 Atk / 0 Def / 244 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Hydro Steam
+    - Flamethrower
+    - Draco Meteor
+- id: glimmora_auto_powerherb_1
+  format: gen9vgc2026regf
+  description: Auto-generated Glimmora set from Smogon 2024-04 gen9vgc2024regf-1760 (Power Herb, top usage moves/spread)
+  import_text: |-
+    Glimmora @ Power Herb
+    Ability: Toxic Debris
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Sludge Bomb
+    - Spiky Shield
+    - Earth Power
+    - Meteor Beam
+- id: glimmora_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Glimmora set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Glimmora @ Assault Vest
+    Ability: Toxic Debris
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Sludge Bomb
+    - Spiky Shield
+    - Earth Power
+    - Meteor Beam
+- id: glimmora_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Glimmora set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Glimmora @ Sitrus Berry
+    Ability: Toxic Debris
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Sludge Bomb
+    - Spiky Shield
+    - Earth Power
+    - Meteor Beam
+- id: glimmora_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Glimmora set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Glimmora @ Rocky Helmet
+    Ability: Toxic Debris
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Sludge Bomb
+    - Spiky Shield
+    - Earth Power
+    - Meteor Beam
+- id: roaring_moon_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Roaring Moon set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Roaring Moon @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 4 HP / 220 Atk / 28 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Knock Off
+    - Acrobatics
+    - Tailwind
+- id: grimmsnarl_auto_lightclay_1
+  format: gen9vgc2026regf
+  description: Auto-generated Grimmsnarl set from Smogon 2024-04 gen9vgc2024regf-1760 (Light Clay, top usage moves/spread)
+  import_text: |-
+    Grimmsnarl @ Light Clay
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Careful Nature
+    - Reflect
+    - Light Screen
+    - Spirit Break
+    - Misty Terrain
+- id: grimmsnarl_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Grimmsnarl set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Grimmsnarl @ Rocky Helmet
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Careful Nature
+    - Reflect
+    - Light Screen
+    - Spirit Break
+    - Misty Terrain
+- id: armarouge_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Armarouge set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Armarouge @ Life Orb
+    Ability: Flash Fire
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Expanding Force
+    - Heat Wave
+    - Trick Room
+- id: armarouge_auto_weaknesspolicy_2
+  format: gen9vgc2026regf
+  description: Auto-generated Armarouge set from Smogon 2024-04 gen9vgc2024regf-1760 (Weakness Policy, top usage moves/spread)
+  import_text: |-
+    Armarouge @ Weakness Policy
+    Ability: Flash Fire
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Expanding Force
+    - Heat Wave
+    - Trick Room
+- id: armarouge_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Armarouge set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Armarouge @ Safety Goggles
+    Ability: Flash Fire
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Expanding Force
+    - Heat Wave
+    - Trick Room
+- id: armarouge_auto_powerherb_4
+  format: gen9vgc2026regf
+  description: Auto-generated Armarouge set from Smogon 2024-04 gen9vgc2024regf-1760 (Power Herb, top usage moves/spread)
+  import_text: |-
+    Armarouge @ Power Herb
+    Ability: Flash Fire
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Expanding Force
+    - Heat Wave
+    - Trick Room
+- id: armarouge_auto_focussash_5
+  format: gen9vgc2026regf
+  description: Auto-generated Armarouge set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Armarouge @ Focus Sash
+    Ability: Flash Fire
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Expanding Force
+    - Heat Wave
+    - Trick Room
+- id: hatterene_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Hatterene set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Hatterene @ Life Orb
+    Ability: Magic Bounce
+    Level: 50
+    EVs: 212 HP / 0 Atk / 44 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Trick Room
+    - Dazzling Gleam
+    - Expanding Force
+- id: hatterene_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Hatterene set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Hatterene @ Clear Amulet
+    Ability: Magic Bounce
+    Level: 50
+    EVs: 212 HP / 0 Atk / 44 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Trick Room
+    - Dazzling Gleam
+    - Expanding Force
+- id: hatterene_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Hatterene set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Hatterene @ Covert Cloak
+    Ability: Magic Bounce
+    Level: 50
+    EVs: 212 HP / 0 Atk / 44 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Trick Room
+    - Dazzling Gleam
+    - Expanding Force
+- id: iron_crown_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Crown set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Iron Crown @ Booster Energy
+    Ability: Quark Drive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 20 Def / 220 SpA / 12 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Tachyon Cutter
+    - Expanding Force
+    - Tera Blast
+- id: tatsugiri_auto_choicescarf_1
+  format: gen9vgc2026regf
+  description: Auto-generated Tatsugiri set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Tatsugiri @ Choice Scarf
+    Ability: Commander
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Draco Meteor
+    - Muddy Water
+    - Icy Wind
+- id: tatsugiri_auto_focussash_2
+  format: gen9vgc2026regf
+  description: Auto-generated Tatsugiri set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Tatsugiri @ Focus Sash
+    Ability: Commander
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Draco Meteor
+    - Muddy Water
+    - Icy Wind
+- id: tatsugiri_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Tatsugiri set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Tatsugiri @ Safety Goggles
+    Ability: Commander
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Draco Meteor
+    - Muddy Water
+    - Icy Wind
+- id: tatsugiri_auto_choicespecs_4
+  format: gen9vgc2026regf
+  description: Auto-generated Tatsugiri set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Tatsugiri @ Choice Specs
+    Ability: Commander
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Draco Meteor
+    - Muddy Water
+    - Icy Wind
+- id: tatsugiri_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Tatsugiri set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Tatsugiri @ Life Orb
+    Ability: Commander
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Draco Meteor
+    - Muddy Water
+    - Icy Wind
+- id: cresselia_auto_mentalherb_1
+  format: gen9vgc2026regf
+  description: Auto-generated Cresselia set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Cresselia @ Mental Herb
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 116 Def / 0 SpA / 140 SpD / 0 Spe
+    Bold Nature
+    - Lunar Blessing
+    - Trick Room
+    - Moonblast
+    - Helping Hand
+- id: cresselia_auto_safetygoggles_2
+  format: gen9vgc2026regf
+  description: Auto-generated Cresselia set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Cresselia @ Safety Goggles
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 116 Def / 0 SpA / 140 SpD / 0 Spe
+    Bold Nature
+    - Lunar Blessing
+    - Trick Room
+    - Moonblast
+    - Helping Hand
+- id: cresselia_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Cresselia set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Cresselia @ Sitrus Berry
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 116 Def / 0 SpA / 140 SpD / 0 Spe
+    Bold Nature
+    - Lunar Blessing
+    - Trick Room
+    - Moonblast
+    - Helping Hand
+- id: cresselia_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Cresselia set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Cresselia @ Rocky Helmet
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 116 Def / 0 SpA / 140 SpD / 0 Spe
+    Bold Nature
+    - Lunar Blessing
+    - Trick Room
+    - Moonblast
+    - Helping Hand
+- id: entei_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Entei set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Entei @ Assault Vest
+    Ability: Inner Focus
+    Level: 50
+    EVs: 132 HP / 196 Atk / 44 Def / 0 SpA / 132 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Sacred Fire
+    - Stomping Tantrum
+- id: entei_auto_choiceband_2
+  format: gen9vgc2026regf
+  description: Auto-generated Entei set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Entei @ Choice Band
+    Ability: Inner Focus
+    Level: 50
+    EVs: 132 HP / 196 Atk / 44 Def / 0 SpA / 132 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Sacred Fire
+    - Stomping Tantrum
+- id: entei_auto_aguav_3
+  format: gen9vgc2026regf
+  description: Auto-generated Entei set from Smogon 2024-04 gen9vgc2024regf-1760 (Aguav Berry, top usage moves/spread)
+  import_text: |-
+    Entei @ Aguav Berry
+    Ability: Inner Focus
+    Level: 50
+    EVs: 132 HP / 196 Atk / 44 Def / 0 SpA / 132 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Sacred Fire
+    - Stomping Tantrum
+- id: entei_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Entei set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Entei @ Sitrus Berry
+    Ability: Inner Focus
+    Level: 50
+    EVs: 132 HP / 196 Atk / 44 Def / 0 SpA / 132 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Sacred Fire
+    - Stomping Tantrum
+- id: entei_auto_flameplate_5
+  format: gen9vgc2026regf
+  description: Auto-generated Entei set from Smogon 2024-04 gen9vgc2024regf-1760 (Flame Plate, top usage moves/spread)
+  import_text: |-
+    Entei @ Flame Plate
+    Ability: Inner Focus
+    Level: 50
+    EVs: 132 HP / 196 Atk / 44 Def / 0 SpA / 132 SpD / 4 Spe
+    Adamant Nature
+    - Protect
+    - Extreme Speed
+    - Sacred Fire
+    - Stomping Tantrum
+- id: porygon2_auto_eviolite_1
+  format: gen9vgc2026regf
+  description: Auto-generated Porygon2 set from Smogon 2024-04 gen9vgc2024regf-1760 (Eviolite, top usage moves/spread)
+  import_text: |-
+    Porygon2 @ Eviolite
+    Ability: Download
+    Level: 50
+    EVs: 252 HP / 4 Atk / 124 Def / 92 SpA / 36 SpD / 0 Spe
+    Quiet Nature
+    - Trick Room
+    - Recover
+    - Ice Beam
+    - Tera Blast
+- id: iron_bundle_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Bundle set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Iron Bundle @ Booster Energy
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Freeze-Dry
+    - Hydro Pump
+    - Icy Wind
+- id: iron_bundle_auto_focussash_2
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Bundle set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Iron Bundle @ Focus Sash
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Freeze-Dry
+    - Hydro Pump
+    - Icy Wind
+- id: iron_bundle_auto_expertbelt_3
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Bundle set from Smogon 2024-04 gen9vgc2024regf-1760 (Expert Belt, top usage moves/spread)
+  import_text: |-
+    Iron Bundle @ Expert Belt
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Freeze-Dry
+    - Hydro Pump
+    - Icy Wind
+- id: iron_bundle_auto_choicespecs_4
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Bundle set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Iron Bundle @ Choice Specs
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Freeze-Dry
+    - Hydro Pump
+    - Icy Wind
+- id: iron_bundle_auto_choicescarf_5
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Bundle set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Iron Bundle @ Choice Scarf
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Freeze-Dry
+    - Hydro Pump
+    - Icy Wind
+- id: tyranitar_auto_choiceband_1
+  format: gen9vgc2026regf
+  description: Auto-generated Tyranitar set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Tyranitar @ Choice Band
+    Ability: Sand Stream
+    Level: 50
+    EVs: 252 HP / 124 Atk / 60 Def / 0 SpA / 4 SpD / 68 Spe
+    Adamant Nature
+    - Protect
+    - Rock Slide
+    - Knock Off
+    - Tera Blast
+- id: tyranitar_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Tyranitar set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Tyranitar @ Assault Vest
+    Ability: Sand Stream
+    Level: 50
+    EVs: 252 HP / 124 Atk / 60 Def / 0 SpA / 4 SpD / 68 Spe
+    Adamant Nature
+    - Protect
+    - Rock Slide
+    - Knock Off
+    - Tera Blast
+- id: tyranitar_auto_weaknesspolicy_3
+  format: gen9vgc2026regf
+  description: Auto-generated Tyranitar set from Smogon 2024-04 gen9vgc2024regf-1760 (Weakness Policy, top usage moves/spread)
+  import_text: |-
+    Tyranitar @ Weakness Policy
+    Ability: Sand Stream
+    Level: 50
+    EVs: 252 HP / 124 Atk / 60 Def / 0 SpA / 4 SpD / 68 Spe
+    Adamant Nature
+    - Protect
+    - Rock Slide
+    - Knock Off
+    - Tera Blast
+- id: tyranitar_auto_choicespecs_4
+  format: gen9vgc2026regf
+  description: Auto-generated Tyranitar set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Tyranitar @ Choice Specs
+    Ability: Sand Stream
+    Level: 50
+    EVs: 252 HP / 124 Atk / 60 Def / 0 SpA / 4 SpD / 68 Spe
+    Adamant Nature
+    - Protect
+    - Rock Slide
+    - Knock Off
+    - Tera Blast
+- id: tyranitar_auto_clearamulet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Tyranitar set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Tyranitar @ Clear Amulet
+    Ability: Sand Stream
+    Level: 50
+    EVs: 252 HP / 124 Atk / 60 Def / 0 SpA / 4 SpD / 68 Spe
+    Adamant Nature
+    - Protect
+    - Rock Slide
+    - Knock Off
+    - Tera Blast
+- id: okidogi_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Okidogi set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Okidogi @ Assault Vest
+    Ability: Guard Dog
+    Level: 50
+    EVs: 228 HP / 172 Atk / 4 Def / 0 SpA / 4 SpD / 100 Spe
+    Adamant Nature
+    - Protect
+    - Drain Punch
+    - Knock Off
+    - Gunk Shot
+- id: okidogi_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Okidogi set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Okidogi @ Sitrus Berry
+    Ability: Guard Dog
+    Level: 50
+    EVs: 228 HP / 172 Atk / 4 Def / 0 SpA / 4 SpD / 100 Spe
+    Adamant Nature
+    - Protect
+    - Drain Punch
+    - Knock Off
+    - Gunk Shot
+- id: okidogi_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Okidogi set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Okidogi @ Covert Cloak
+    Ability: Guard Dog
+    Level: 50
+    EVs: 228 HP / 172 Atk / 4 Def / 0 SpA / 4 SpD / 100 Spe
+    Adamant Nature
+    - Protect
+    - Drain Punch
+    - Knock Off
+    - Gunk Shot
+- id: okidogi_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Okidogi set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Okidogi @ Safety Goggles
+    Ability: Guard Dog
+    Level: 50
+    EVs: 228 HP / 172 Atk / 4 Def / 0 SpA / 4 SpD / 100 Spe
+    Adamant Nature
+    - Protect
+    - Drain Punch
+    - Knock Off
+    - Gunk Shot
+- id: metagross_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Metagross set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Metagross @ Life Orb
+    Ability: Clear Body
+    Level: 50
+    EVs: 68 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 180 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Heavy Slam
+    - Earthquake
+- id: metagross_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Metagross set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Metagross @ Assault Vest
+    Ability: Clear Body
+    Level: 50
+    EVs: 68 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 180 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Heavy Slam
+    - Earthquake
+- id: metagross_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Metagross set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Metagross @ Covert Cloak
+    Ability: Clear Body
+    Level: 50
+    EVs: 68 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 180 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Heavy Slam
+    - Earthquake
+- id: zapdos_galar_auto_choicescarf_1
+  format: gen9vgc2026regf
+  description: Auto-generated Zapdos-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Zapdos-Galar @ Choice Scarf
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Brave Bird
+    - Coaching
+    - Close Combat
+- id: zapdos_galar_auto_yache_2
+  format: gen9vgc2026regf
+  description: Auto-generated Zapdos-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Yache Berry, top usage moves/spread)
+  import_text: |-
+    Zapdos-Galar @ Yache Berry
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Brave Bird
+    - Coaching
+    - Close Combat
+- id: zapdos_galar_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Zapdos-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Zapdos-Galar @ Life Orb
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Brave Bird
+    - Coaching
+    - Close Combat
+- id: zapdos_galar_auto_covertcloak_4
+  format: gen9vgc2026regf
+  description: Auto-generated Zapdos-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Zapdos-Galar @ Covert Cloak
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Brave Bird
+    - Coaching
+    - Close Combat
+- id: maushold_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Maushold set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Maushold @ Rocky Helmet
+    Ability: Friend Guard
+    Level: 50
+    EVs: 252 HP / 4 Atk / 196 Def / 0 SpA / 28 SpD / 28 Spe
+    Impish Nature
+    - Protect
+    - Follow Me
+    - Feint
+    - Super Fang
+- id: maushold_auto_widelens_2
+  format: gen9vgc2026regf
+  description: Auto-generated Maushold set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Maushold @ Wide Lens
+    Ability: Friend Guard
+    Level: 50
+    EVs: 252 HP / 4 Atk / 196 Def / 0 SpA / 28 SpD / 28 Spe
+    Impish Nature
+    - Protect
+    - Follow Me
+    - Feint
+    - Super Fang
+- id: maushold_auto_focussash_3
+  format: gen9vgc2026regf
+  description: Auto-generated Maushold set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Maushold @ Focus Sash
+    Ability: Friend Guard
+    Level: 50
+    EVs: 252 HP / 4 Atk / 196 Def / 0 SpA / 28 SpD / 28 Spe
+    Impish Nature
+    - Protect
+    - Follow Me
+    - Feint
+    - Super Fang
+- id: maushold_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Maushold set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Maushold @ Safety Goggles
+    Ability: Friend Guard
+    Level: 50
+    EVs: 252 HP / 4 Atk / 196 Def / 0 SpA / 28 SpD / 28 Spe
+    Impish Nature
+    - Protect
+    - Follow Me
+    - Feint
+    - Super Fang
+- id: gallade_auto_clearamulet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gallade set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Gallade @ Clear Amulet
+    Ability: Sharpness
+    Level: 50
+    EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+    Brave Nature
+    - Sacred Sword
+    - Psycho Cut
+    - Trick Room
+    - Upper Hand
+- id: comfey_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Comfey set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Comfey @ Rocky Helmet
+    Ability: Triage
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Floral Healing
+    - Draining Kiss
+    - Calm Mind
+- id: comfey_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Comfey set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Comfey @ Sitrus Berry
+    Ability: Triage
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Floral Healing
+    - Draining Kiss
+    - Calm Mind
+- id: comfey_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Comfey set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Comfey @ Leftovers
+    Ability: Triage
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Floral Healing
+    - Draining Kiss
+    - Calm Mind
+- id: comfey_auto_iapapa_4
+  format: gen9vgc2026regf
+  description: Auto-generated Comfey set from Smogon 2024-04 gen9vgc2024regf-1760 (Iapapa Berry, top usage moves/spread)
+  import_text: |-
+    Comfey @ Iapapa Berry
+    Ability: Triage
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Floral Healing
+    - Draining Kiss
+    - Calm Mind
+- id: comfey_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Comfey set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Comfey @ Life Orb
+    Ability: Triage
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Floral Healing
+    - Draining Kiss
+    - Calm Mind
+- id: sableye_auto_lightclay_1
+  format: gen9vgc2026regf
+  description: Auto-generated Sableye set from Smogon 2024-04 gen9vgc2024regf-1760 (Light Clay, top usage moves/spread)
+  import_text: |-
+    Sableye @ Light Clay
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Calm Nature
+    - Quash
+    - Light Screen
+    - Reflect
+    - Encore
+- id: sableye_auto_roseli_2
+  format: gen9vgc2026regf
+  description: Auto-generated Sableye set from Smogon 2024-04 gen9vgc2024regf-1760 (Roseli Berry, top usage moves/spread)
+  import_text: |-
+    Sableye @ Roseli Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Calm Nature
+    - Quash
+    - Light Screen
+    - Reflect
+    - Encore
+- id: sableye_auto_focussash_3
+  format: gen9vgc2026regf
+  description: Auto-generated Sableye set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Sableye @ Focus Sash
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Calm Nature
+    - Quash
+    - Light Screen
+    - Reflect
+    - Encore
+- id: sableye_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Sableye set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Sableye @ Sitrus Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 124 Def / 0 SpA / 132 SpD / 0 Spe
+    Calm Nature
+    - Quash
+    - Light Screen
+    - Reflect
+    - Encore
+- id: thundurus_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Thundurus set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Thundurus @ Sitrus Berry
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 236 Def / 4 SpA / 4 SpD / 12 Spe
+    Bold Nature
+    - Eerie Impulse
+    - Thunder Wave
+    - Sunny Day
+    - Thunderbolt
+- id: thundurus_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Thundurus set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Thundurus @ Covert Cloak
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 236 Def / 4 SpA / 4 SpD / 12 Spe
+    Bold Nature
+    - Eerie Impulse
+    - Thunder Wave
+    - Sunny Day
+    - Thunderbolt
+- id: thundurus_auto_mentalherb_3
+  format: gen9vgc2026regf
+  description: Auto-generated Thundurus set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Thundurus @ Mental Herb
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 236 Def / 4 SpA / 4 SpD / 12 Spe
+    Bold Nature
+    - Eerie Impulse
+    - Thunder Wave
+    - Sunny Day
+    - Thunderbolt
+- id: thundurus_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Thundurus set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Thundurus @ Rocky Helmet
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 236 Def / 4 SpA / 4 SpD / 12 Spe
+    Bold Nature
+    - Eerie Impulse
+    - Thunder Wave
+    - Sunny Day
+    - Thunderbolt
+- id: thundurus_auto_kingsrock_5
+  format: gen9vgc2026regf
+  description: Auto-generated Thundurus set from Smogon 2024-04 gen9vgc2024regf-1760 (King's Rock, top usage moves/spread)
+  import_text: |-
+    Thundurus @ King's Rock
+    Ability: Prankster
+    Level: 50
+    EVs: 252 HP / 0 Atk / 236 Def / 4 SpA / 4 SpD / 12 Spe
+    Bold Nature
+    - Eerie Impulse
+    - Thunder Wave
+    - Sunny Day
+    - Thunderbolt
+- id: primarina_auto_throatspray_1
+  format: gen9vgc2026regf
+  description: Auto-generated Primarina set from Smogon 2024-04 gen9vgc2024regf-1760 (Throat Spray, top usage moves/spread)
+  import_text: |-
+    Primarina @ Throat Spray
+    Ability: Liquid Voice
+    Level: 50
+    EVs: 68 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 188 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Dazzling Gleam
+    - Moonblast
+- id: primarina_auto_life_2
+  format: gen9vgc2026regf
+  description: Auto-generated Primarina set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Primarina @ Life Orb
+    Ability: Liquid Voice
+    Level: 50
+    EVs: 68 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 188 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Dazzling Gleam
+    - Moonblast
+- id: primarina_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Primarina set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Primarina @ Leftovers
+    Ability: Liquid Voice
+    Level: 50
+    EVs: 68 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 188 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Dazzling Gleam
+    - Moonblast
+- id: primarina_auto_assaultvest_4
+  format: gen9vgc2026regf
+  description: Auto-generated Primarina set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Primarina @ Assault Vest
+    Ability: Liquid Voice
+    Level: 50
+    EVs: 68 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 188 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Dazzling Gleam
+    - Moonblast
+- id: primarina_auto_mysticwater_5
+  format: gen9vgc2026regf
+  description: Auto-generated Primarina set from Smogon 2024-04 gen9vgc2024regf-1760 (Mystic Water, top usage moves/spread)
+  import_text: |-
+    Primarina @ Mystic Water
+    Ability: Liquid Voice
+    Level: 50
+    EVs: 68 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 188 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Dazzling Gleam
+    - Moonblast
+- id: smeargle_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Smeargle set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Smeargle @ Focus Sash
+    Ability: Technician
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+    Brave Nature
+    - Spore
+    - Follow Me
+    - Fake Out
+    - Decorate
+- id: smeargle_auto_ejectpack_2
+  format: gen9vgc2026regf
+  description: Auto-generated Smeargle set from Smogon 2024-04 gen9vgc2024regf-1760 (Eject Pack, top usage moves/spread)
+  import_text: |-
+    Smeargle @ Eject Pack
+    Ability: Technician
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+    Brave Nature
+    - Spore
+    - Follow Me
+    - Fake Out
+    - Decorate
+- id: heatran_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Heatran set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Heatran @ Sitrus Berry
+    Ability: Flash Fire
+    Level: 50
+    EVs: 204 HP / 0 Atk / 4 Def / 236 SpA / 4 SpD / 60 Spe
+    Modest Nature
+    - Protect
+    - Earth Power
+    - Heat Wave
+    - Flash Cannon
+- id: heatran_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Heatran set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Heatran @ Leftovers
+    Ability: Flash Fire
+    Level: 50
+    EVs: 204 HP / 0 Atk / 4 Def / 236 SpA / 4 SpD / 60 Spe
+    Modest Nature
+    - Protect
+    - Earth Power
+    - Heat Wave
+    - Flash Cannon
+- id: heatran_auto_assaultvest_3
+  format: gen9vgc2026regf
+  description: Auto-generated Heatran set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Heatran @ Assault Vest
+    Ability: Flash Fire
+    Level: 50
+    EVs: 204 HP / 0 Atk / 4 Def / 236 SpA / 4 SpD / 60 Spe
+    Modest Nature
+    - Protect
+    - Earth Power
+    - Heat Wave
+    - Flash Cannon
+- id: heatran_auto_life_4
+  format: gen9vgc2026regf
+  description: Auto-generated Heatran set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Heatran @ Life Orb
+    Ability: Flash Fire
+    Level: 50
+    EVs: 204 HP / 0 Atk / 4 Def / 236 SpA / 4 SpD / 60 Spe
+    Modest Nature
+    - Protect
+    - Earth Power
+    - Heat Wave
+    - Flash Cannon
+- id: heatran_auto_zoomlens_5
+  format: gen9vgc2026regf
+  description: Auto-generated Heatran set from Smogon 2024-04 gen9vgc2024regf-1760 (Zoom Lens, top usage moves/spread)
+  import_text: |-
+    Heatran @ Zoom Lens
+    Ability: Flash Fire
+    Level: 50
+    EVs: 204 HP / 0 Atk / 4 Def / 236 SpA / 4 SpD / 60 Spe
+    Modest Nature
+    - Protect
+    - Earth Power
+    - Heat Wave
+    - Flash Cannon
+- id: corviknight_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Corviknight set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Corviknight @ Rocky Helmet
+    Ability: Mirror Armor
+    Level: 50
+    EVs: 252 HP / 0 Atk / 36 Def / 0 SpA / 220 SpD / 0 Spe
+    Impish Nature
+    - Brave Bird
+    - Roost
+    - Iron Head
+    - Tailwind
+- id: corviknight_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Corviknight set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Corviknight @ Sitrus Berry
+    Ability: Mirror Armor
+    Level: 50
+    EVs: 252 HP / 0 Atk / 36 Def / 0 SpA / 220 SpD / 0 Spe
+    Impish Nature
+    - Brave Bird
+    - Roost
+    - Iron Head
+    - Tailwind
+- id: corviknight_auto_wiki_3
+  format: gen9vgc2026regf
+  description: Auto-generated Corviknight set from Smogon 2024-04 gen9vgc2024regf-1760 (Wiki Berry, top usage moves/spread)
+  import_text: |-
+    Corviknight @ Wiki Berry
+    Ability: Mirror Armor
+    Level: 50
+    EVs: 252 HP / 0 Atk / 36 Def / 0 SpA / 220 SpD / 0 Spe
+    Impish Nature
+    - Brave Bird
+    - Roost
+    - Iron Head
+    - Tailwind
+- id: corviknight_auto_leftovers_4
+  format: gen9vgc2026regf
+  description: Auto-generated Corviknight set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Corviknight @ Leftovers
+    Ability: Mirror Armor
+    Level: 50
+    EVs: 252 HP / 0 Atk / 36 Def / 0 SpA / 220 SpD / 0 Spe
+    Impish Nature
+    - Brave Bird
+    - Roost
+    - Iron Head
+    - Tailwind
+- id: corviknight_auto_choiceband_5
+  format: gen9vgc2026regf
+  description: Auto-generated Corviknight set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Corviknight @ Choice Band
+    Ability: Mirror Armor
+    Level: 50
+    EVs: 252 HP / 0 Atk / 36 Def / 0 SpA / 220 SpD / 0 Spe
+    Impish Nature
+    - Brave Bird
+    - Roost
+    - Iron Head
+    - Tailwind
+- id: ogerpon_cornerstone_auto_cornerstonemask_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon-Cornerstone set from Smogon 2024-04 gen9vgc2024regf-1760 (Cornerstone Mask, top usage moves/spread)
+  import_text: |-
+    Ogerpon-Cornerstone @ Cornerstone Mask
+    Ability: Sturdy
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Ivy Cudgel
+    - Spiky Shield
+    - Follow Me
+    - Horn Leech
+- id: baxcalibur_auto_clearamulet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Baxcalibur set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Baxcalibur @ Clear Amulet
+    Ability: Thermal Exchange
+    Level: 50
+    EVs: 132 HP / 252 Atk / 4 Def / 0 SpA / 12 SpD / 108 Spe
+    Adamant Nature
+    - Protect
+    - Glaive Rush
+    - Ice Shard
+    - Icicle Crash
+- id: baxcalibur_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Baxcalibur set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Baxcalibur @ Assault Vest
+    Ability: Thermal Exchange
+    Level: 50
+    EVs: 132 HP / 252 Atk / 4 Def / 0 SpA / 12 SpD / 108 Spe
+    Adamant Nature
+    - Protect
+    - Glaive Rush
+    - Ice Shard
+    - Icicle Crash
+- id: baxcalibur_auto_loadeddice_3
+  format: gen9vgc2026regf
+  description: Auto-generated Baxcalibur set from Smogon 2024-04 gen9vgc2024regf-1760 (Loaded Dice, top usage moves/spread)
+  import_text: |-
+    Baxcalibur @ Loaded Dice
+    Ability: Thermal Exchange
+    Level: 50
+    EVs: 132 HP / 252 Atk / 4 Def / 0 SpA / 12 SpD / 108 Spe
+    Adamant Nature
+    - Protect
+    - Glaive Rush
+    - Ice Shard
+    - Icicle Crash
+- id: volcarona_auto_covertcloak_1
+  format: gen9vgc2026regf
+  description: Auto-generated Volcarona set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Volcarona @ Covert Cloak
+    Ability: Flame Body
+    Level: 50
+    EVs: 132 HP / 0 Atk / 4 Def / 180 SpA / 4 SpD / 188 Spe
+    Timid Nature
+    - Protect
+    - Quiver Dance
+    - Tera Blast
+    - Fiery Dance
+- id: volcarona_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Volcarona set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Volcarona @ Leftovers
+    Ability: Flame Body
+    Level: 50
+    EVs: 132 HP / 0 Atk / 4 Def / 180 SpA / 4 SpD / 188 Spe
+    Timid Nature
+    - Protect
+    - Quiver Dance
+    - Tera Blast
+    - Fiery Dance
+- id: volcarona_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Volcarona set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Volcarona @ Sitrus Berry
+    Ability: Flame Body
+    Level: 50
+    EVs: 132 HP / 0 Atk / 4 Def / 180 SpA / 4 SpD / 188 Spe
+    Timid Nature
+    - Protect
+    - Quiver Dance
+    - Tera Blast
+    - Fiery Dance
+- id: volcarona_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Volcarona set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Volcarona @ Rocky Helmet
+    Ability: Flame Body
+    Level: 50
+    EVs: 132 HP / 0 Atk / 4 Def / 180 SpA / 4 SpD / 188 Spe
+    Timid Nature
+    - Protect
+    - Quiver Dance
+    - Tera Blast
+    - Fiery Dance
+- id: kommo_o_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Kommo-o set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Kommo-o @ Leftovers
+    Ability: Overcoat
+    Level: 50
+    EVs: 12 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - Body Press
+    - Iron Defense
+- id: kommo_o_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Kommo-o set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Kommo-o @ Clear Amulet
+    Ability: Overcoat
+    Level: 50
+    EVs: 12 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - Body Press
+    - Iron Defense
+- id: kommo_o_auto_throatspray_3
+  format: gen9vgc2026regf
+  description: Auto-generated Kommo-o set from Smogon 2024-04 gen9vgc2024regf-1760 (Throat Spray, top usage moves/spread)
+  import_text: |-
+    Kommo-o @ Throat Spray
+    Ability: Overcoat
+    Level: 50
+    EVs: 12 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - Body Press
+    - Iron Defense
+- id: kommo_o_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Kommo-o set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Kommo-o @ Rocky Helmet
+    Ability: Overcoat
+    Level: 50
+    EVs: 12 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - Body Press
+    - Iron Defense
+- id: sneasler_auto_psychicseed_1
+  format: gen9vgc2026regf
+  description: Auto-generated Sneasler set from Smogon 2024-04 gen9vgc2024regf-1760 (Psychic Seed, top usage moves/spread)
+  import_text: |-
+    Sneasler @ Psychic Seed
+    Ability: Unburden
+    Level: 50
+    EVs: 0 HP / 236 Atk / 156 Def / 0 SpA / 0 SpD / 116 Spe
+    Adamant Nature
+    - Protect
+    - Dire Claw
+    - Close Combat
+    - Rock Slide
+- id: sneasler_auto_grassyseed_2
+  format: gen9vgc2026regf
+  description: Auto-generated Sneasler set from Smogon 2024-04 gen9vgc2024regf-1760 (Grassy Seed, top usage moves/spread)
+  import_text: |-
+    Sneasler @ Grassy Seed
+    Ability: Unburden
+    Level: 50
+    EVs: 0 HP / 236 Atk / 156 Def / 0 SpA / 0 SpD / 116 Spe
+    Adamant Nature
+    - Protect
+    - Dire Claw
+    - Close Combat
+    - Rock Slide
+- id: sneasler_auto_focussash_3
+  format: gen9vgc2026regf
+  description: Auto-generated Sneasler set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Sneasler @ Focus Sash
+    Ability: Unburden
+    Level: 50
+    EVs: 0 HP / 236 Atk / 156 Def / 0 SpA / 0 SpD / 116 Spe
+    Adamant Nature
+    - Protect
+    - Dire Claw
+    - Close Combat
+    - Rock Slide
+- id: sneasler_auto_normalgem_4
+  format: gen9vgc2026regf
+  description: Auto-generated Sneasler set from Smogon 2024-04 gen9vgc2024regf-1760 (Normal Gem, top usage moves/spread)
+  import_text: |-
+    Sneasler @ Normal Gem
+    Ability: Unburden
+    Level: 50
+    EVs: 0 HP / 236 Atk / 156 Def / 0 SpA / 0 SpD / 116 Spe
+    Adamant Nature
+    - Protect
+    - Dire Claw
+    - Close Combat
+    - Rock Slide
+- id: sneasler_auto_choicescarf_5
+  format: gen9vgc2026regf
+  description: Auto-generated Sneasler set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Sneasler @ Choice Scarf
+    Ability: Unburden
+    Level: 50
+    EVs: 0 HP / 236 Atk / 156 Def / 0 SpA / 0 SpD / 116 Spe
+    Adamant Nature
+    - Protect
+    - Dire Claw
+    - Close Combat
+    - Rock Slide
+- id: regidrago_auto_dragonfang_1
+  format: gen9vgc2026regf
+  description: Auto-generated Regidrago set from Smogon 2024-04 gen9vgc2024regf-1760 (Dragon Fang, top usage moves/spread)
+  import_text: |-
+    Regidrago @ Dragon Fang
+    Ability: Dragon's Maw
+    Level: 50
+    EVs: 4 HP / 0 Atk / 60 Def / 252 SpA / 140 SpD / 52 Spe
+    Modest Nature
+    - Protect
+    - Dragon Energy
+    - Earth Power
+    - Draco Meteor
+- id: regidrago_auto_choicescarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Regidrago set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Regidrago @ Choice Scarf
+    Ability: Dragon's Maw
+    Level: 50
+    EVs: 4 HP / 0 Atk / 60 Def / 252 SpA / 140 SpD / 52 Spe
+    Modest Nature
+    - Protect
+    - Dragon Energy
+    - Earth Power
+    - Draco Meteor
+- id: moltres_galar_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Moltres-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Moltres-Galar @ Sitrus Berry
+    Ability: Berserk
+    Level: 50
+    EVs: 252 HP / 0 Atk / 100 Def / 140 SpA / 4 SpD / 12 Spe
+    Calm Nature
+    - Protect
+    - Fiery Wrath
+    - Air Slash
+    - Nasty Plot
+- id: moltres_galar_auto_choicespecs_2
+  format: gen9vgc2026regf
+  description: Auto-generated Moltres-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Moltres-Galar @ Choice Specs
+    Ability: Berserk
+    Level: 50
+    EVs: 252 HP / 0 Atk / 100 Def / 140 SpA / 4 SpD / 12 Spe
+    Calm Nature
+    - Protect
+    - Fiery Wrath
+    - Air Slash
+    - Nasty Plot
+- id: moltres_galar_auto_rockyhelmet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Moltres-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Moltres-Galar @ Rocky Helmet
+    Ability: Berserk
+    Level: 50
+    EVs: 252 HP / 0 Atk / 100 Def / 140 SpA / 4 SpD / 12 Spe
+    Calm Nature
+    - Protect
+    - Fiery Wrath
+    - Air Slash
+    - Nasty Plot
+- id: garchomp_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Garchomp set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Garchomp @ Life Orb
+    Ability: Rough Skin
+    Level: 50
+    EVs: 0 HP / 208 Atk / 52 Def / 0 SpA / 32 SpD / 212 Spe
+    Jolly Nature
+    - Protect
+    - Earthquake
+    - Dragon Claw
+    - Swords Dance
+- id: garchomp_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Garchomp set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Garchomp @ Clear Amulet
+    Ability: Rough Skin
+    Level: 50
+    EVs: 0 HP / 208 Atk / 52 Def / 0 SpA / 32 SpD / 212 Spe
+    Jolly Nature
+    - Protect
+    - Earthquake
+    - Dragon Claw
+    - Swords Dance
+- id: garchomp_auto_assaultvest_3
+  format: gen9vgc2026regf
+  description: Auto-generated Garchomp set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Garchomp @ Assault Vest
+    Ability: Rough Skin
+    Level: 50
+    EVs: 0 HP / 208 Atk / 52 Def / 0 SpA / 32 SpD / 212 Spe
+    Jolly Nature
+    - Protect
+    - Earthquake
+    - Dragon Claw
+    - Swords Dance
+- id: garchomp_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Garchomp set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Garchomp @ Rocky Helmet
+    Ability: Rough Skin
+    Level: 50
+    EVs: 0 HP / 208 Atk / 52 Def / 0 SpA / 32 SpD / 212 Spe
+    Jolly Nature
+    - Protect
+    - Earthquake
+    - Dragon Claw
+    - Swords Dance
+- id: garchomp_auto_loadeddice_5
+  format: gen9vgc2026regf
+  description: Auto-generated Garchomp set from Smogon 2024-04 gen9vgc2024regf-1760 (Loaded Dice, top usage moves/spread)
+  import_text: |-
+    Garchomp @ Loaded Dice
+    Ability: Rough Skin
+    Level: 50
+    EVs: 0 HP / 208 Atk / 52 Def / 0 SpA / 32 SpD / 212 Spe
+    Jolly Nature
+    - Protect
+    - Earthquake
+    - Dragon Claw
+    - Swords Dance
+- id: lilligant_hisui_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Lilligant-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Lilligant-Hisui @ Focus Sash
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Close Combat
+    - After You
+    - Solar Blade
+- id: gastrodon_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gastrodon set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Gastrodon @ Focus Sash
+    Ability: Storm Drain
+    Level: 50
+    EVs: 132 HP / 0 Atk / 116 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Earth Power
+    - Yawn
+    - Ice Beam
+- id: gastrodon_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Gastrodon set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Gastrodon @ Leftovers
+    Ability: Storm Drain
+    Level: 50
+    EVs: 132 HP / 0 Atk / 116 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Earth Power
+    - Yawn
+    - Ice Beam
+- id: gastrodon_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Gastrodon set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Gastrodon @ Sitrus Berry
+    Ability: Storm Drain
+    Level: 50
+    EVs: 132 HP / 0 Atk / 116 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Earth Power
+    - Yawn
+    - Ice Beam
+- id: gastrodon_auto_rockyhelmet_4
+  format: gen9vgc2026regf
+  description: Auto-generated Gastrodon set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Gastrodon @ Rocky Helmet
+    Ability: Storm Drain
+    Level: 50
+    EVs: 132 HP / 0 Atk / 116 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Earth Power
+    - Yawn
+    - Ice Beam
+- id: gastrodon_auto_safetygoggles_5
+  format: gen9vgc2026regf
+  description: Auto-generated Gastrodon set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Gastrodon @ Safety Goggles
+    Ability: Storm Drain
+    Level: 50
+    EVs: 132 HP / 0 Atk / 116 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Earth Power
+    - Yawn
+    - Ice Beam
+- id: clefairy_auto_eviolite_1
+  format: gen9vgc2026regf
+  description: Auto-generated Clefairy set from Smogon 2024-04 gen9vgc2024regf-1760 (Eviolite, top usage moves/spread)
+  import_text: |-
+    Clefairy @ Eviolite
+    Ability: Friend Guard
+    Level: 50
+    EVs: 252 HP / 0 Atk / 204 Def / 0 SpA / 52 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Follow Me
+    - Helping Hand
+    - Sing
+- id: flamigo_auto_whiteherb_1
+  format: gen9vgc2026regf
+  description: Auto-generated Flamigo set from Smogon 2024-04 gen9vgc2024regf-1760 (White Herb, top usage moves/spread)
+  import_text: |-
+    Flamigo @ White Herb
+    Ability: Costar
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Wide Guard
+    - Acrobatics
+- id: flamigo_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Flamigo set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Flamigo @ Sitrus Berry
+    Ability: Costar
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Wide Guard
+    - Acrobatics
+- id: flamigo_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Flamigo set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Flamigo @ Life Orb
+    Ability: Costar
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Wide Guard
+    - Acrobatics
+- id: flamigo_auto_focussash_4
+  format: gen9vgc2026regf
+  description: Auto-generated Flamigo set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Flamigo @ Focus Sash
+    Ability: Costar
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Wide Guard
+    - Acrobatics
+- id: flamigo_auto_powerherb_5
+  format: gen9vgc2026regf
+  description: Auto-generated Flamigo set from Smogon 2024-04 gen9vgc2024regf-1760 (Power Herb, top usage moves/spread)
+  import_text: |-
+    Flamigo @ Power Herb
+    Ability: Costar
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Wide Guard
+    - Acrobatics
+- id: milotic_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Milotic set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Milotic @ Life Orb
+    Ability: Competitive
+    Level: 50
+    EVs: 236 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 20 Spe
+    Modest Nature
+    - Protect
+    - Icy Wind
+    - Muddy Water
+    - Hypnosis
+- id: milotic_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Milotic set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Milotic @ Leftovers
+    Ability: Competitive
+    Level: 50
+    EVs: 236 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 20 Spe
+    Modest Nature
+    - Protect
+    - Icy Wind
+    - Muddy Water
+    - Hypnosis
+- id: milotic_auto_adrenaline_3
+  format: gen9vgc2026regf
+  description: Auto-generated Milotic set from Smogon 2024-04 gen9vgc2024regf-1760 (Adrenaline Orb, top usage moves/spread)
+  import_text: |-
+    Milotic @ Adrenaline Orb
+    Ability: Competitive
+    Level: 50
+    EVs: 236 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 20 Spe
+    Modest Nature
+    - Protect
+    - Icy Wind
+    - Muddy Water
+    - Hypnosis
+- id: milotic_auto_assaultvest_4
+  format: gen9vgc2026regf
+  description: Auto-generated Milotic set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Milotic @ Assault Vest
+    Ability: Competitive
+    Level: 50
+    EVs: 236 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 20 Spe
+    Modest Nature
+    - Protect
+    - Icy Wind
+    - Muddy Water
+    - Hypnosis
+- id: milotic_auto_wiki_5
+  format: gen9vgc2026regf
+  description: Auto-generated Milotic set from Smogon 2024-04 gen9vgc2024regf-1760 (Wiki Berry, top usage moves/spread)
+  import_text: |-
+    Milotic @ Wiki Berry
+    Ability: Competitive
+    Level: 50
+    EVs: 236 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 20 Spe
+    Modest Nature
+    - Protect
+    - Icy Wind
+    - Muddy Water
+    - Hypnosis
+- id: dragapult_auto_choiceband_1
+  format: gen9vgc2026regf
+  description: Auto-generated Dragapult set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Dragapult @ Choice Band
+    Ability: Clear Body
+    Level: 50
+    EVs: 28 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 220 Spe
+    Jolly Nature
+    - Protect
+    - Dragon Darts
+    - Phantom Force
+    - Tera Blast
+- id: dragapult_auto_life_2
+  format: gen9vgc2026regf
+  description: Auto-generated Dragapult set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Dragapult @ Life Orb
+    Ability: Clear Body
+    Level: 50
+    EVs: 28 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 220 Spe
+    Jolly Nature
+    - Protect
+    - Dragon Darts
+    - Phantom Force
+    - Tera Blast
+- id: dragapult_auto_widelens_3
+  format: gen9vgc2026regf
+  description: Auto-generated Dragapult set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Dragapult @ Wide Lens
+    Ability: Clear Body
+    Level: 50
+    EVs: 28 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 220 Spe
+    Jolly Nature
+    - Protect
+    - Dragon Darts
+    - Phantom Force
+    - Tera Blast
+- id: dragapult_auto_lightclay_4
+  format: gen9vgc2026regf
+  description: Auto-generated Dragapult set from Smogon 2024-04 gen9vgc2024regf-1760 (Light Clay, top usage moves/spread)
+  import_text: |-
+    Dragapult @ Light Clay
+    Ability: Clear Body
+    Level: 50
+    EVs: 28 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 220 Spe
+    Jolly Nature
+    - Protect
+    - Dragon Darts
+    - Phantom Force
+    - Tera Blast
+- id: dragapult_auto_focussash_5
+  format: gen9vgc2026regf
+  description: Auto-generated Dragapult set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Dragapult @ Focus Sash
+    Ability: Clear Body
+    Level: 50
+    EVs: 28 HP / 252 Atk / 4 Def / 0 SpA / 4 SpD / 220 Spe
+    Jolly Nature
+    - Protect
+    - Dragon Darts
+    - Phantom Force
+    - Tera Blast
+- id: scizor_auto_ironplate_1
+  format: gen9vgc2026regf
+  description: Auto-generated Scizor set from Smogon 2024-04 gen9vgc2024regf-1760 (Iron Plate, top usage moves/spread)
+  import_text: |-
+    Scizor @ Iron Plate
+    Ability: Technician
+    Level: 50
+    EVs: 244 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 20 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Swords Dance
+    - Bug Bite
+- id: scizor_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Scizor set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Scizor @ Rocky Helmet
+    Ability: Technician
+    Level: 50
+    EVs: 244 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 20 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Swords Dance
+    - Bug Bite
+- id: scizor_auto_clearamulet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Scizor set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Scizor @ Clear Amulet
+    Ability: Technician
+    Level: 50
+    EVs: 244 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 20 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Swords Dance
+    - Bug Bite
+- id: scizor_auto_life_4
+  format: gen9vgc2026regf
+  description: Auto-generated Scizor set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Scizor @ Life Orb
+    Ability: Technician
+    Level: 50
+    EVs: 244 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 20 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Swords Dance
+    - Bug Bite
+- id: scizor_auto_choiceband_5
+  format: gen9vgc2026regf
+  description: Auto-generated Scizor set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Scizor @ Choice Band
+    Ability: Technician
+    Level: 50
+    EVs: 244 HP / 236 Atk / 4 Def / 0 SpA / 4 SpD / 20 Spe
+    Adamant Nature
+    - Protect
+    - Bullet Punch
+    - Swords Dance
+    - Bug Bite
+- id: goodra_hisui_auto_assaultvest_1
+  format: gen9vgc2026regf
+  description: Auto-generated Goodra-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Goodra-Hisui @ Assault Vest
+    Ability: Sap Sipper
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Heavy Slam
+    - Draco Meteor
+    - Ice Beam
+- id: goodra_hisui_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Goodra-Hisui set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Goodra-Hisui @ Leftovers
+    Ability: Sap Sipper
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 0 Spe
+    Quiet Nature
+    - Protect
+    - Heavy Slam
+    - Draco Meteor
+    - Ice Beam
+- id: regieleki_auto_choicespecs_1
+  format: gen9vgc2026regf
+  description: Auto-generated Regieleki set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Regieleki @ Choice Specs
+    Ability: Transistor
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+    Mild Nature
+    - Protect
+    - Electroweb
+    - Thunderbolt
+    - Volt Switch
+- id: regieleki_auto_magnet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Regieleki set from Smogon 2024-04 gen9vgc2024regf-1760 (Magnet, top usage moves/spread)
+  import_text: |-
+    Regieleki @ Magnet
+    Ability: Transistor
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+    Mild Nature
+    - Protect
+    - Electroweb
+    - Thunderbolt
+    - Volt Switch
+- id: regieleki_auto_choicescarf_3
+  format: gen9vgc2026regf
+  description: Auto-generated Regieleki set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Regieleki @ Choice Scarf
+    Ability: Transistor
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+    Mild Nature
+    - Protect
+    - Electroweb
+    - Thunderbolt
+    - Volt Switch
+- id: regieleki_auto_covertcloak_4
+  format: gen9vgc2026regf
+  description: Auto-generated Regieleki set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Regieleki @ Covert Cloak
+    Ability: Transistor
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+    Mild Nature
+    - Protect
+    - Electroweb
+    - Thunderbolt
+    - Volt Switch
+- id: regieleki_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Regieleki set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Regieleki @ Life Orb
+    Ability: Transistor
+    Level: 50
+    EVs: 4 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+    Mild Nature
+    - Protect
+    - Electroweb
+    - Thunderbolt
+    - Volt Switch
+- id: gyarados_auto_rockyhelmet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gyarados set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Gyarados @ Rocky Helmet
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 44 Atk / 204 Def / 0 SpA / 4 SpD / 4 Spe
+    Impish Nature
+    - Protect
+    - Waterfall
+    - Thunder Wave
+    - Taunt
+- id: gyarados_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Gyarados set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Gyarados @ Sitrus Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 44 Atk / 204 Def / 0 SpA / 4 SpD / 4 Spe
+    Impish Nature
+    - Protect
+    - Waterfall
+    - Thunder Wave
+    - Taunt
+- id: gyarados_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Gyarados set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Gyarados @ Safety Goggles
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 44 Atk / 204 Def / 0 SpA / 4 SpD / 4 Spe
+    Impish Nature
+    - Protect
+    - Waterfall
+    - Thunder Wave
+    - Taunt
+- id: gyarados_auto_covertcloak_4
+  format: gen9vgc2026regf
+  description: Auto-generated Gyarados set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Gyarados @ Covert Cloak
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 44 Atk / 204 Def / 0 SpA / 4 SpD / 4 Spe
+    Impish Nature
+    - Protect
+    - Waterfall
+    - Thunder Wave
+    - Taunt
+- id: gyarados_auto_clearamulet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Gyarados set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Gyarados @ Clear Amulet
+    Ability: Intimidate
+    Level: 50
+    EVs: 252 HP / 44 Atk / 204 Def / 0 SpA / 4 SpD / 4 Spe
+    Impish Nature
+    - Protect
+    - Waterfall
+    - Thunder Wave
+    - Taunt
+- id: ogerpon_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Ogerpon @ Focus Sash
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Spiky Shield
+    - Ivy Cudgel
+    - Follow Me
+    - Superpower
+- id: ogerpon_auto_covertcloak_2
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Ogerpon @ Covert Cloak
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Spiky Shield
+    - Ivy Cudgel
+    - Follow Me
+    - Superpower
+- id: ogerpon_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Ogerpon @ Life Orb
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Spiky Shield
+    - Ivy Cudgel
+    - Follow Me
+    - Superpower
+- id: ogerpon_auto_razorclaw_4
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon set from Smogon 2024-04 gen9vgc2024regf-1760 (Razor Claw, top usage moves/spread)
+  import_text: |-
+    Ogerpon @ Razor Claw
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Spiky Shield
+    - Ivy Cudgel
+    - Follow Me
+    - Superpower
+- id: ogerpon_auto_rockyhelmet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Ogerpon set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Ogerpon @ Rocky Helmet
+    Ability: Defiant
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Spiky Shield
+    - Ivy Cudgel
+    - Follow Me
+    - Superpower
+- id: oranguru_auto_mentalherb_1
+  format: gen9vgc2026regf
+  description: Auto-generated Oranguru set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Oranguru @ Mental Herb
+    Ability: Inner Focus
+    Level: 50
+    EVs: 252 HP / 0 Atk / 196 Def / 0 SpA / 56 SpD / 0 Spe
+    Sassy Nature
+    - Protect
+    - Instruct
+    - Trick Room
+    - Encore
+- id: oranguru_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Oranguru set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Oranguru @ Leftovers
+    Ability: Inner Focus
+    Level: 50
+    EVs: 252 HP / 0 Atk / 196 Def / 0 SpA / 56 SpD / 0 Spe
+    Sassy Nature
+    - Protect
+    - Instruct
+    - Trick Room
+    - Encore
+- id: oranguru_auto_rockyhelmet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Oranguru set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Oranguru @ Rocky Helmet
+    Ability: Inner Focus
+    Level: 50
+    EVs: 252 HP / 0 Atk / 196 Def / 0 SpA / 56 SpD / 0 Spe
+    Sassy Nature
+    - Protect
+    - Instruct
+    - Trick Room
+    - Encore
+- id: oranguru_auto_safetygoggles_4
+  format: gen9vgc2026regf
+  description: Auto-generated Oranguru set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Oranguru @ Safety Goggles
+    Ability: Inner Focus
+    Level: 50
+    EVs: 252 HP / 0 Atk / 196 Def / 0 SpA / 56 SpD / 0 Spe
+    Sassy Nature
+    - Protect
+    - Instruct
+    - Trick Room
+    - Encore
+- id: excadrill_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Excadrill set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Excadrill @ Focus Sash
+    Ability: Sand Rush
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - High Horsepower
+    - Earthquake
+- id: excadrill_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Excadrill set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Excadrill @ Clear Amulet
+    Ability: Sand Rush
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - High Horsepower
+    - Earthquake
+- id: excadrill_auto_life_3
+  format: gen9vgc2026regf
+  description: Auto-generated Excadrill set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Excadrill @ Life Orb
+    Ability: Sand Rush
+    Level: 50
+    EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+    Adamant Nature
+    - Protect
+    - Iron Head
+    - High Horsepower
+    - Earthquake
+- id: muk_alola_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Muk-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Muk-Alola @ Leftovers
+    Ability: Power of Alchemy
+    Level: 50
+    EVs: 228 HP / 0 Atk / 244 Def / 0 SpA / 36 SpD / 0 Spe
+    Impish Nature
+    - Protect
+    - Knock Off
+    - Minimize
+    - Toxic
+- id: muk_alola_auto_assaultvest_2
+  format: gen9vgc2026regf
+  description: Auto-generated Muk-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Muk-Alola @ Assault Vest
+    Ability: Power of Alchemy
+    Level: 50
+    EVs: 228 HP / 0 Atk / 244 Def / 0 SpA / 36 SpD / 0 Spe
+    Impish Nature
+    - Protect
+    - Knock Off
+    - Minimize
+    - Toxic
+- id: muk_alola_auto_blacksludge_3
+  format: gen9vgc2026regf
+  description: Auto-generated Muk-Alola set from Smogon 2024-04 gen9vgc2024regf-1760 (Black Sludge, top usage moves/spread)
+  import_text: |-
+    Muk-Alola @ Black Sludge
+    Ability: Power of Alchemy
+    Level: 50
+    EVs: 228 HP / 0 Atk / 244 Def / 0 SpA / 36 SpD / 0 Spe
+    Impish Nature
+    - Protect
+    - Knock Off
+    - Minimize
+    - Toxic
+- id: bronzong_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Bronzong set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Bronzong @ Leftovers
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 188 Def / 0 SpA / 68 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Trick Room
+    - Gyro Ball
+    - Body Press
+- id: bronzong_auto_mentalherb_2
+  format: gen9vgc2026regf
+  description: Auto-generated Bronzong set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Bronzong @ Mental Herb
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 188 Def / 0 SpA / 68 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Trick Room
+    - Gyro Ball
+    - Body Press
+- id: bronzong_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Bronzong set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Bronzong @ Safety Goggles
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 188 Def / 0 SpA / 68 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Trick Room
+    - Gyro Ball
+    - Body Press
+- id: bronzong_auto_colbur_4
+  format: gen9vgc2026regf
+  description: Auto-generated Bronzong set from Smogon 2024-04 gen9vgc2024regf-1760 (Colbur Berry, top usage moves/spread)
+  import_text: |-
+    Bronzong @ Colbur Berry
+    Ability: Levitate
+    Level: 50
+    EVs: 252 HP / 0 Atk / 188 Def / 0 SpA / 68 SpD / 0 Spe
+    Relaxed Nature
+    - Protect
+    - Trick Room
+    - Gyro Ball
+    - Body Press
+- id: weezing_galar_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Weezing-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Weezing-Galar @ Sitrus Berry
+    Ability: Neutralizing Gas
+    Level: 50
+    EVs: 236 HP / 0 Atk / 20 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Will-O-Wisp
+    - Dazzling Gleam
+    - Scary Face
+- id: weezing_galar_auto_airballoon_2
+  format: gen9vgc2026regf
+  description: Auto-generated Weezing-Galar set from Smogon 2024-04 gen9vgc2024regf-1760 (Air Balloon, top usage moves/spread)
+  import_text: |-
+    Weezing-Galar @ Air Balloon
+    Ability: Neutralizing Gas
+    Level: 50
+    EVs: 236 HP / 0 Atk / 20 Def / 0 SpA / 252 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Will-O-Wisp
+    - Dazzling Gleam
+    - Scary Face
+- id: politoed_auto_ejectbutton_1
+  format: gen9vgc2026regf
+  description: Auto-generated Politoed set from Smogon 2024-04 gen9vgc2024regf-1760 (Eject Button, top usage moves/spread)
+  import_text: |-
+    Politoed @ Eject Button
+    Ability: Drizzle
+    Level: 50
+    EVs: 252 HP / 0 Atk / 172 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Helping Hand
+    - Perish Song
+    - Muddy Water
+- id: politoed_auto_damprock_2
+  format: gen9vgc2026regf
+  description: Auto-generated Politoed set from Smogon 2024-04 gen9vgc2024regf-1760 (Damp Rock, top usage moves/spread)
+  import_text: |-
+    Politoed @ Damp Rock
+    Ability: Drizzle
+    Level: 50
+    EVs: 252 HP / 0 Atk / 172 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Helping Hand
+    - Perish Song
+    - Muddy Water
+- id: politoed_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Politoed set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Politoed @ Sitrus Berry
+    Ability: Drizzle
+    Level: 50
+    EVs: 252 HP / 0 Atk / 172 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Helping Hand
+    - Perish Song
+    - Muddy Water
+- id: politoed_auto_blunderpolicy_4
+  format: gen9vgc2026regf
+  description: Auto-generated Politoed set from Smogon 2024-04 gen9vgc2024regf-1760 (Blunder Policy, top usage moves/spread)
+  import_text: |-
+    Politoed @ Blunder Policy
+    Ability: Drizzle
+    Level: 50
+    EVs: 252 HP / 0 Atk / 172 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Helping Hand
+    - Perish Song
+    - Muddy Water
+- id: politoed_auto_focussash_5
+  format: gen9vgc2026regf
+  description: Auto-generated Politoed set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Politoed @ Focus Sash
+    Ability: Drizzle
+    Level: 50
+    EVs: 252 HP / 0 Atk / 172 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Helping Hand
+    - Perish Song
+    - Muddy Water
+- id: sylveon_auto_throatspray_1
+  format: gen9vgc2026regf
+  description: Auto-generated Sylveon set from Smogon 2024-04 gen9vgc2024regf-1760 (Throat Spray, top usage moves/spread)
+  import_text: |-
+    Sylveon @ Throat Spray
+    Ability: Pixilate
+    Level: 50
+    EVs: 212 HP / 0 Atk / 212 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Tera Blast
+    - Quick Attack
+- id: sylveon_auto_choicespecs_2
+  format: gen9vgc2026regf
+  description: Auto-generated Sylveon set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Sylveon @ Choice Specs
+    Ability: Pixilate
+    Level: 50
+    EVs: 212 HP / 0 Atk / 212 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Tera Blast
+    - Quick Attack
+- id: sylveon_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Sylveon set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Sylveon @ Leftovers
+    Ability: Pixilate
+    Level: 50
+    EVs: 212 HP / 0 Atk / 212 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Tera Blast
+    - Quick Attack
+- id: sylveon_auto_fairyfeather_4
+  format: gen9vgc2026regf
+  description: Auto-generated Sylveon set from Smogon 2024-04 gen9vgc2024regf-1760 (Fairy Feather, top usage moves/spread)
+  import_text: |-
+    Sylveon @ Fairy Feather
+    Ability: Pixilate
+    Level: 50
+    EVs: 212 HP / 0 Atk / 212 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Tera Blast
+    - Quick Attack
+- id: sylveon_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Sylveon set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Sylveon @ Life Orb
+    Ability: Pixilate
+    Level: 50
+    EVs: 212 HP / 0 Atk / 212 Def / 76 SpA / 4 SpD / 4 Spe
+    Modest Nature
+    - Protect
+    - Hyper Voice
+    - Tera Blast
+    - Quick Attack
+- id: salamence_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Salamence set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Salamence @ Life Orb
+    Ability: Intimidate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Tailwind
+    - Draco Meteor
+    - Air Slash
+- id: salamence_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Salamence set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Salamence @ Rocky Helmet
+    Ability: Intimidate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Tailwind
+    - Draco Meteor
+    - Air Slash
+- id: salamence_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Salamence set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Salamence @ Sitrus Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Tailwind
+    - Draco Meteor
+    - Air Slash
+- id: salamence_auto_choicescarf_4
+  format: gen9vgc2026regf
+  description: Auto-generated Salamence set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Salamence @ Choice Scarf
+    Ability: Intimidate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Tailwind
+    - Draco Meteor
+    - Air Slash
+- id: salamence_auto_clearamulet_5
+  format: gen9vgc2026regf
+  description: Auto-generated Salamence set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Salamence @ Clear Amulet
+    Ability: Intimidate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Modest Nature
+    - Protect
+    - Tailwind
+    - Draco Meteor
+    - Air Slash
+- id: venusaur_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Venusaur set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Venusaur @ Life Orb
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 108 HP / 0 Atk / 4 Def / 252 SpA / 4 SpD / 140 Spe
+    Modest Nature
+    - Protect
+    - Sludge Bomb
+    - Weather Ball
+    - Energy Ball
+- id: venusaur_auto_widelens_2
+  format: gen9vgc2026regf
+  description: Auto-generated Venusaur set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Venusaur @ Wide Lens
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 108 HP / 0 Atk / 4 Def / 252 SpA / 4 SpD / 140 Spe
+    Modest Nature
+    - Protect
+    - Sludge Bomb
+    - Weather Ball
+    - Energy Ball
+- id: venusaur_auto_choicespecs_3
+  format: gen9vgc2026regf
+  description: Auto-generated Venusaur set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Venusaur @ Choice Specs
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 108 HP / 0 Atk / 4 Def / 252 SpA / 4 SpD / 140 Spe
+    Modest Nature
+    - Protect
+    - Sludge Bomb
+    - Weather Ball
+    - Energy Ball
+- id: venusaur_auto_leftovers_4
+  format: gen9vgc2026regf
+  description: Auto-generated Venusaur set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Venusaur @ Leftovers
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 108 HP / 0 Atk / 4 Def / 252 SpA / 4 SpD / 140 Spe
+    Modest Nature
+    - Protect
+    - Sludge Bomb
+    - Weather Ball
+    - Energy Ball
+- id: venusaur_auto_miracleseed_5
+  format: gen9vgc2026regf
+  description: Auto-generated Venusaur set from Smogon 2024-04 gen9vgc2024regf-1760 (Miracle Seed, top usage moves/spread)
+  import_text: |-
+    Venusaur @ Miracle Seed
+    Ability: Chlorophyll
+    Level: 50
+    EVs: 108 HP / 0 Atk / 4 Def / 252 SpA / 4 SpD / 140 Spe
+    Modest Nature
+    - Protect
+    - Sludge Bomb
+    - Weather Ball
+    - Energy Ball
+- id: latios_auto_souldew_1
+  format: gen9vgc2026regf
+  description: Auto-generated Latios set from Smogon 2024-04 gen9vgc2024regf-1760 (Soul Dew, top usage moves/spread)
+  import_text: |-
+    Latios @ Soul Dew
+    Ability: Levitate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Luster Purge
+    - Draco Meteor
+    - Tailwind
+- id: latios_auto_focussash_2
+  format: gen9vgc2026regf
+  description: Auto-generated Latios set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Latios @ Focus Sash
+    Ability: Levitate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Luster Purge
+    - Draco Meteor
+    - Tailwind
+- id: latios_auto_sitrus_3
+  format: gen9vgc2026regf
+  description: Auto-generated Latios set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Latios @ Sitrus Berry
+    Ability: Levitate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Luster Purge
+    - Draco Meteor
+    - Tailwind
+- id: latios_auto_covertcloak_4
+  format: gen9vgc2026regf
+  description: Auto-generated Latios set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Latios @ Covert Cloak
+    Ability: Levitate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Luster Purge
+    - Draco Meteor
+    - Tailwind
+- id: latios_auto_life_5
+  format: gen9vgc2026regf
+  description: Auto-generated Latios set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Latios @ Life Orb
+    Ability: Levitate
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Luster Purge
+    - Draco Meteor
+    - Tailwind
+- id: weezing_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Weezing set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Weezing @ Sitrus Berry
+    Ability: Neutralizing Gas
+    Level: 50
+    EVs: 220 HP / 0 Atk / 0 Def / 0 SpA / 156 SpD / 132 Spe
+    Calm Nature
+    - Protect
+    - Will-O-Wisp
+    - Taunt
+    - Sludge Bomb
+- id: weezing_auto_rockyhelmet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Weezing set from Smogon 2024-04 gen9vgc2024regf-1760 (Rocky Helmet, top usage moves/spread)
+  import_text: |-
+    Weezing @ Rocky Helmet
+    Ability: Neutralizing Gas
+    Level: 50
+    EVs: 220 HP / 0 Atk / 0 Def / 0 SpA / 156 SpD / 132 Spe
+    Calm Nature
+    - Protect
+    - Will-O-Wisp
+    - Taunt
+    - Sludge Bomb
+- id: weezing_auto_shuca_3
+  format: gen9vgc2026regf
+  description: Auto-generated Weezing set from Smogon 2024-04 gen9vgc2024regf-1760 (Shuca Berry, top usage moves/spread)
+  import_text: |-
+    Weezing @ Shuca Berry
+    Ability: Neutralizing Gas
+    Level: 50
+    EVs: 220 HP / 0 Atk / 0 Def / 0 SpA / 156 SpD / 132 Spe
+    Calm Nature
+    - Protect
+    - Will-O-Wisp
+    - Taunt
+    - Sludge Bomb
+- id: basculegion_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Basculegion set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Basculegion @ Life Orb
+    Ability: Swift Swim
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Last Respects
+    - Wave Crash
+    - Aqua Jet
+- id: basculegion_auto_choiceband_2
+  format: gen9vgc2026regf
+  description: Auto-generated Basculegion set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Basculegion @ Choice Band
+    Ability: Swift Swim
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Last Respects
+    - Wave Crash
+    - Aqua Jet
+- id: basculegion_auto_clearamulet_3
+  format: gen9vgc2026regf
+  description: Auto-generated Basculegion set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Basculegion @ Clear Amulet
+    Ability: Swift Swim
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Last Respects
+    - Wave Crash
+    - Aqua Jet
+- id: basculegion_auto_mysticwater_4
+  format: gen9vgc2026regf
+  description: Auto-generated Basculegion set from Smogon 2024-04 gen9vgc2024regf-1760 (Mystic Water, top usage moves/spread)
+  import_text: |-
+    Basculegion @ Mystic Water
+    Ability: Swift Swim
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Last Respects
+    - Wave Crash
+    - Aqua Jet
+- id: basculegion_auto_choicescarf_5
+  format: gen9vgc2026regf
+  description: Auto-generated Basculegion set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Basculegion @ Choice Scarf
+    Ability: Swift Swim
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Last Respects
+    - Wave Crash
+    - Aqua Jet
+- id: empoleon_auto_expertbelt_1
+  format: gen9vgc2026regf
+  description: Auto-generated Empoleon set from Smogon 2024-04 gen9vgc2024regf-1760 (Expert Belt, top usage moves/spread)
+  import_text: |-
+    Empoleon @ Expert Belt
+    Ability: Competitive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Hydro Pump
+    - Flash Cannon
+    - Ice Beam
+- id: empoleon_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Empoleon set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Empoleon @ Sitrus Berry
+    Ability: Competitive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Hydro Pump
+    - Flash Cannon
+    - Ice Beam
+- id: empoleon_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Empoleon set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Empoleon @ Leftovers
+    Ability: Competitive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Hydro Pump
+    - Flash Cannon
+    - Ice Beam
+- id: empoleon_auto_assaultvest_4
+  format: gen9vgc2026regf
+  description: Auto-generated Empoleon set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Empoleon @ Assault Vest
+    Ability: Competitive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Hydro Pump
+    - Flash Cannon
+    - Ice Beam
+- id: empoleon_auto_choicespecs_5
+  format: gen9vgc2026regf
+  description: Auto-generated Empoleon set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Empoleon @ Choice Specs
+    Ability: Competitive
+    Level: 50
+    EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 4 SpD / 0 Spe
+    Bold Nature
+    - Protect
+    - Hydro Pump
+    - Flash Cannon
+    - Ice Beam
+- id: glastrier_auto_clearamulet_1
+  format: gen9vgc2026regf
+  description: Auto-generated Glastrier set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Glastrier @ Clear Amulet
+    Ability: Chilling Neigh
+    Level: 50
+    EVs: 252 HP / 36 Atk / 0 Def / 0 SpA / 220 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Icicle Crash
+    - High Horsepower
+    - Heavy Slam
+- id: glastrier_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Glastrier set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Glastrier @ Leftovers
+    Ability: Chilling Neigh
+    Level: 50
+    EVs: 252 HP / 36 Atk / 0 Def / 0 SpA / 220 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Icicle Crash
+    - High Horsepower
+    - Heavy Slam
+- id: glastrier_auto_safetygoggles_3
+  format: gen9vgc2026regf
+  description: Auto-generated Glastrier set from Smogon 2024-04 gen9vgc2024regf-1760 (Safety Goggles, top usage moves/spread)
+  import_text: |-
+    Glastrier @ Safety Goggles
+    Ability: Chilling Neigh
+    Level: 50
+    EVs: 252 HP / 36 Atk / 0 Def / 0 SpA / 220 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Icicle Crash
+    - High Horsepower
+    - Heavy Slam
+- id: glastrier_auto_sitrus_4
+  format: gen9vgc2026regf
+  description: Auto-generated Glastrier set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Glastrier @ Sitrus Berry
+    Ability: Chilling Neigh
+    Level: 50
+    EVs: 252 HP / 36 Atk / 0 Def / 0 SpA / 220 SpD / 0 Spe
+    Adamant Nature
+    - Protect
+    - Icicle Crash
+    - High Horsepower
+    - Heavy Slam
+- id: indeedee_auto_focussash_1
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Indeedee @ Focus Sash
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Expanding Force
+    - Dazzling Gleam
+    - Trick Room
+- id: indeedee_auto_choicescarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Indeedee @ Choice Scarf
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Expanding Force
+    - Dazzling Gleam
+    - Trick Room
+- id: indeedee_auto_twistedspoon_3
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee set from Smogon 2024-04 gen9vgc2024regf-1760 (Twisted Spoon, top usage moves/spread)
+  import_text: |-
+    Indeedee @ Twisted Spoon
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Expanding Force
+    - Dazzling Gleam
+    - Trick Room
+- id: indeedee_auto_psychicseed_4
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee set from Smogon 2024-04 gen9vgc2024regf-1760 (Psychic Seed, top usage moves/spread)
+  import_text: |-
+    Indeedee @ Psychic Seed
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Expanding Force
+    - Dazzling Gleam
+    - Trick Room
+- id: indeedee_auto_choicespecs_5
+  format: gen9vgc2026regf
+  description: Auto-generated Indeedee set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Indeedee @ Choice Specs
+    Ability: Psychic Surge
+    Level: 50
+    EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Expanding Force
+    - Dazzling Gleam
+    - Trick Room
+- id: regigigas_auto_life_1
+  format: gen9vgc2026regf
+  description: Auto-generated Regigigas set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Regigigas @ Life Orb
+    Ability: Slow Start
+    Level: 50
+    EVs: 12 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 244 Spe
+    Adamant Nature
+    - Protect
+    - Heavy Slam
+    - Crush Grip
+    - High Horsepower
+- id: regigigas_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Regigigas set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Regigigas @ Clear Amulet
+    Ability: Slow Start
+    Level: 50
+    EVs: 12 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 244 Spe
+    Adamant Nature
+    - Protect
+    - Heavy Slam
+    - Crush Grip
+    - High Horsepower
+- id: scream_tail_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Scream Tail set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Scream Tail @ Booster Energy
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 252 HP / 0 Atk / 84 Def / 4 SpA / 12 SpD / 156 Spe
+    Calm Nature
+    - Protect
+    - Dazzling Gleam
+    - Disable
+    - Encore
+- id: scream_tail_auto_leftovers_2
+  format: gen9vgc2026regf
+  description: Auto-generated Scream Tail set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Scream Tail @ Leftovers
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 252 HP / 0 Atk / 84 Def / 4 SpA / 12 SpD / 156 Spe
+    Calm Nature
+    - Protect
+    - Dazzling Gleam
+    - Disable
+    - Encore
+- id: scream_tail_auto_covertcloak_3
+  format: gen9vgc2026regf
+  description: Auto-generated Scream Tail set from Smogon 2024-04 gen9vgc2024regf-1760 (Covert Cloak, top usage moves/spread)
+  import_text: |-
+    Scream Tail @ Covert Cloak
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 252 HP / 0 Atk / 84 Def / 4 SpA / 12 SpD / 156 Spe
+    Calm Nature
+    - Protect
+    - Dazzling Gleam
+    - Disable
+    - Encore
+- id: scream_tail_auto_fairyfeather_4
+  format: gen9vgc2026regf
+  description: Auto-generated Scream Tail set from Smogon 2024-04 gen9vgc2024regf-1760 (Fairy Feather, top usage moves/spread)
+  import_text: |-
+    Scream Tail @ Fairy Feather
+    Ability: Protosynthesis
+    Level: 50
+    EVs: 252 HP / 0 Atk / 84 Def / 4 SpA / 12 SpD / 156 Spe
+    Calm Nature
+    - Protect
+    - Dazzling Gleam
+    - Disable
+    - Encore
+- id: tsareena_auto_widelens_1
+  format: gen9vgc2026regf
+  description: Auto-generated Tsareena set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Tsareena @ Wide Lens
+    Ability: Queenly Majesty
+    Level: 50
+    EVs: 76 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 180 Spe
+    Adamant Nature
+    - Protect
+    - Power Whip
+    - Triple Axel
+    - High Jump Kick
+- id: tsareena_auto_clearamulet_2
+  format: gen9vgc2026regf
+  description: Auto-generated Tsareena set from Smogon 2024-04 gen9vgc2024regf-1760 (Clear Amulet, top usage moves/spread)
+  import_text: |-
+    Tsareena @ Clear Amulet
+    Ability: Queenly Majesty
+    Level: 50
+    EVs: 76 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 180 Spe
+    Adamant Nature
+    - Protect
+    - Power Whip
+    - Triple Axel
+    - High Jump Kick
+- id: iron_valiant_auto_boosterenergy_1
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Valiant set from Smogon 2024-04 gen9vgc2024regf-1760 (Booster Energy, top usage moves/spread)
+  import_text: |-
+    Iron Valiant @ Booster Energy
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Spirit Break
+    - Wide Guard
+- id: iron_valiant_auto_focussash_2
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Valiant set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Iron Valiant @ Focus Sash
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Spirit Break
+    - Wide Guard
+- id: iron_valiant_auto_choicespecs_3
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Valiant set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Specs, top usage moves/spread)
+  import_text: |-
+    Iron Valiant @ Choice Specs
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Spirit Break
+    - Wide Guard
+- id: iron_valiant_auto_life_4
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Valiant set from Smogon 2024-04 gen9vgc2024regf-1760 (Life Orb, top usage moves/spread)
+  import_text: |-
+    Iron Valiant @ Life Orb
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Spirit Break
+    - Wide Guard
+- id: iron_valiant_auto_ironball_5
+  format: gen9vgc2026regf
+  description: Auto-generated Iron Valiant set from Smogon 2024-04 gen9vgc2024regf-1760 (Iron Ball, top usage moves/spread)
+  import_text: |-
+    Iron Valiant @ Iron Ball
+    Ability: Quark Drive
+    Level: 50
+    EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+    Jolly Nature
+    - Protect
+    - Close Combat
+    - Spirit Break
+    - Wide Guard
+- id: gothitelle_auto_sitrus_1
+  format: gen9vgc2026regf
+  description: Auto-generated Gothitelle set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Gothitelle @ Sitrus Berry
+    Ability: Shadow Tag
+    Level: 50
+    EVs: 244 HP / 0 Atk / 188 Def / 0 SpA / 76 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Fake Out
+    - Psychic
+    - Trick Room
+- id: gothitelle_auto_focussash_2
+  format: gen9vgc2026regf
+  description: Auto-generated Gothitelle set from Smogon 2024-04 gen9vgc2024regf-1760 (Focus Sash, top usage moves/spread)
+  import_text: |-
+    Gothitelle @ Focus Sash
+    Ability: Shadow Tag
+    Level: 50
+    EVs: 244 HP / 0 Atk / 188 Def / 0 SpA / 76 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Fake Out
+    - Psychic
+    - Trick Room
+- id: gothitelle_auto_leftovers_3
+  format: gen9vgc2026regf
+  description: Auto-generated Gothitelle set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Gothitelle @ Leftovers
+    Ability: Shadow Tag
+    Level: 50
+    EVs: 244 HP / 0 Atk / 188 Def / 0 SpA / 76 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Fake Out
+    - Psychic
+    - Trick Room
+- id: gothitelle_auto_psychicseed_4
+  format: gen9vgc2026regf
+  description: Auto-generated Gothitelle set from Smogon 2024-04 gen9vgc2024regf-1760 (Psychic Seed, top usage moves/spread)
+  import_text: |-
+    Gothitelle @ Psychic Seed
+    Ability: Shadow Tag
+    Level: 50
+    EVs: 244 HP / 0 Atk / 188 Def / 0 SpA / 76 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Fake Out
+    - Psychic
+    - Trick Room
+- id: gothitelle_auto_mentalherb_5
+  format: gen9vgc2026regf
+  description: Auto-generated Gothitelle set from Smogon 2024-04 gen9vgc2024regf-1760 (Mental Herb, top usage moves/spread)
+  import_text: |-
+    Gothitelle @ Mental Herb
+    Ability: Shadow Tag
+    Level: 50
+    EVs: 244 HP / 0 Atk / 188 Def / 0 SpA / 76 SpD / 0 Spe
+    Calm Nature
+    - Protect
+    - Fake Out
+    - Psychic
+    - Trick Room
+- id: arcanine_auto_widelens_1
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine set from Smogon 2024-04 gen9vgc2024regf-1760 (Wide Lens, top usage moves/spread)
+  import_text: |-
+    Arcanine @ Wide Lens
+    Ability: Intimidate
+    Level: 50
+    EVs: 244 HP / 0 Atk / 4 Def / 4 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Flare Blitz
+    - Extreme Speed
+    - Snarl
+- id: arcanine_auto_choicescarf_2
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Scarf, top usage moves/spread)
+  import_text: |-
+    Arcanine @ Choice Scarf
+    Ability: Intimidate
+    Level: 50
+    EVs: 244 HP / 0 Atk / 4 Def / 4 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Flare Blitz
+    - Extreme Speed
+    - Snarl
+- id: arcanine_auto_aguav_3
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine set from Smogon 2024-04 gen9vgc2024regf-1760 (Aguav Berry, top usage moves/spread)
+  import_text: |-
+    Arcanine @ Aguav Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 244 HP / 0 Atk / 4 Def / 4 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Flare Blitz
+    - Extreme Speed
+    - Snarl
+- id: arcanine_auto_choiceband_4
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine set from Smogon 2024-04 gen9vgc2024regf-1760 (Choice Band, top usage moves/spread)
+  import_text: |-
+    Arcanine @ Choice Band
+    Ability: Intimidate
+    Level: 50
+    EVs: 244 HP / 0 Atk / 4 Def / 4 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Flare Blitz
+    - Extreme Speed
+    - Snarl
+- id: arcanine_auto_sitrus_5
+  format: gen9vgc2026regf
+  description: Auto-generated Arcanine set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Arcanine @ Sitrus Berry
+    Ability: Intimidate
+    Level: 50
+    EVs: 244 HP / 0 Atk / 4 Def / 4 SpA / 4 SpD / 252 Spe
+    Timid Nature
+    - Protect
+    - Flare Blitz
+    - Extreme Speed
+    - Snarl
+- id: garganacl_auto_leftovers_1
+  format: gen9vgc2026regf
+  description: Auto-generated Garganacl set from Smogon 2024-04 gen9vgc2024regf-1760 (Leftovers, top usage moves/spread)
+  import_text: |-
+    Garganacl @ Leftovers
+    Ability: Purifying Salt
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Careful Nature
+    - Protect
+    - Salt Cure
+    - Recover
+    - Wide Guard
+- id: garganacl_auto_sitrus_2
+  format: gen9vgc2026regf
+  description: Auto-generated Garganacl set from Smogon 2024-04 gen9vgc2024regf-1760 (Sitrus Berry, top usage moves/spread)
+  import_text: |-
+    Garganacl @ Sitrus Berry
+    Ability: Purifying Salt
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Careful Nature
+    - Protect
+    - Salt Cure
+    - Recover
+    - Wide Guard
+- id: garganacl_auto_assaultvest_3
+  format: gen9vgc2026regf
+  description: Auto-generated Garganacl set from Smogon 2024-04 gen9vgc2024regf-1760 (Assault Vest, top usage moves/spread)
+  import_text: |-
+    Garganacl @ Assault Vest
+    Ability: Purifying Salt
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Careful Nature
+    - Protect
+    - Salt Cure
+    - Recover
+    - Wide Guard
+- id: garganacl_auto_brightpowder_4
+  format: gen9vgc2026regf
+  description: Auto-generated Garganacl set from Smogon 2024-04 gen9vgc2024regf-1760 (Bright Powder, top usage moves/spread)
+  import_text: |-
+    Garganacl @ Bright Powder
+    Ability: Purifying Salt
+    Level: 50
+    EVs: 252 HP / 0 Atk / 4 Def / 0 SpA / 252 SpD / 0 Spe
+    Careful Nature
+    - Protect
+    - Salt Cure
+    - Recover
+    - Wide Guard

@@ -1,0 +1,374 @@
+|t:|1765331987
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Feraligatr, L50, F|
+|poke|p1|Eternatus, L50|
+|poke|p1|Trevenant, L50, F|
+|poke|p1|Eelektross, L50, F|
+|poke|p1|Iron Leaves, L50|
+|poke|p1|Rotom, L50|
+|poke|p2|Eelektross, L50, M|
+|poke|p2|Oricorio-Pom-Pom, L50, F|
+|poke|p2|Azumarill, L50, F|
+|poke|p2|Lycanroc-Dusk, L50, M|
+|poke|p2|Gardevoir, L50, M|
+|poke|p2|Wyrdeer, L50, M|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765331987
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Feraligatr|Feraligatr, L50, F|171/171
+|switch|p1b: Eternatus|Eternatus, L50|226/226
+|switch|p2a: Eelektross|Eelektross, L50, M|171/171
+|switch|p2b: Oricorio|Oricorio-Pom-Pom, L50, F|161/161
+|-ability|p1b: Eternatus|Pressure
+|turn|1
+|
+|t:|1765331987
+|move|p2b: Oricorio|Protect|p2b: Oricorio
+|-singleturn|p2b: Oricorio|Protect
+|move|p1b: Eternatus|Flamethrower|p2a: Eelektross
+|-damage|p2a: Eelektross|134/171
+|move|p1a: Feraligatr|Dragon Dance|p1a: Feraligatr
+|-boost|p1a: Feraligatr|atk|1
+|-boost|p1a: Feraligatr|spe|1
+|-activate|p2b: Oricorio|ability: Dancer
+|move|p2b: Oricorio|Dragon Dance|p2b: Oricorio|[from] ability: Dancer
+|-boost|p2b: Oricorio|atk|1
+|-boost|p2b: Oricorio|spe|1
+|move|p2a: Eelektross|Electroweb|p1b: Eternatus|[spread] p1a,p1b
+|-supereffective|p1a: Feraligatr
+|-resisted|p1b: Eternatus
+|-crit|p1b: Eternatus
+|-damage|p1a: Feraligatr|109/171
+|-damage|p1b: Eternatus|206/226
+|-unboost|p1a: Feraligatr|spe|1
+|-unboost|p1b: Eternatus|spe|1
+|
+|-heal|p1b: Eternatus|220/226|[from] item: Leftovers
+|upkeep
+|turn|2
+|
+|t:|1765331987
+|move|p2b: Oricorio|Quiver Dance|p2b: Oricorio
+|-boost|p2b: Oricorio|spa|1
+|-boost|p2b: Oricorio|spd|1
+|-boost|p2b: Oricorio|spe|1
+|move|p1a: Feraligatr|Dragon Dance|p1a: Feraligatr
+|-boost|p1a: Feraligatr|atk|1
+|-boost|p1a: Feraligatr|spe|1
+|-activate|p2b: Oricorio|ability: Dancer
+|move|p2b: Oricorio|Dragon Dance|p2b: Oricorio|[from] ability: Dancer
+|-boost|p2b: Oricorio|atk|1
+|-boost|p2b: Oricorio|spe|1
+|move|p1b: Eternatus|Recover|p1b: Eternatus
+|-heal|p1b: Eternatus|226/226
+|move|p2a: Eelektross|Electroweb|p1b: Eternatus|[spread] p1a,p1b
+|-supereffective|p1a: Feraligatr
+|-resisted|p1b: Eternatus
+|-damage|p1a: Feraligatr|49/171
+|-damage|p1b: Eternatus|211/226
+|-unboost|p1a: Feraligatr|spe|1
+|-unboost|p1b: Eternatus|spe|1
+|
+|-heal|p1b: Eternatus|225/226|[from] item: Leftovers
+|upkeep
+|turn|3
+|
+|t:|1765331987
+|move|p1a: Feraligatr|Protect|p1a: Feraligatr
+|-singleturn|p1a: Feraligatr|Protect
+|move|p2b: Oricorio|Quiver Dance|p2b: Oricorio
+|-boost|p2b: Oricorio|spa|1
+|-boost|p2b: Oricorio|spd|1
+|-boost|p2b: Oricorio|spe|1
+|move|p2a: Eelektross|Thunderbolt|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|194/226
+|move|p1b: Eternatus|Dynamax Cannon|p2a: Eelektross
+|-damage|p2a: Eelektross|64/171
+|
+|-heal|p1b: Eternatus|208/226|[from] item: Leftovers
+|upkeep
+|turn|4
+|
+|t:|1765331987
+|move|p2b: Oricorio|Quiver Dance|p2b: Oricorio
+|-boost|p2b: Oricorio|spa|1
+|-boost|p2b: Oricorio|spd|1
+|-boost|p2b: Oricorio|spe|1
+|move|p1a: Feraligatr|Dragon Dance|p1a: Feraligatr
+|-boost|p1a: Feraligatr|atk|1
+|-boost|p1a: Feraligatr|spe|1
+|-activate|p2b: Oricorio|ability: Dancer
+|move|p2b: Oricorio|Dragon Dance|p2b: Oricorio|[from] ability: Dancer
+|-boost|p2b: Oricorio|atk|1
+|-boost|p2b: Oricorio|spe|1
+|move|p2a: Eelektross|Electroweb|p1b: Eternatus|[spread] p1a,p1b
+|-supereffective|p1a: Feraligatr
+|-resisted|p1b: Eternatus
+|-damage|p1a: Feraligatr|0 fnt
+|-damage|p1b: Eternatus|196/226
+|-unboost|p1b: Eternatus|spe|1
+|faint|p1a: Feraligatr
+|move|p1b: Eternatus|Cosmic Power|p1b: Eternatus
+|-boost|p1b: Eternatus|def|1
+|-boost|p1b: Eternatus|spd|1
+|
+|-heal|p1b: Eternatus|210/226|[from] item: Leftovers
+|upkeep
+|
+|t:|1765331987
+|switch|p1a: Eelektross|Eelektross, L50, F|171/171
+|turn|5
+|
+|t:|1765331987
+|move|p2b: Oricorio|Air Slash|p1a: Eelektross
+|-resisted|p1a: Eelektross
+|-damage|p1a: Eelektross|115/171
+|-damage|p2b: Oricorio|145/161|[from] item: Life Orb
+|move|p2a: Eelektross|Knock Off|p1a: Eelektross
+|-damage|p1a: Eelektross|58/171
+|-enditem|p1a: Eelektross|Assault Vest|[from] move: Knock Off|[of] p2a: Eelektross
+|move|p1a: Eelektross|Thunderbolt|p2a: Eelektross
+|-resisted|p2a: Eelektross
+|-damage|p2a: Eelektross|42/171
+|move|p1b: Eternatus|Cosmic Power|p1b: Eternatus
+|-boost|p1b: Eternatus|def|1
+|-boost|p1b: Eternatus|spd|1
+|
+|-heal|p1b: Eternatus|224/226|[from] item: Leftovers
+|upkeep
+|turn|6
+|
+|t:|1765331987
+|move|p2b: Oricorio|Air Slash|p1a: Eelektross
+|-resisted|p1a: Eelektross
+|-damage|p1a: Eelektross|0 fnt
+|faint|p1a: Eelektross
+|-damage|p2b: Oricorio|129/161|[from] item: Life Orb
+|move|p2a: Eelektross|U-turn|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|216/226
+|
+|t:|1765331987
+|switch|p2a: Azumarill|Azumarill, L50, F|186/186|[from] U-turn
+|move|p1b: Eternatus|Cosmic Power|p1b: Eternatus
+|-boost|p1b: Eternatus|def|1
+|-boost|p1b: Eternatus|spd|1
+|
+|-heal|p1b: Eternatus|226/226|[from] item: Leftovers
+|upkeep
+|
+|t:|1765331987
+|switch|p1a: Trevenant|Trevenant, L50, F|171/171
+|turn|7
+|
+|t:|1765331987
+|move|p2b: Oricorio|Protect|p2b: Oricorio
+|-singleturn|p2b: Oricorio|Protect
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|206/226
+|move|p1b: Eternatus|Dynamax Cannon|p2a: Azumarill
+|-immune|p2a: Azumarill
+|move|p1a: Trevenant|Poltergeist|p2b: Oricorio
+|-activate|p2b: Oricorio|move: Protect
+|
+|-heal|p1b: Eternatus|220/226|[from] item: Leftovers
+|upkeep
+|turn|8
+|
+|t:|1765331987
+|move|p2b: Oricorio|Quiver Dance|p2b: Oricorio
+|-boost|p2b: Oricorio|spa|1
+|-boost|p2b: Oricorio|spd|1
+|-boost|p2b: Oricorio|spe|0
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|202/226
+|move|p1b: Eternatus|Recover|p1b: Eternatus
+|-heal|p1b: Eternatus|226/226
+|move|p1a: Trevenant|Poltergeist|p2b: Oricorio
+|-activate|p2b: Oricorio|move: Poltergeist|Life Orb
+|-damage|p2b: Oricorio|32/161
+|
+|upkeep
+|turn|9
+|
+|t:|1765331987
+|move|p1a: Trevenant|Protect|p1a: Trevenant
+|-singleturn|p1a: Trevenant|Protect
+|move|p2b: Oricorio|Air Slash|p1b: Eternatus
+|-damage|p1b: Eternatus|156/226
+|-damage|p2b: Oricorio|16/161|[from] item: Life Orb
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|135/226
+|cant|p1b: Eternatus|flinch
+|
+|-heal|p1b: Eternatus|149/226|[from] item: Leftovers
+|upkeep
+|turn|10
+|
+|t:|1765331987
+|move|p2b: Oricorio|Protect|p2b: Oricorio
+|-singleturn|p2b: Oricorio|Protect
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|130/226
+|move|p1b: Eternatus|Flamethrower|p2b: Oricorio
+|-activate|p2b: Oricorio|move: Protect
+|move|p1a: Trevenant|Trick Room|p1a: Trevenant
+|-fieldstart|move: Trick Room|[of] p1a: Trevenant
+|
+|-heal|p1b: Eternatus|144/226|[from] item: Leftovers
+|upkeep
+|turn|11
+|
+|t:|1765331987
+|move|p1a: Trevenant|Poltergeist|p2a: Azumarill
+|-activate|p2a: Azumarill|move: Poltergeist|Choice Band
+|-damage|p2a: Azumarill|102/186
+|move|p1b: Eternatus|Cosmic Power|p1b: Eternatus
+|-boost|p1b: Eternatus|def|1
+|-boost|p1b: Eternatus|spd|1
+|move|p2a: Azumarill|Liquidation|p1a: Trevenant
+|-resisted|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-damage|p1a: Trevenant|84/171
+|-enditem|p1a: Trevenant|Sitrus Berry|[eat]
+|-heal|p1a: Trevenant|126/171|[from] item: Sitrus Berry
+|move|p2b: Oricorio|Air Slash|p1a: Trevenant
+|-supereffective|p1a: Trevenant
+|-crit|p1a: Trevenant
+|-damage|p1a: Trevenant|0 fnt
+|faint|p1a: Trevenant
+|-damage|p2b: Oricorio|0 fnt|[from] item: Life Orb
+|faint|p2b: Oricorio
+|
+|-heal|p1b: Eternatus|158/226|[from] item: Leftovers
+|upkeep
+|
+|t:|1765331987
+|switch|p2b: Lycanroc|Lycanroc-Dusk, L50, M|161/161
+|turn|12
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Protect|p2b: Lycanroc
+|-singleturn|p2b: Lycanroc|Protect
+|move|p1b: Eternatus|Recover|p1b: Eternatus
+|-heal|p1b: Eternatus|226/226
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|208/226
+|-unboost|p1b: Eternatus|def|1
+|
+|-heal|p1b: Eternatus|222/226|[from] item: Leftovers
+|upkeep
+|turn|13
+|
+|t:|1765331987
+|move|p1b: Eternatus|Recover|p1b: Eternatus
+|-heal|p1b: Eternatus|226/226
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-crit|p1b: Eternatus
+|-damage|p1b: Eternatus|143/226
+|move|p2b: Lycanroc|Rock Slide|p1b: Eternatus
+|-damage|p1b: Eternatus|112/226
+|-damage|p2b: Lycanroc|145/161|[from] item: Life Orb
+|
+|-heal|p1b: Eternatus|126/226|[from] item: Leftovers
+|upkeep
+|turn|14
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Protect|p2b: Lycanroc
+|-singleturn|p2b: Lycanroc|Protect
+|move|p1b: Eternatus|Dynamax Cannon|p2b: Lycanroc
+|-activate|p2b: Lycanroc|move: Protect
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|106/226
+|
+|-heal|p1b: Eternatus|120/226|[from] item: Leftovers
+|-fieldend|move: Trick Room
+|upkeep
+|turn|15
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Psychic Fangs|p1b: Eternatus
+|-supereffective|p1b: Eternatus
+|-damage|p1b: Eternatus|65/226
+|-damage|p2b: Lycanroc|129/161|[from] item: Life Orb
+|move|p2a: Azumarill|Liquidation|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|44/226
+|move|p1b: Eternatus|Cosmic Power|p1b: Eternatus
+|-boost|p1b: Eternatus|def|1
+|-boost|p1b: Eternatus|spd|1
+|
+|-heal|p1b: Eternatus|58/226|[from] item: Leftovers
+|upkeep
+|turn|16
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Close Combat|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|41/226
+|-unboost|p2b: Lycanroc|def|1
+|-unboost|p2b: Lycanroc|spd|1
+|-damage|p2b: Lycanroc|113/161|[from] item: Life Orb
+|-activate|p2a: Azumarill|move: Struggle
+|move|p2a: Azumarill|Struggle|p1b: Eternatus
+|-damage|p1b: Eternatus|27/226
+|-damage|p2a: Azumarill|55/186|[from] recoil
+|move|p1b: Eternatus|Flamethrower|p2a: Azumarill
+|-resisted|p2a: Azumarill
+|-damage|p2a: Azumarill|24/186
+|
+|-heal|p1b: Eternatus|41/226|[from] item: Leftovers
+|upkeep
+|turn|17
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Rock Slide|p1b: Eternatus
+|-damage|p1b: Eternatus|16/226
+|-damage|p2b: Lycanroc|97/161|[from] item: Life Orb
+|-activate|p2a: Azumarill|move: Struggle
+|move|p2a: Azumarill|Struggle|p1b: Eternatus
+|-damage|p1b: Eternatus|2/226
+|-damage|p2a: Azumarill|0 fnt|[from] recoil
+|faint|p2a: Azumarill
+|cant|p1b: Eternatus|flinch
+|
+|-heal|p1b: Eternatus|16/226|[from] item: Leftovers
+|upkeep
+|
+|t:|1765331987
+|switch|p2a: Eelektross|Eelektross, L50, M|42/171
+|turn|18
+|
+|t:|1765331987
+|move|p2b: Lycanroc|Close Combat|p1b: Eternatus
+|-resisted|p1b: Eternatus
+|-damage|p1b: Eternatus|0 fnt
+|-unboost|p2b: Lycanroc|def|1
+|-unboost|p2b: Lycanroc|spd|1
+|faint|p1b: Eternatus
+|-damage|p2b: Lycanroc|81/161|[from] item: Life Orb
+|
+|win|Bot2

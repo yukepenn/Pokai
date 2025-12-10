@@ -1,0 +1,141 @@
+|t:|1765334459
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Amoonguss, L50, M|
+|poke|p1|Flutter Mane, L50|
+|poke|p1|Tornadus, L50, M|
+|poke|p1|Incineroar, L50, M|
+|poke|p1|Landorus, L50, M|
+|poke|p1|Urshifu-*, L50, F|
+|poke|p2|Noivern, L50, F|
+|poke|p2|Hawlucha, L50, M|
+|poke|p2|Mesprit, L50|
+|poke|p2|Toxicroak, L50, F|
+|poke|p2|Arboliva, L50, F|
+|poke|p2|Dudunsparce-*, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765334459
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Amoonguss|Amoonguss, L50, M|217/217
+|switch|p1b: Flutter Mane|Flutter Mane, L50|145/145
+|switch|p2a: Noivern|Noivern, L50, F|171/171
+|switch|p2b: Hawlucha|Hawlucha, L50, M|164/164
+|-item|p1a: Amoonguss|Sitrus Berry|[from] ability: Frisk|[of] p2a: Noivern
+|-item|p1b: Flutter Mane|Booster Energy|[from] ability: Frisk|[of] p2a: Noivern
+|-enditem|p1b: Flutter Mane|Booster Energy
+|-activate|p1b: Flutter Mane|ability: Protosynthesis|[fromitem]
+|-start|p1b: Flutter Mane|protosynthesisspa
+|turn|1
+|
+|t:|1765334459
+|move|p2b: Hawlucha|Protect|p2b: Hawlucha
+|-singleturn|p2b: Hawlucha|Protect
+|move|p1a: Amoonguss|Protect|p1a: Amoonguss
+|-singleturn|p1a: Amoonguss|Protect
+|move|p1b: Flutter Mane|Moonblast|p2b: Hawlucha
+|-activate|p2b: Hawlucha|move: Protect
+|move|p2a: Noivern|Tailwind|p2a: Noivern
+|-sidestart|p2: Bot2|move: Tailwind
+|
+|upkeep
+|turn|2
+|
+|t:|1765334459
+|move|p1a: Amoonguss|Rage Powder|p1a: Amoonguss
+|-singleturn|p1a: Amoonguss|move: Rage Powder
+|move|p2a: Noivern|Tailwind||[still]
+|-fail|p2a: Noivern
+|move|p2b: Hawlucha|Swords Dance|p2b: Hawlucha
+|-boost|p2b: Hawlucha|atk|2
+|move|p1b: Flutter Mane|Shadow Ball|p2a: Noivern
+|-damage|p2a: Noivern|65/171
+|
+|upkeep
+|turn|3
+|
+|t:|1765334459
+|move|p2b: Hawlucha|Protect|p2b: Hawlucha
+|-singleturn|p2b: Hawlucha|Protect
+|move|p2a: Noivern|Hurricane|p1b: Flutter Mane|[miss]
+|-miss|p2a: Noivern|p1b: Flutter Mane
+|move|p1b: Flutter Mane|Shadow Ball|p2b: Hawlucha
+|-activate|p2b: Hawlucha|move: Protect
+|move|p1a: Amoonguss|Spore|p2a: Noivern
+|-status|p2a: Noivern|slp|[from] move: Spore
+|
+|upkeep
+|turn|4
+|
+|t:|1765334459
+|move|p1a: Amoonguss|Rage Powder|p1a: Amoonguss
+|-singleturn|p1a: Amoonguss|move: Rage Powder
+|cant|p2a: Noivern|slp
+|move|p2b: Hawlucha|Swords Dance|p2b: Hawlucha
+|-boost|p2b: Hawlucha|atk|2
+|move|p1b: Flutter Mane|Dazzling Gleam|p2b: Hawlucha|[spread] p2a,p2b
+|-supereffective|p2a: Noivern
+|-supereffective|p2b: Hawlucha
+|-damage|p2a: Noivern|0 fnt
+|-damage|p2b: Hawlucha|0 fnt
+|faint|p2a: Noivern
+|faint|p2b: Hawlucha
+|
+|-sideend|p2: Bot2|move: Tailwind
+|upkeep
+|
+|t:|1765334459
+|switch|p2a: Toxicroak|Toxicroak, L50, F|169/169
+|switch|p2b: Mesprit|Mesprit, L50|166/166
+|turn|5
+|
+|t:|1765334459
+|move|p2a: Toxicroak|Sucker Punch|p1b: Flutter Mane
+|-damage|p1b: Flutter Mane|83/145
+|-damage|p2a: Toxicroak|153/169|[from] item: Life Orb
+|move|p1b: Flutter Mane|Dazzling Gleam|p2a: Toxicroak|[spread] p2a,p2b
+|-damage|p2a: Toxicroak|65/169
+|-damage|p2b: Mesprit|102/166
+|move|p2b: Mesprit|Ice Beam|p1b: Flutter Mane
+|-damage|p1b: Flutter Mane|50/145
+|move|p1a: Amoonguss|Spore|p2a: Toxicroak
+|-status|p2a: Toxicroak|slp|[from] move: Spore
+|
+|upkeep
+|turn|6
+|
+|t:|1765334459
+|cant|p2a: Toxicroak|slp
+|move|p1b: Flutter Mane|Moonblast|p2b: Mesprit
+|-damage|p2b: Mesprit|0 fnt
+|faint|p2b: Mesprit
+|move|p1a: Amoonguss|Sludge Bomb|p2a: Toxicroak
+|-resisted|p2a: Toxicroak
+|-damage|p2a: Toxicroak|35/169 slp
+|
+|upkeep
+|turn|7
+|
+|t:|1765334459
+|move|p1a: Amoonguss|Rage Powder|p1a: Amoonguss
+|-singleturn|p1a: Amoonguss|move: Rage Powder
+|-curestatus|p2a: Toxicroak|slp|[msg]
+|move|p2a: Toxicroak|Sucker Punch||[still]
+|-fail|p2a: Toxicroak
+|move|p1b: Flutter Mane|Shadow Ball|p2a: Toxicroak
+|-damage|p2a: Toxicroak|0 fnt
+|faint|p2a: Toxicroak
+|
+|win|Bot1

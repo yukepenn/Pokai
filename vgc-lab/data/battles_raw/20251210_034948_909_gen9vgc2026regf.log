@@ -1,0 +1,112 @@
+|t:|1765338588
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Entei, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Shiftry, L50, F|
+|poke|p1|Delibird, L50, M|
+|poke|p1|Regidrago, L50|
+|poke|p1|Emboar, L50, M|
+|poke|p2|Greninja-*, L50, M|
+|poke|p2|Ditto, L50|
+|poke|p2|Meloetta, L50|
+|poke|p2|Virizion, L50|
+|poke|p2|Mabosstiff, L50, F|
+|poke|p2|Golurk, L50|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765338588
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Entei|Entei, L50|201/201
+|switch|p1b: Chien-Pao|Chien-Pao, L50|166/166
+|switch|p2a: Greninja|Greninja, L50, M|158/158
+|switch|p2b: Ditto|Ditto, L50|134/134
+|-ability|p1b: Chien-Pao|Sword of Ruin
+|-transform|p2b: Ditto|p1a: Entei|[from] ability: Imposter
+|turn|1
+|
+|t:|1765338588
+|move|p1a: Entei|Extreme Speed|p2a: Greninja
+|-damage|p2a: Greninja|58/158
+|move|p1b: Chien-Pao|Sucker Punch|p2b: Ditto
+|-damage|p2b: Ditto|40/134
+|-enditem|p2b: Ditto|Sitrus Berry|[eat]
+|-heal|p2b: Ditto|73/134|[from] item: Sitrus Berry
+|-damage|p1b: Chien-Pao|150/166|[from] item: Life Orb
+|move|p2a: Greninja|Hydro Pump|p1a: Entei
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|-ability|p2a: Greninja|Battle Bond|boost
+|-boost|p2a: Greninja|atk|1
+|-boost|p2a: Greninja|spa|1
+|-boost|p2a: Greninja|spe|1
+|-activate|p2a: Greninja|ability: Battle Bond
+|-damage|p2a: Greninja|43/158|[from] item: Life Orb
+|move|p2b: Ditto|Flare Blitz|p1b: Chien-Pao
+|-supereffective|p1b: Chien-Pao
+|-damage|p1b: Chien-Pao|0 fnt
+|faint|p1b: Chien-Pao
+|-damage|p2b: Ditto|23/134|[from] Recoil
+|
+|upkeep
+|
+|t:|1765338588
+|switch|p1b: Delibird|Delibird, L50, M|131/131
+|switch|p1a: Shiftry|Shiftry, L50, F|176/176
+|turn|2
+|
+|t:|1765338588
+|move|p2b: Ditto|Extreme Speed|p1b: Delibird
+|-damage|p1b: Delibird|73/131
+|move|p2a: Greninja|Dark Pulse|p1b: Delibird
+|-damage|p1b: Delibird|0 fnt
+|faint|p1b: Delibird
+|-damage|p2a: Greninja|28/158|[from] item: Life Orb
+|move|p1a: Shiftry|Leaf Blade|p2a: Greninja
+|-supereffective|p2a: Greninja
+|-damage|p2a: Greninja|0 fnt
+|faint|p2a: Greninja
+|-damage|p1a: Shiftry|159/176|[from] item: Life Orb
+|
+|upkeep
+|
+|t:|1765338588
+|switch|p2a: Virizion|Virizion, L50|177/177
+|turn|3
+|
+|t:|1765338588
+|move|p2b: Ditto|Extreme Speed|p1a: Shiftry
+|-damage|p1a: Shiftry|109/176
+|move|p2a: Virizion|Stone Edge|p1a: Shiftry
+|-damage|p1a: Shiftry|54/176
+|move|p1a: Shiftry|Leaf Blade|p2b: Ditto
+|-resisted|p2b: Ditto
+|-damage|p2b: Ditto|0 fnt
+|faint|p2b: Ditto
+|-damage|p1a: Shiftry|37/176|[from] item: Life Orb
+|
+|upkeep
+|
+|t:|1765338588
+|switch|p2b: Meloetta|Meloetta, L50|186/186
+|turn|4
+|
+|t:|1765338588
+|move|p2a: Virizion|Stone Edge|p1a: Shiftry
+|-damage|p1a: Shiftry|0 fnt
+|faint|p1a: Shiftry
+|
+|win|Bot2

@@ -4,7 +4,7 @@ import json
 import random
 import subprocess
 from pathlib import Path
-from typing import Any, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 
 from .config import SHOWDOWN_ROOT, DEFAULT_FORMAT, PROJECT_ROOT
 from .random_bot import choose_action
@@ -361,18 +361,24 @@ def play_battle_with_random_bots(
     return log_text, winner_side, turns
 
 
-def run_random_selfplay(
+def run_random_selfplay_json(
     format_id: str = DEFAULT_FORMAT,
     p1_name: str = "Bot1",
     p2_name: str = "Bot2",
     p1_packed_team: Optional[str] = None,
     p2_packed_team: Optional[str] = None,
     timeout_seconds: int = 60,
-) -> Tuple[str, str, Optional[int], str, str]:
+) -> Dict[str, Any]:
     """
-    Call the Node random selfplay script and return battle results.
+    Call `node js/random_selfplay.js` and return the parsed JSON object.
 
-    Uses Showdown's internal BattleStream + RandomPlayerAI to run a complete battle.
+    The JSON object contains:
+      - format_id, p1_name, p2_name
+      - winner_side, winner_name
+      - turns
+      - log
+      - p1_team_packed, p2_team_packed
+      - p1_team_public, p2_team_public
 
     Args:
         format_id: Format ID (defaults to DEFAULT_FORMAT)
@@ -383,12 +389,7 @@ def run_random_selfplay(
         timeout_seconds: Timeout for subprocess execution (default: 60)
 
     Returns:
-        Tuple of (log_text, winner_side, turns, p1_name, p2_name):
-        - log_text: Full battle log as string
-        - winner_side: "p1", "p2", "tie", or "unknown"
-        - turns: Number of turns (int or None)
-        - p1_name: Player 1 name
-        - p2_name: Player 2 name
+        Dictionary containing all battle data from the Node script
 
     Raises:
         RuntimeError: If the Node script fails or times out
@@ -437,11 +438,56 @@ def run_random_selfplay(
     except json.JSONDecodeError as e:
         raise RuntimeError(f"Failed to parse JSON output from random_selfplay: {e}")
 
-    # Extract fields
+    return data
+
+
+def run_random_selfplay(
+    format_id: str = DEFAULT_FORMAT,
+    p1_name: str = "Bot1",
+    p2_name: str = "Bot2",
+    p1_packed_team: Optional[str] = None,
+    p2_packed_team: Optional[str] = None,
+    timeout_seconds: int = 60,
+) -> Tuple[str, str, Optional[int], str, str]:
+    """
+    Call the Node random selfplay script and return battle results.
+
+    Uses Showdown's internal BattleStream + RandomPlayerAI to run a complete battle.
+
+    This is a thin wrapper around run_random_selfplay_json() that extracts
+    the legacy tuple return format for backwards compatibility.
+
+    Args:
+        format_id: Format ID (defaults to DEFAULT_FORMAT)
+        p1_name: Player 1 name (default: "Bot1")
+        p2_name: Player 2 name (default: "Bot2")
+        p1_packed_team: Optional packed team string for p1 (if None, generates random)
+        p2_packed_team: Optional packed team string for p2 (if None, generates random)
+        timeout_seconds: Timeout for subprocess execution (default: 60)
+
+    Returns:
+        Tuple of (log_text, winner_side, turns, p1_name, p2_name):
+        - log_text: Full battle log as string
+        - winner_side: "p1", "p2", "tie", or "unknown"
+        - turns: Number of turns (int or None)
+        - p1_name: Player 1 name
+        - p2_name: Player 2 name
+
+    Raises:
+        RuntimeError: If the Node script fails or times out
+    """
+    data = run_random_selfplay_json(
+        format_id=format_id,
+        p1_name=p1_name,
+        p2_name=p2_name,
+        p1_packed_team=p1_packed_team,
+        p2_packed_team=p2_packed_team,
+        timeout_seconds=timeout_seconds,
+    )
+
     log_text = data.get("log", "")
     winner_side = data.get("winner_side", "unknown")
     turns = data.get("turns")
-    # Use names from response (should match input, but trust the response)
     p1_name_resp = data.get("p1_name", p1_name)
     p2_name_resp = data.get("p2_name", p2_name)
 

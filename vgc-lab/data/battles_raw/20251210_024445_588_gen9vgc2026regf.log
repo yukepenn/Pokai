@@ -1,0 +1,166 @@
+|t:|1765334685
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Regirock, L50|
+|poke|p1|Seviper, L50, M|
+|poke|p1|Murkrow, L50, F|
+|poke|p1|Diancie, L50|
+|poke|p1|Feraligatr, L50, M|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p2|Sandy Shocks, L50|
+|poke|p2|Latios, L50, M|
+|poke|p2|Clefable, L50, F|
+|poke|p2|Keldeo-Resolute, L50|
+|poke|p2|Tentacruel, L50, M|
+|poke|p2|Overqwil, L50, M|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765334685
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Regirock|Regirock, L50|166/166
+|switch|p1b: Seviper|Seviper, L50, M|159/159
+|switch|p2a: Sandy Shocks|Sandy Shocks, L50|171/171
+|switch|p2b: Latios|Latios, L50, M|166/166
+|turn|1
+|
+|t:|1765334685
+|move|p1b: Seviper|Protect|p1b: Seviper
+|-singleturn|p1b: Seviper|Protect
+|move|p2b: Latios|Luster Purge|p1a: Regirock
+|-damage|p1a: Regirock|84/166
+|move|p2a: Sandy Shocks|Thunderbolt|p1b: Seviper
+|-activate|p1b: Seviper|move: Protect
+|move|p1a: Regirock|Body Press|p2a: Sandy Shocks
+|-damage|p2a: Sandy Shocks|110/171
+|
+|upkeep
+|turn|2
+|
+|t:|1765334685
+|move|p2b: Latios|Luster Purge|p1a: Regirock
+|-damage|p1a: Regirock|0 fnt
+|faint|p1a: Regirock
+|move|p2a: Sandy Shocks|Earth Power|p1b: Seviper
+|-supereffective|p1b: Seviper
+|-damage|p1b: Seviper|0 fnt
+|faint|p1b: Seviper
+|
+|upkeep
+|
+|t:|1765334685
+|switch|p1b: Diancie|Diancie, L50|136/136
+|switch|p1a: Murkrow|Murkrow, L50, F|146/146
+|turn|3
+|
+|t:|1765334685
+|move|p1a: Murkrow|Tailwind|p1a: Murkrow
+|-sidestart|p1: Bot1|move: Tailwind
+|move|p2b: Latios|Luster Purge|p1a: Murkrow
+|-immune|p1a: Murkrow
+|move|p2a: Sandy Shocks|Volt Switch|p1b: Diancie
+|-damage|p1b: Diancie|97/136
+|
+|t:|1765334685
+|-end|p2a: Sandy Shocks|Protosynthesis|[silent]
+|switch|p2a: Clefable|Clefable, L50, F|181/181|[from] Volt Switch
+|move|p1b: Diancie|Body Press|p2b: Latios
+|-resisted|p2b: Latios
+|-damage|p2b: Latios|141/166
+|
+|upkeep
+|turn|4
+|
+|t:|1765334685
+|move|p1a: Murkrow|Brave Bird|p2b: Latios
+|-damage|p2b: Latios|62/166
+|-damage|p1a: Murkrow|120/146|[from] Recoil
+|move|p2b: Latios|Tailwind|p2b: Latios
+|-sidestart|p2: Bot2|move: Tailwind
+|move|p2a: Clefable|Moonblast|p1a: Murkrow
+|-supereffective|p1a: Murkrow
+|-damage|p1a: Murkrow|0 fnt
+|faint|p1a: Murkrow
+|move|p1b: Diancie|Body Press|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|153/181
+|-damage|p1b: Diancie|75/136|[from] item: Rocky Helmet|[of] p2a: Clefable
+|
+|upkeep
+|turn|5
+|
+|t:|1765334685
+|move|p2b: Latios|Tailwind||[still]
+|-fail|p2b: Latios
+|move|p2a: Clefable|Encore|p1b: Diancie
+|-start|p1b: Diancie|Encore
+|move|p1b: Diancie|Body Press|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|123/181
+|-damage|p1b: Diancie|53/136|[from] item: Rocky Helmet|[of] p2a: Clefable
+|-enditem|p1b: Diancie|Sitrus Berry|[eat]
+|-heal|p1b: Diancie|87/136|[from] item: Sitrus Berry
+|
+|upkeep
+|turn|6
+|
+|t:|1765334685
+|move|p2b: Latios|Draco Meteor|p1b: Diancie
+|-immune|p1b: Diancie
+|move|p2a: Clefable|Moonblast|p1b: Diancie
+|-damage|p1b: Diancie|45/136
+|move|p1b: Diancie|Body Press|p2a: Clefable
+|-resisted|p2a: Clefable
+|-damage|p2a: Clefable|96/181
+|-damage|p1b: Diancie|23/136|[from] item: Rocky Helmet|[of] p2a: Clefable
+|
+|-sideend|p1: Bot1|move: Tailwind
+|upkeep
+|turn|7
+|
+|t:|1765334685
+|move|p2b: Latios|Protect|p2b: Latios
+|-singleturn|p2b: Latios|Protect
+|move|p2a: Clefable|Life Dew|p2a: Clefable|[spread] p2a,p2b
+|-heal|p2a: Clefable|141/181
+|-heal|p2b: Latios|104/166
+|move|p1b: Diancie|Body Press|p2b: Latios
+|-activate|p2b: Latios|move: Protect
+|
+|-end|p1b: Diancie|Encore
+|-sideend|p2: Bot2|move: Tailwind
+|upkeep
+|turn|8
+|
+|t:|1765334685
+|move|p2b: Latios|Protect|p2b: Latios
+|-singleturn|p2b: Latios|Protect
+|move|p2a: Clefable|Follow Me|p2a: Clefable
+|-singleturn|p2a: Clefable|move: Follow Me
+|move|p1b: Diancie|Trick Room|p1b: Diancie
+|-fieldstart|move: Trick Room|[of] p1b: Diancie
+|
+|upkeep
+|turn|9
+|
+|t:|1765334685
+|move|p1b: Diancie|Diamond Storm|p2a: Clefable|[spread] p2a,p2b
+|-damage|p2a: Clefable|87/181
+|-damage|p2b: Latios|53/166
+|-boost|p1b: Diancie|def|2
+|move|p2a: Clefable|Moonblast|p1b: Diancie
+|-damage|p1b: Diancie|0 fnt
+|faint|p1b: Diancie
+|
+|win|Bot2

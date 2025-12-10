@@ -1,0 +1,143 @@
+|t:|1765329704
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Tauros, L50, M|
+|poke|p1|Clawitzer, L50, F|
+|poke|p1|Entei, L50|
+|poke|p1|Emboar, L50, F|
+|poke|p1|Poliwrath, L50, M|
+|poke|p1|Zangoose, L50, M|
+|poke|p2|Arboliva, L50, M|
+|poke|p2|Arcanine-Hisui, L50, M|
+|poke|p2|Chandelure, L50, F|
+|poke|p2|Cresselia, L50, F|
+|poke|p2|Slaking, L50, F|
+|poke|p2|Hydrapple, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765329704
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Tauros|Tauros, L50, M|161/161
+|switch|p1b: Clawitzer|Clawitzer, L50, F|157/157
+|switch|p2a: Arboliva|Arboliva, L50, M|164/164
+|switch|p2b: Arcanine|Arcanine-Hisui, L50, M|181/181
+|-ability|p1a: Tauros|Intimidate|boost
+|-unboost|p2a: Arboliva|atk|1
+|-unboost|p2b: Arcanine|atk|1
+|-ability|p2b: Arcanine|Intimidate|boost
+|-unboost|p1a: Tauros|atk|1
+|-unboost|p1b: Clawitzer|atk|1
+|turn|1
+|
+|t:|1765329704
+|move|p1a: Tauros|High Horsepower|p2a: Arboliva
+|-resisted|p2a: Arboliva
+|-damage|p2a: Arboliva|142/164
+|-fieldstart|move: Grassy Terrain|[from] ability: Seed Sower|[of] p2a: Arboliva
+|move|p2b: Arcanine|Rock Slide|p1b: Clawitzer|[spread] p1a,p1b
+|-damage|p1a: Tauros|122/161
+|-damage|p1b: Clawitzer|114/157
+|move|p1b: Clawitzer|Dark Pulse|p2b: Arcanine
+|-damage|p2b: Arcanine|114/181
+|move|p2a: Arboliva|Hyper Voice|p1b: Clawitzer|[spread] p1a,p1b
+|-damage|p1a: Tauros|32/161
+|-damage|p1b: Clawitzer|48/157
+|-enditem|p1b: Clawitzer|Sitrus Berry|[eat]
+|-heal|p1b: Clawitzer|87/157|[from] item: Sitrus Berry
+|-damage|p2a: Arboliva|126/164|[from] item: Life Orb
+|
+|-heal|p1a: Tauros|42/161|[from] Grassy Terrain
+|-heal|p2b: Arcanine|125/181|[from] Grassy Terrain
+|-heal|p1b: Clawitzer|96/157|[from] Grassy Terrain
+|-heal|p2a: Arboliva|136/164|[from] Grassy Terrain
+|upkeep
+|turn|2
+|
+|t:|1765329704
+|move|p1a: Tauros|High Horsepower|p2a: Arboliva
+|-resisted|p2a: Arboliva
+|-crit|p2a: Arboliva
+|-damage|p2a: Arboliva|90/164
+|move|p2b: Arcanine|Rock Slide|p1a: Tauros|[spread] p1a,p1b
+|-damage|p1a: Tauros|5/161
+|-damage|p1b: Clawitzer|53/157
+|move|p1b: Clawitzer|Dark Pulse|p2a: Arboliva
+|-damage|p2a: Arboliva|33/164
+|move|p2a: Arboliva|Earth Power|p1b: Clawitzer
+|-damage|p1b: Clawitzer|0 fnt
+|faint|p1b: Clawitzer
+|-damage|p2a: Arboliva|17/164|[from] item: Life Orb
+|
+|-heal|p1a: Tauros|15/161|[from] Grassy Terrain
+|-heal|p2b: Arcanine|136/181|[from] Grassy Terrain
+|-heal|p2a: Arboliva|27/164|[from] Grassy Terrain
+|upkeep
+|
+|t:|1765329704
+|switch|p1b: Emboar|Emboar, L50, F|196/196
+|turn|3
+|
+|t:|1765329704
+|move|p1a: Tauros|High Horsepower|p2a: Arboliva
+|-resisted|p2a: Arboliva
+|-crit|p2a: Arboliva
+|-damage|p2a: Arboliva|0 fnt
+|faint|p2a: Arboliva
+|move|p2b: Arcanine|Rock Slide|p1b: Emboar|[spread] p1a,p1b
+|-damage|p1a: Tauros|0 fnt
+|-damage|p1b: Emboar|148/196
+|faint|p1a: Tauros
+|cant|p1b: Emboar|flinch
+|
+|-heal|p2b: Arcanine|147/181|[from] Grassy Terrain
+|-heal|p1b: Emboar|160/196|[from] Grassy Terrain
+|upkeep
+|
+|t:|1765329704
+|switch|p1a: Entei|Entei, L50|201/201
+|switch|p2a: Cresselia|Cresselia, L50, F|206/206
+|turn|4
+|
+|t:|1765329704
+|move|p1a: Entei|Sacred Fire|p2a: Cresselia
+|-damage|p2a: Cresselia|112/206
+|move|p2b: Arcanine|Rock Slide|p1b: Emboar|[spread] p1a,p1b
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|121/201
+|-damage|p1b: Emboar|111/196
+|move|p2a: Cresselia|Psychic|p1b: Emboar
+|-supereffective|p1b: Emboar
+|-damage|p1b: Emboar|0 fnt
+|faint|p1b: Emboar
+|
+|-heal|p1a: Entei|133/201|[from] Grassy Terrain
+|-heal|p2b: Arcanine|158/181|[from] Grassy Terrain
+|upkeep
+|turn|5
+|
+|t:|1765329704
+|move|p1a: Entei|Sacred Fire|p2a: Cresselia
+|-damage|p2a: Cresselia|9/206
+|-status|p2a: Cresselia|brn
+|-enditem|p2a: Cresselia|Sitrus Berry|[eat]
+|-heal|p2a: Cresselia|60/206 brn|[from] item: Sitrus Berry
+|move|p2b: Arcanine|Rock Slide|p1a: Entei
+|-supereffective|p1a: Entei
+|-damage|p1a: Entei|13/201
+|move|p2a: Cresselia|Psychic|p1a: Entei
+|-damage|p1a: Entei|0 fnt
+|faint|p1a: Entei
+|
+|win|Bot2

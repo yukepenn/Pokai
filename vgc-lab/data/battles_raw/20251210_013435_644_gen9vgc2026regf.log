@@ -1,0 +1,255 @@
+|t:|1765330475
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Sandaconda, L50, M|
+|poke|p1|Mamoswine, L50, F|
+|poke|p1|Hawlucha, L50, M|
+|poke|p1|Phione, L50|
+|poke|p1|Serperior, L50, M|
+|poke|p1|Alcremie-Matcha-Cream, L50, F|
+|poke|p2|Banette, L50, M|
+|poke|p2|Wo-Chien, L50|
+|poke|p2|Spidops, L50, M|
+|poke|p2|Dudunsparce-*, L50, F|
+|poke|p2|Barraskewda, L50, F|
+|poke|p2|Tinkaton, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765330475
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Sandaconda|Sandaconda, L50, M|158/158
+|switch|p1b: Mamoswine|Mamoswine, L50, F|196/196
+|switch|p2a: Banette|Banette, L50, M|150/150
+|switch|p2b: Wo-Chien|Wo-Chien, L50|171/171
+|-ability|p2b: Wo-Chien|Tablets of Ruin
+|-item|p1a: Sandaconda|Sitrus Berry|[from] ability: Frisk|[of] p2a: Banette
+|-item|p1b: Mamoswine|Life Orb|[from] ability: Frisk|[of] p2a: Banette
+|turn|1
+|
+|t:|1765330475
+|move|p2a: Banette|Protect|p2a: Banette
+|-singleturn|p2a: Banette|Protect
+|move|p1b: Mamoswine|Icicle Crash|p2a: Banette
+|-activate|p2a: Banette|move: Protect
+|move|p1a: Sandaconda|High Horsepower|p2a: Banette
+|-activate|p2a: Banette|move: Protect
+|move|p2b: Wo-Chien|Leech Seed|p1a: Sandaconda
+|-start|p1a: Sandaconda|move: Leech Seed
+|
+|-damage|p1a: Sandaconda|139/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|upkeep
+|turn|2
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Protect|p1b: Mamoswine
+|-singleturn|p1b: Mamoswine|Protect
+|move|p2a: Banette|Shadow Sneak|p1a: Sandaconda
+|-damage|p1a: Sandaconda|114/158
+|-damage|p2a: Banette|135/150|[from] item: Life Orb
+|move|p1a: Sandaconda|High Horsepower|p2b: Wo-Chien
+|-resisted|p2b: Wo-Chien
+|-damage|p2b: Wo-Chien|150/171
+|move|p2b: Wo-Chien|Leech Seed||[still]
+|-fail|p2b: Wo-Chien
+|
+|-damage|p1a: Sandaconda|95/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|-heal|p2b: Wo-Chien|169/171|[silent]
+|upkeep
+|turn|3
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Icicle Crash|p2a: Banette
+|-damage|p2a: Banette|40/150
+|-damage|p1b: Mamoswine|177/196|[from] item: Life Orb
+|move|p1a: Sandaconda|Glare|p2b: Wo-Chien
+|-status|p2b: Wo-Chien|par
+|move|p2a: Banette|Gunk Shot|p1b: Mamoswine
+|-resisted|p1b: Mamoswine
+|-damage|p1b: Mamoswine|148/196
+|-damage|p2a: Banette|25/150|[from] item: Life Orb
+|cant|p2b: Wo-Chien|par
+|
+|-damage|p1a: Sandaconda|76/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|-heal|p2b: Wo-Chien|171/171 par|[silent]
+|upkeep
+|-enditem|p1a: Sandaconda|Sitrus Berry|[eat]
+|-heal|p1a: Sandaconda|115/158|[from] item: Sitrus Berry
+|turn|4
+|
+|t:|1765330475
+|move|p2a: Banette|Shadow Sneak|p1b: Mamoswine
+|-damage|p1b: Mamoswine|113/196
+|-damage|p2a: Banette|10/150|[from] item: Life Orb
+|move|p1b: Mamoswine|High Horsepower|p2a: Banette
+|-damage|p2a: Banette|0 fnt
+|faint|p2a: Banette
+|-damage|p1b: Mamoswine|94/196|[from] item: Life Orb
+|move|p1a: Sandaconda|Glare|p2b: Wo-Chien
+|-fail|p2b: Wo-Chien|par
+|cant|p2b: Wo-Chien|par
+|
+|-damage|p1a: Sandaconda|96/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|upkeep
+|
+|t:|1765330475
+|switch|p2a: Spidops|Spidops, L50, M|146/146
+|turn|5
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Protect|p1b: Mamoswine
+|-singleturn|p1b: Mamoswine|Protect
+|move|p1a: Sandaconda|Glare|p2a: Spidops
+|-status|p2a: Spidops|par
+|move|p2b: Wo-Chien|Leech Seed|p1b: Mamoswine
+|-activate|p1b: Mamoswine|move: Protect
+|move|p2a: Spidops|Knock Off|p1a: Sandaconda
+|-damage|p1a: Sandaconda|80/158
+|
+|-damage|p1a: Sandaconda|61/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|upkeep
+|turn|6
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Protect|p1b: Mamoswine
+|-singleturn|p1b: Mamoswine|Protect
+|move|p1a: Sandaconda|High Horsepower|p2b: Wo-Chien
+|-resisted|p2b: Wo-Chien
+|-damage|p2b: Wo-Chien|149/171 par
+|move|p2b: Wo-Chien|Knock Off|p1b: Mamoswine
+|-activate|p1b: Mamoswine|move: Protect
+|cant|p2a: Spidops|par
+|
+|-damage|p1a: Sandaconda|42/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|-heal|p2b: Wo-Chien|168/171 par|[silent]
+|upkeep
+|turn|7
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Ice Shard|p2b: Wo-Chien
+|-supereffective|p2b: Wo-Chien
+|-damage|p2b: Wo-Chien|111/171 par
+|-damage|p1b: Mamoswine|75/196|[from] item: Life Orb
+|move|p1a: Sandaconda|Stone Edge|p2a: Spidops
+|-supereffective|p2a: Spidops
+|-damage|p2a: Spidops|76/146 par
+|cant|p2b: Wo-Chien|par
+|move|p2a: Spidops|Knock Off|p1b: Mamoswine
+|-crit|p1b: Mamoswine
+|-damage|p1b: Mamoswine|27/196
+|-enditem|p1b: Mamoswine|Life Orb|[from] move: Knock Off|[of] p2a: Spidops
+|
+|-damage|p1a: Sandaconda|23/158|[from] Leech Seed|[of] p2b: Wo-Chien
+|-heal|p2b: Wo-Chien|130/171 par|[silent]
+|upkeep
+|turn|8
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Icicle Crash|p2b: Wo-Chien
+|-supereffective|p2b: Wo-Chien
+|-damage|p2b: Wo-Chien|40/171 par
+|-enditem|p2b: Wo-Chien|Sitrus Berry|[eat]
+|-heal|p2b: Wo-Chien|82/171 par|[from] item: Sitrus Berry
+|move|p1a: Sandaconda|Rest|p1a: Sandaconda
+|-status|p1a: Sandaconda|slp|[from] move: Rest
+|-heal|p1a: Sandaconda|158/158 slp|[silent]
+|move|p2b: Wo-Chien|Ruination|p1b: Mamoswine
+|-damage|p1b: Mamoswine|14/196
+|move|p2a: Spidops|Circle Throw|p1a: Sandaconda
+|-damage|p1a: Sandaconda|145/158 slp
+|drag|p1a: Phione|Phione, L50|166/166
+|
+|upkeep
+|turn|9
+|
+|t:|1765330475
+|cant|p2b: Wo-Chien|par
+|move|p1a: Phione|Take Heart|p1a: Phione
+|-boost|p1a: Phione|spa|1
+|-boost|p1a: Phione|spd|1
+|move|p1b: Mamoswine|Icicle Crash|p2b: Wo-Chien
+|-supereffective|p2b: Wo-Chien
+|-damage|p2b: Wo-Chien|0 fnt
+|faint|p2b: Wo-Chien
+|cant|p2a: Spidops|par
+|
+|upkeep
+|
+|t:|1765330475
+|switch|p2b: Dudunsparce|Dudunsparce, L50, F|211/211
+|turn|10
+|
+|t:|1765330475
+|move|p1b: Mamoswine|Ice Shard|p2a: Spidops
+|-damage|p2a: Spidops|43/146 par
+|-enditem|p2a: Spidops|Sitrus Berry|[eat]
+|-heal|p2a: Spidops|79/146 par|[from] item: Sitrus Berry
+|move|p1a: Phione|Scald|p2a: Spidops
+|-damage|p2a: Spidops|7/146 par
+|move|p2b: Dudunsparce|Tailwind|p2b: Dudunsparce
+|-sidestart|p2: Bot2|move: Tailwind
+|cant|p2a: Spidops|par
+|
+|upkeep
+|turn|11
+|
+|t:|1765330475
+|move|p1a: Phione|Protect|p1a: Phione
+|-singleturn|p1a: Phione|Protect
+|move|p2b: Dudunsparce|Earth Power|p1b: Mamoswine
+|-damage|p1b: Mamoswine|0 fnt
+|faint|p1b: Mamoswine
+|move|p2a: Spidops|Circle Throw|p1a: Phione
+|-activate|p1a: Phione|move: Protect
+|
+|upkeep
+|
+|t:|1765330475
+|switch|p1b: Sandaconda|Sandaconda, L50, M|145/158 slp
+|turn|12
+|
+|t:|1765330475
+|move|p2b: Dudunsparce|Earth Power|p1b: Sandaconda
+|-damage|p1b: Sandaconda|103/158 slp
+|move|p1a: Phione|Scald|p2a: Spidops
+|-damage|p2a: Spidops|0 fnt
+|faint|p2a: Spidops
+|cant|p1b: Sandaconda|slp
+|
+|upkeep
+|turn|13
+|
+|t:|1765330475
+|move|p2b: Dudunsparce|Tailwind||[still]
+|-fail|p2b: Dudunsparce
+|move|p1a: Phione|Scald|p2b: Dudunsparce
+|-damage|p2b: Dudunsparce|132/211
+|cant|p1b: Sandaconda|slp
+|
+|-sideend|p2: Bot2|move: Tailwind
+|upkeep
+|turn|14
+|
+|t:|1765330475
+|move|p1a: Phione|Scald|p2b: Dudunsparce
+|-crit|p2b: Dudunsparce
+|-damage|p2b: Dudunsparce|6/211
+|-enditem|p2b: Dudunsparce|Sitrus Berry|[eat]
+|-heal|p2b: Dudunsparce|58/211|[from] item: Sitrus Berry
+|-curestatus|p1b: Sandaconda|slp|[msg]
+|move|p1b: Sandaconda|High Horsepower|p2b: Dudunsparce
+|-damage|p2b: Dudunsparce|0 fnt
+|faint|p2b: Dudunsparce
+|
+|win|Bot1

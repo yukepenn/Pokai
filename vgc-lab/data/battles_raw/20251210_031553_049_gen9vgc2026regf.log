@@ -1,0 +1,201 @@
+|t:|1765336552
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Delphox, L50, F|
+|poke|p1|Exeggutor, L50, M|
+|poke|p1|Quagsire, L50, F|
+|poke|p1|Klawf, L50, F|
+|poke|p1|Dedenne, L50, M|
+|poke|p1|Luvdisc, L50, F|
+|poke|p2|Cloyster, L50, F|
+|poke|p2|Hitmontop, L50, M|
+|poke|p2|Venusaur, L50, M|
+|poke|p2|Ambipom, L50, F|
+|poke|p2|Avalugg-Hisui, L50, F|
+|poke|p2|Tauros-Paldea-Combat, L50, M|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|1765336553
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Delphox|Delphox, L50, F|161/161
+|switch|p1b: Exeggutor|Exeggutor, L50, M|181/181
+|switch|p2a: Cloyster|Cloyster, L50, F|136/136
+|switch|p2b: Hitmontop|Hitmontop, L50, M|136/136
+|-ability|p2b: Hitmontop|Intimidate|boost
+|-unboost|p1a: Delphox|atk|1
+|-unboost|p1b: Exeggutor|atk|1
+|turn|1
+|
+|t:|1765336553
+|move|p2b: Hitmontop|Sucker Punch|p1a: Delphox
+|-supereffective|p1a: Delphox
+|-damage|p1a: Delphox|93/161
+|move|p1a: Delphox|Heat Wave|p2a: Cloyster|[spread] p2a,p2b
+|-damage|p2a: Cloyster|37/136
+|-damage|p2b: Hitmontop|80/136
+|-damage|p1a: Delphox|77/161|[from] item: Life Orb
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|-enditem|p2a: Cloyster|White Herb
+|-clearnegativeboost|p2a: Cloyster|[silent]
+|move|p1b: Exeggutor|Psychic|p2b: Hitmontop
+|-supereffective|p2b: Hitmontop
+|-damage|p2b: Hitmontop|0 fnt
+|faint|p2b: Hitmontop
+|
+|upkeep
+|
+|t:|1765336553
+|switch|p2b: Ambipom|Ambipom, L50, F|161/161
+|turn|2
+|
+|t:|1765336553
+|move|p2a: Cloyster|Rock Blast|p1a: Delphox|[miss]
+|-miss|p2a: Cloyster|p1a: Delphox
+|move|p2b: Ambipom|Knock Off|p1b: Exeggutor
+|-supereffective|p1b: Exeggutor
+|-damage|p1b: Exeggutor|85/181
+|-enditem|p1b: Exeggutor|Sitrus Berry|[from] move: Knock Off|[of] p2b: Ambipom
+|move|p1a: Delphox|Heat Wave|p2a: Cloyster|[spread] p2b
+|-miss|p1a: Delphox|p2a: Cloyster
+|-damage|p2b: Ambipom|79/161
+|-damage|p1a: Delphox|61/161|[from] item: Life Orb
+|move|p1b: Exeggutor|Energy Ball|p2b: Ambipom
+|-damage|p2b: Ambipom|0 fnt
+|faint|p2b: Ambipom
+|
+|upkeep
+|
+|t:|1765336553
+|switch|p2b: Venusaur|Venusaur, L50, M|166/166
+|turn|3
+|
+|t:|1765336553
+|move|p1b: Exeggutor|Protect|p1b: Exeggutor
+|-singleturn|p1b: Exeggutor|Protect
+|move|p2a: Cloyster|Icicle Spear|p1b: Exeggutor
+|-activate|p1b: Exeggutor|move: Protect
+|move|p1a: Delphox|Nasty Plot|p1a: Delphox
+|-boost|p1a: Delphox|spa|2
+|move|p2b: Venusaur|Leaf Storm|p1a: Delphox
+|-resisted|p1a: Delphox
+|-damage|p1a: Delphox|6/161
+|-unboost|p2b: Venusaur|spa|2
+|-damage|p2b: Venusaur|150/166|[from] item: Life Orb
+|
+|upkeep
+|turn|4
+|
+|t:|1765336553
+|move|p1a: Delphox|Protect|p1a: Delphox
+|-singleturn|p1a: Delphox|Protect
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|move|p2b: Venusaur|Sludge Bomb|p1b: Exeggutor
+|-supereffective|p1b: Exeggutor
+|-damage|p1b: Exeggutor|0 fnt
+|faint|p1b: Exeggutor
+|-damage|p2b: Venusaur|134/166|[from] item: Life Orb
+|
+|upkeep
+|
+|t:|1765336553
+|switch|p1b: Klawf|Klawf, L50, F|156/156
+|turn|5
+|
+|t:|1765336553
+|move|p2a: Cloyster|Hydro Pump|p1b: Klawf|[miss]
+|-miss|p2a: Cloyster|p1b: Klawf
+|move|p1a: Delphox|Nasty Plot|p1a: Delphox
+|-boost|p1a: Delphox|spa|2
+|move|p2b: Venusaur|Knock Off|p1a: Delphox
+|-supereffective|p1a: Delphox
+|-damage|p1a: Delphox|0 fnt
+|-enditem|p1a: Delphox|Life Orb|[from] move: Knock Off|[of] p2b: Venusaur
+|faint|p1a: Delphox
+|-damage|p2b: Venusaur|118/166|[from] item: Life Orb
+|move|p1b: Klawf|Crabhammer|p2a: Cloyster
+|-resisted|p2a: Cloyster
+|-damage|p2a: Cloyster|7/136
+|
+|upkeep
+|
+|t:|1765336553
+|switch|p1a: Quagsire|Quagsire, L50, F|181/181
+|turn|6
+|
+|t:|1765336553
+|move|p2b: Venusaur|Protect|p2b: Venusaur
+|-singleturn|p2b: Venusaur|Protect
+|move|p2a: Cloyster|Shell Smash|p2a: Cloyster
+|-unboost|p2a: Cloyster|def|1
+|-unboost|p2a: Cloyster|spd|1
+|-boost|p2a: Cloyster|atk|2
+|-boost|p2a: Cloyster|spa|2
+|-boost|p2a: Cloyster|spe|2
+|move|p1b: Klawf|Crabhammer|p2a: Cloyster
+|-resisted|p2a: Cloyster
+|-damage|p2a: Cloyster|0 fnt
+|faint|p2a: Cloyster
+|move|p1a: Quagsire|Liquidation|p2b: Venusaur
+|-activate|p2b: Venusaur|move: Protect
+|
+|upkeep
+|turn|7
+|
+|t:|1765336553
+|move|p2b: Venusaur|Protect||[still]
+|-fail|p2b: Venusaur
+|move|p1b: Klawf|Crabhammer|p2b: Venusaur
+|-resisted|p2b: Venusaur
+|-damage|p2b: Venusaur|80/166
+|move|p1a: Quagsire|Icy Wind|p2b: Venusaur
+|-supereffective|p2b: Venusaur
+|-damage|p2b: Venusaur|44/166
+|-unboost|p2b: Venusaur|spe|1
+|
+|upkeep
+|turn|8
+|
+|t:|1765336553
+|move|p2b: Venusaur|Protect|p2b: Venusaur
+|-singleturn|p2b: Venusaur|Protect
+|move|p1b: Klawf|Crabhammer|p2b: Venusaur
+|-activate|p2b: Venusaur|move: Protect
+|move|p1a: Quagsire|Icy Wind|p2b: Venusaur
+|-activate|p2b: Venusaur|move: Protect
+|
+|upkeep
+|turn|9
+|
+|t:|1765336553
+|move|p1b: Klawf|Crabhammer|p2b: Venusaur
+|-resisted|p2b: Venusaur
+|-damage|p2b: Venusaur|9/166
+|move|p2b: Venusaur|Knock Off|p1b: Klawf
+|-damage|p1b: Klawf|111/156
+|-enditem|p1b: Klawf|Choice Band|[from] move: Knock Off|[of] p2b: Venusaur
+|-damage|p2b: Venusaur|0 fnt|[from] item: Life Orb
+|faint|p2b: Venusaur
+|
+|win|Bot1
