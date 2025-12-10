@@ -1,0 +1,36 @@
+update
+|t:|1765323247
+|gametype|doubles
+|player|p1|Bot1||
+|player|p2|Bot2||
+|gen|9
+|tier|[Gen 9] VGC 2026 Reg F
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Arceus-Psychic, L50|
+|poke|p1|Toxtricity-Low-Key, L50, F|
+|poke|p1|Cramorant, L50, M|
+|poke|p1|Copperajah, L50, F|
+|poke|p1|Phione, L50|
+|poke|p1|Goodra-Hisui, L50, F|
+|poke|p2|Lunala, L50|
+|poke|p2|Illumise, L50, F|
+|poke|p2|Heracross, L50, F|
+|poke|p2|Eiscue, L50, M|
+|poke|p2|Flutter Mane, L50|
+|poke|p2|Cinccino, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bot1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50","condition":"206/206","active":true,"stats":{"atk":125,"def":151,"spa":151,"spd":151,"spe":151},"moves":["taunt","willowisp","tailwind","judgment"],"baseAbility":"multitype","item":"mindplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Toxtricity","details":"Toxtricity-Low-Key, L50, F","condition":"161/161","active":true,"stats":{"atk":103,"def":101,"spa":145,"spd":101,"spe":106},"moves":["overdrive","voltswitch","sludgebomb","psychicnoise"],"baseAbility":"punkrock","item":"choicespecs","pokeball":"pokeball","ability":"punkrock","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"156/156","active":false,"stats":{"atk":116,"def":86,"spa":116,"spd":126,"spe":116},"moves":["bravebird","surf","tailwind","protect"],"baseAbility":"gulpmissile","item":"sitrusberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Copperajah","details":"Copperajah, L50, F","condition":"208/208","active":false,"stats":{"atk":161,"def":100,"spa":111,"spd":100,"spe":61},"moves":["highhorsepower","heavyslam","stoneedge","heatcrash"],"baseAbility":"heavymetal","item":"assaultvest","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Phione","details":"Phione, L50","condition":"166/166","active":false,"stats":{"atk":85,"def":111,"spa":111,"spd":111,"spe":111},"moves":["icebeam","takeheart","scald","protect"],"baseAbility":"hydration","item":"leftovers","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Goodra","details":"Goodra-Hisui, L50, F","condition":"166/166","active":false,"stats":{"atk":131,"def":131,"spa":141,"spd":181,"spe":91},"moves":["dragontail","thunderbolt","heavyslam","dracometeor"],"baseAbility":"sapsipper","item":"assaultvest","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bot2","id":"p2","pokemon":[{"ident":"p2: Lunala","details":"Lunala, L50","condition":"223/223","active":true,"stats":{"atk":118,"def":120,"spa":168,"spd":138,"spe":128},"moves":["protect","moongeistbeam","calmmind","moonblast"],"baseAbility":"shadowshield","item":"leftovers","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"151/151","active":true,"stats":{"atk":52,"def":106,"spa":104,"spd":116,"spe":116},"moves":["tailwind","encore","strugglebug","thunderwave"],"baseAbility":"prankster","item":"sitrusberry","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, F","condition":"166/166","active":false,"stats":{"atk":156,"def":106,"spa":71,"spd":126,"spe":116},"moves":["knockoff","protect","closecombat","facade"],"baseAbility":"guts","item":"flameorb","pokeball":"pokeball","ability":"guts","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Eiscue","details":"Eiscue, L50, M","condition":"160/160","active":false,"stats":{"atk":111,"def":141,"spa":96,"spd":121,"spe":81},"moves":["bellydrum","liquidation","protect","icespinner"],"baseAbility":"iceface","item":"sitrusberry","pokeball":"pokeball","ability":"iceface","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L50","condition":"141/141","active":false,"stats":{"atk":60,"def":86,"spa":166,"spd":166,"spe":166},"moves":["shadowball","moonblast","dazzlinggleam","protect"],"baseAbility":"protosynthesis","item":"boosterenergy","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Cinccino","details":"Cinccino, L50, M","condition":"161/161","active":false,"stats":{"atk":126,"def":91,"spa":96,"spd":91,"spe":146},"moves":["tailslap","tripleaxel","protect","bulletseed"],"baseAbility":"technician","item":"loadeddice","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}

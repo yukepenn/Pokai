@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/vgc_lab/__init__.py
+src/vgc_lab/battle_logger.py
+src/vgc_lab/config.py
+src/vgc_lab/random_bot.py
+src/vgc_lab/showdown_cli.py
+src/vgc_lab.egg-info/PKG-INFO
+src/vgc_lab.egg-info/SOURCES.txt
+src/vgc_lab.egg-info/dependency_links.txt
+src/vgc_lab.egg-info/requires.txt
+src/vgc_lab.egg-info/top_level.txt

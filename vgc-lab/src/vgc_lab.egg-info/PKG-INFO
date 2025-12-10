@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: vgc-lab
+Version: 0.1.0
+Summary: Python wrapper for Pokemon Showdown CLI - VGC Reg F battle simulation and data collection
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: typer>=0.9.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+# vgc-lab
+
+Python wrapper and utilities for Pokemon Showdown CLI, focused on Gen 9 VGC Reg F battle simulation and data collection.
+
+## Overview
+
+`vgc-lab` is a helper project that wraps the sibling `pokemon-showdown/` folder (a fork of smogon/pokemon-showdown). It provides Python utilities to:
+
+- Generate random teams for VGC formats
+- Validate teams against format rules
+- Run CLI simulated battles (AI vs AI) without requiring the web server
+- Save battle logs and structured metadata under `vgc-lab/data/`
+
+## Project Structure
+
+- `src/vgc_lab/` - Main Python package
+  - `config.py` - Paths and configuration
+  - `showdown_cli.py` - Wrappers around `node pokemon-showdown` CLI commands
+  - `battle_logger.py` - BattleResult model and persistence utilities
+- `scripts/` - CLI tools and demo scripts
+- `data/` - Generated data (teams, battle logs, JSON results)
+
+## Future Extensions
+
+This project will later be extended for RL/DL training environments, but currently focuses on:
+1. Establishing clean battle simulation workflows
+2. Collecting battle logs and structured data
+3. Providing reusable Python APIs for team generation and validation
+
+## Dependencies
+
+- Python 3.10+
+- Node.js 16+ and npm (for the underlying `pokemon-showdown` CLI)
+- The `pokemon-showdown/` folder must be present as a sibling directory
+
+## Quick Start
+
+See the local server quickstart guide for setup instructions.
+
