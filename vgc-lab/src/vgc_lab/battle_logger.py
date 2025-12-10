@@ -3,11 +3,11 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 from pydantic import BaseModel, Field
 
-from .config import BATTLES_RAW_DIR, BATTLES_JSON_DIR
+from .config import BATTLES_RAW_DIR, BATTLES_JSON_DIR, PROJECT_ROOT
 
 
 class BattleResult(BaseModel):
@@ -128,4 +128,59 @@ def save_battle_result(result: BattleResult) -> Path:
 
     filepath.write_text(json.dumps(data, indent=2), encoding="utf-8")
     return filepath
+
+
+class FullBattleRecord(BaseModel):
+    """Full battle record for completed battles."""
+
+    format_id: str = Field(..., description="Format ID (e.g., gen9vgc2026regf)")
+    p1_name: str = Field(..., description="Player 1 name")
+    p2_name: str = Field(..., description="Player 2 name")
+    winner_side: str = Field(
+        ..., description="Winner side: 'p1', 'p2', 'tie', or 'unknown'"
+    )
+    winner_name: Optional[str] = Field(
+        None, description="Winner player name (null if tie)"
+    )
+    turns: Optional[int] = Field(None, description="Number of turns")
+    raw_log_path: Path = Field(..., description="Path to raw battle log file")
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    meta: dict[str, Any] = Field(default_factory=dict, description="Optional metadata")
+
+    class Config:
+        json_encoders = {
+            Path: str,
+            datetime: lambda v: v.isoformat(),
+        }
+
+
+# Full battle dataset location
+FULL_BATTLE_DATASET_DIR = PROJECT_ROOT / "data" / "datasets" / "full_battles"
+FULL_BATTLE_DATASET_PATH = FULL_BATTLE_DATASET_DIR / "full_battles.jsonl"
+
+
+def ensure_full_battle_dataset_dir() -> None:
+    """Ensure the full battle dataset directory exists."""
+    FULL_BATTLE_DATASET_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def append_full_battle_record(record: FullBattleRecord) -> None:
+    """
+    Append one full battle record as a JSON line to FULL_BATTLE_DATASET_PATH.
+
+    Args:
+        record: FullBattleRecord instance to append
+    """
+    ensure_full_battle_dataset_dir()
+
+    # Convert to dict, handling Path and datetime serialization
+    data = record.model_dump(mode="json")
+    if record.raw_log_path is not None:
+        data["raw_log_path"] = str(record.raw_log_path)
+    data["created_at"] = record.created_at.isoformat()
+
+    # Write as a single JSON line
+    json_line = json.dumps(data, ensure_ascii=False)
+    with FULL_BATTLE_DATASET_PATH.open("a", encoding="utf-8") as f:
+        f.write(json_line + "\n")
 

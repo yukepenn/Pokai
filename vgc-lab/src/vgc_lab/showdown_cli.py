@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 from typing import Any, Optional, Tuple
 
-from .config import SHOWDOWN_ROOT, DEFAULT_FORMAT
+from .config import SHOWDOWN_ROOT, DEFAULT_FORMAT, PROJECT_ROOT
 from .random_bot import choose_action
 
 
@@ -359,4 +359,91 @@ def play_battle_with_random_bots(
 
     log_text = "\n".join(log_lines)
     return log_text, winner_side, turns
+
+
+def run_random_selfplay(
+    format_id: str = DEFAULT_FORMAT,
+    p1_name: str = "Bot1",
+    p2_name: str = "Bot2",
+    p1_packed_team: Optional[str] = None,
+    p2_packed_team: Optional[str] = None,
+    timeout_seconds: int = 60,
+) -> Tuple[str, str, Optional[int], str, str]:
+    """
+    Call the Node random selfplay script and return battle results.
+
+    Uses Showdown's internal BattleStream + RandomPlayerAI to run a complete battle.
+
+    Args:
+        format_id: Format ID (defaults to DEFAULT_FORMAT)
+        p1_name: Player 1 name (default: "Bot1")
+        p2_name: Player 2 name (default: "Bot2")
+        p1_packed_team: Optional packed team string for p1 (if None, generates random)
+        p2_packed_team: Optional packed team string for p2 (if None, generates random)
+        timeout_seconds: Timeout for subprocess execution (default: 60)
+
+    Returns:
+        Tuple of (log_text, winner_side, turns, p1_name, p2_name):
+        - log_text: Full battle log as string
+        - winner_side: "p1", "p2", "tie", or "unknown"
+        - turns: Number of turns (int or None)
+        - p1_name: Player 1 name
+        - p2_name: Player 2 name
+
+    Raises:
+        RuntimeError: If the Node script fails or times out
+    """
+    cmd = [
+        "node",
+        "js/random_selfplay.js",
+        "--format",
+        format_id,
+        "--p1-name",
+        p1_name,
+        "--p2-name",
+        p2_name,
+    ]
+
+    if p1_packed_team is not None:
+        cmd.extend(["--p1-team", p1_packed_team])
+    if p2_packed_team is not None:
+        cmd.extend(["--p2-team", p2_packed_team])
+
+    try:
+        result = subprocess.run(
+            cmd,
+            cwd=str(PROJECT_ROOT),
+            capture_output=True,
+            text=True,
+            timeout=timeout_seconds,
+            check=False,  # We'll check return code manually
+        )
+    except subprocess.TimeoutExpired:
+        raise RuntimeError(f"random_selfplay timed out after {timeout_seconds} seconds")
+    except FileNotFoundError as e:
+        if "node" in str(e).lower():
+            raise RuntimeError(
+                "Node.js not found. Please install Node.js 16+ from https://nodejs.org/"
+            ) from e
+        raise
+
+    if result.returncode != 0:
+        error_msg = result.stderr.strip() if result.stderr else "Unknown error"
+        raise RuntimeError(f"random_selfplay failed: {error_msg}")
+
+    # Parse JSON output
+    try:
+        data = json.loads(result.stdout.strip())
+    except json.JSONDecodeError as e:
+        raise RuntimeError(f"Failed to parse JSON output from random_selfplay: {e}")
+
+    # Extract fields
+    log_text = data.get("log", "")
+    winner_side = data.get("winner_side", "unknown")
+    turns = data.get("turns")
+    # Use names from response (should match input, but trust the response)
+    p1_name_resp = data.get("p1_name", p1_name)
+    p2_name_resp = data.get("p2_name", p2_name)
+
+    return log_text, winner_side, turns, p1_name_resp, p2_name_resp
 
