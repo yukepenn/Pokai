@@ -14,11 +14,14 @@ Python wrapper and utilities for Pokemon Showdown CLI, focused on Gen 9 VGC Reg 
 ## Project Structure
 
 - `src/vgc_lab/` - Main Python package
-  - `config.py` - Paths and configuration
-  - `showdown_cli.py` - Wrappers around `node pokemon-showdown` CLI commands
-  - `battle_logger.py` - BattleResult model and persistence utilities
-- `scripts/` - CLI tools and demo scripts
-- `data/` - Generated data (teams, battle logs, JSON results)
+  - `core.py` ⭐ - **Single core module** containing all functionality (config, Showdown client, battle logging, datasets, team preview)
+  - `__init__.py` - Package exports
+- `scripts/` - CLI tools
+  - `cli.py` ⭐ - **Unified Typer CLI** with all commands (`demo-battle`, `gen-full`, `gen-preview`, `pack-team`, `validate-team`)
+- `js/` - Node.js bridge scripts
+  - `random_selfplay.js` - Bridge to Showdown's BattleStream and RandomPlayerAI
+- `scratch/` - Temporary experimental scripts (not part of core API)
+- `data/` - Generated data (teams, battle logs, JSON results, datasets)
 
 ## Team Preview Dataset
 
@@ -30,7 +33,7 @@ Python wrapper and utilities for Pokemon Showdown CLI, focused on Gen 9 VGC Reg 
 - **Usage example**:
   ```bash
   cd Pokai/vgc-lab
-  python scripts/generate_team_preview_dataset.py generate --n 50
+  python -m scripts.cli gen-preview 50
   ```
 
 This dataset is intended as the input space for future agents making team-preview decisions (which 4 mons to bring, BO3 planning, etc.), but RL/ML implementation is out of scope for this phase.
@@ -40,40 +43,18 @@ This dataset is intended as the input space for future agents making team-previe
 `vgc-lab` can generate datasets of completed battles using Showdown's internal random AI:
 
 - **Method**: Uses Showdown's `BattleStream` and `RandomPlayerAI` via a Node.js script (`js/random_selfplay.js`)
-- **Generation**: The script `scripts/generate_full_battle_dataset.py` runs complete battles and collects results
+- **Generation**: The command `gen-full` runs complete battles and collects results
 - **Output**: JSONL dataset with battle logs, winners, turn counts, and metadata
 - **Usage example**:
   ```bash
   cd Pokai/vgc-lab
-  python scripts/generate_full_battle_dataset.py --n 5
+  python -m scripts.cli gen-full 100
   ```
 - **Data locations**:
   - Raw logs: `data/battles_raw/`
   - Dataset: `data/datasets/full_battles/full_battles.jsonl`
 
 The Node script `js/random_selfplay.js` serves as the bridge to Showdown's battle engine, running battles to completion and outputting structured JSON results.
-
-## Preview + Outcome Dataset (Random Self-Play)
-
-`vgc-lab` can generate datasets that directly tie open team sheets to battle outcomes:
-
-- **Method**: Uses Showdown's internal `RandomPlayerAI` and the same engine as `js/random_selfplay.js`
-- **Data stored**: For each battle:
-  - Both sides' 6-Pokémon public teams (from the engine, via `Teams.unpack`)
-  - The winner (`winner_side` / `winner_name`)
-  - The path to the raw battle log
-- **Generation**: The script `scripts/generate_preview_outcome_dataset.py` runs complete battles and stores preview+outcome pairs
-- **Dataset location**: `data/datasets/preview_outcome/preview_outcome.jsonl`
-- **Usage example**:
-  ```bash
-  cd Pokai/vgc-lab
-  python scripts/generate_preview_outcome_dataset.py --n 5
-  ```
-- **Data locations**:
-  - Raw logs: `data/battles_raw/` (shared with other scripts)
-  - Dataset: `data/datasets/preview_outcome/preview_outcome.jsonl`
-
-You can then load `preview_outcome.jsonl` from Python / Jupyter for analysis or model training.
 
 ## Future Extensions
 
@@ -91,5 +72,35 @@ This project will later be extended for RL/DL training environments, but current
 
 ## Quick Start
 
-See the local server quickstart guide for setup instructions.
+1. **Install dependencies**:
+   ```bash
+   pip install -e .
+   ```
+
+2. **Run a demo battle**:
+   ```bash
+   python -m scripts.cli demo-battle
+   ```
+
+3. **Generate battle datasets**:
+   ```bash
+   # Generate 100 full battle records
+   python -m scripts.cli gen-full 100
+
+   # Generate 100 team preview snapshots
+   python -m scripts.cli gen-preview 100
+   ```
+
+4. **Team utilities**:
+   ```bash
+   # Pack a team from export format
+   python -m scripts.cli pack-team --file my_team.txt
+
+   # Validate a team
+   python -m scripts.cli validate-team --file my_team.txt
+   ```
+
+All generated data is stored under `data/`:
+- Raw logs: `data/battles_raw/`
+- Datasets: `data/datasets/full_battles/` and `data/datasets/team_preview/`
 

@@ -1,0 +1,33 @@
+# Battle logs and JSON files (user requested to ignore)
+data/battles_json/
+data/battles_raw/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.pytest_cache/
+.coverage
+htmlcov/
