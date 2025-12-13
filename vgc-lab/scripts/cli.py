@@ -44,6 +44,18 @@ except ImportError:
     BattleStepDataset = None  # type: ignore
     BattleStepDatasetConfig = None  # type: ignore
 
+try:
+    from projects.rl_battle.rl_dataset import BattleTransitionDataset, RlBattleDatasetConfig
+except ImportError:
+    BattleTransitionDataset = None  # type: ignore
+    RlBattleDatasetConfig = None  # type: ignore
+
+try:
+    from projects.rl_battle.train_dqn import BattleDqnConfig, train_battle_dqn
+except ImportError:
+    BattleDqnConfig = None  # type: ignore
+    train_battle_dqn = None  # type: ignore
+
 app = typer.Typer(help="Unified CLI for vgc-lab")
 
 
@@ -546,6 +558,72 @@ def battle_bc_stats(
     ):
         choice_str = ds.id_to_choice[action_id] if 0 <= action_id < len(ds.id_to_choice) else "<unknown>"
         typer.echo(f"  #{idx:2d} id={action_id:3d} count={count:5d} choice={choice_str!r}")
+
+
+@app.command("battle-rl-dataset-stats")
+def battle_rl_dataset_stats(
+    format_id: str = typer.Option("gen9vgc2026regf", "--format-id", help="Battle format id"),
+    max_trajectories: Optional[int] = typer.Option(None, "--max-trajectories", help="Max trajectories to load"),
+) -> None:
+    """
+    Show basic statistics for the offline RL battle transition dataset.
+    """
+    if BattleTransitionDataset is None or RlBattleDatasetConfig is None:
+        typer.echo("Error: BattleTransitionDataset not available. Is projects.rl_battle installed?")
+        raise typer.Exit(1)
+
+    cfg = RlBattleDatasetConfig(format_id=format_id, max_trajectories=max_trajectories)
+    dataset = BattleTransitionDataset(cfg)
+
+    num_transitions = len(dataset)
+    num_episodes = len({t.battle_id for t in dataset._transitions})
+    avg_reward = sum(t.reward for t in dataset._transitions) / max(1, num_transitions)
+    done_fraction = sum(t.done for t in dataset._transitions) / max(1, num_transitions)
+
+    typer.echo("Battle RL dataset stats:")
+    typer.echo(f"  Format:          {format_id}")
+    typer.echo(f"  Episodes:        {num_episodes}")
+    typer.echo(f"  Transitions:     {num_transitions}")
+    typer.echo(f"  Avg reward:      {avg_reward:.4f}")
+    typer.echo(f"  Done fraction:   {done_fraction:.4f}")
+
+
+@app.command("train-battle-dqn")
+def train_battle_dqn_cmd(
+    format_id: str = typer.Option("gen9vgc2026regf", "--format-id", help="Battle format id"),
+    vec_dim: int = typer.Option(256, "--vec-dim", help="State vector dimension"),
+    num_actions: int = typer.Option(4, "--num-actions", help="Number of discrete actions"),
+    max_trajectories: Optional[int] = typer.Option(
+        None,
+        "--max-trajectories",
+        help="Max trajectories to load for RL training",
+    ),
+    epochs: int = typer.Option(3, "--epochs", help="Number of training epochs"),
+    steps_per_epoch: int = typer.Option(100, "--steps-per-epoch", help="Optimization steps per epoch"),
+    batch_size: int = typer.Option(64, "--batch-size", help="Mini-batch size"),
+    lr: float = typer.Option(1e-3, "--lr", help="Learning rate"),
+    device: str = typer.Option("cpu", "--device", help="Torch device"),
+) -> None:
+    """
+    Train a simple offline DQN on battle trajectories.
+    """
+    if BattleDqnConfig is None or train_battle_dqn is None:
+        typer.echo("Error: BattleDqnConfig not available. Is projects.rl_battle installed?")
+        raise typer.Exit(1)
+
+    cfg = BattleDqnConfig(
+        format_id=format_id,
+        vec_dim=vec_dim,
+        num_actions=num_actions,
+        max_trajectories=max_trajectories,
+        epochs=epochs,
+        steps_per_epoch=steps_per_epoch,
+        batch_size=batch_size,
+        lr=lr,
+        device=device,
+    )
+    ckpt_path = train_battle_dqn(cfg)
+    typer.echo(f"Saved DQN checkpoint to: {ckpt_path}")
 
 
 @app.command("gen-battles-from-sets")

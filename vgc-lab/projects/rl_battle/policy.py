@@ -3,17 +3,19 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, Tuple
+from pathlib import Path
+from typing import Any, Dict, Tuple
 
 import numpy as np
 import torch
 from torch import nn
 
 from vgc_lab import encode_state_from_request, get_paths
-from vgc_lab.core import PROJECT_ROOT
+from vgc_lab.core import DEFAULT_FORMAT, PROJECT_ROOT
 
 from .dataset import encode_battle_state_to_vec
 from .train_bc import BattlePolicyBC
+from .train_dqn import BattleQNetwork
 
 
 @dataclass
@@ -152,6 +154,156 @@ class BattleBCPolicy:
 
         choice_str = self.id_to_choice[action_index]
         return action_index, choice_str
+
+
+@dataclass
+class BattleDqnPolicyConfig:
+    """Configuration for BattleDqnPolicy."""
+
+    format_id: str = DEFAULT_FORMAT
+    ckpt_path: Path = PROJECT_ROOT / "checkpoints" / "battle_dqn.pt"
+    vec_dim: int = 256
+    num_actions: int = 4
+    device: str = "cpu"
+
+
+def load_battle_dqn_checkpoint(
+    cfg: BattleDqnPolicyConfig,
+) -> Tuple[BattleQNetwork, Dict]:
+    """
+    Load a BattleQNetwork and metadata from a DQN checkpoint.
+
+    Validates that input_dim / num_actions in the checkpoint are compatible
+    with the config.
+
+    Raises a clear error if the checkpoint is missing or incompatible.
+    """
+    if not cfg.ckpt_path.exists():
+        raise FileNotFoundError(
+            f"Battle DQN checkpoint not found: {cfg.ckpt_path}. "
+            "Train a model first using: python -m scripts.cli train-battle-dqn"
+        )
+
+    ckpt = torch.load(cfg.ckpt_path, map_location=cfg.device)
+
+    # Validate format_id
+    ckpt_format_id = ckpt.get("format_id")
+    if ckpt_format_id is not None and ckpt_format_id != cfg.format_id:
+        raise ValueError(
+            f"Battle DQN checkpoint format_id={ckpt_format_id!r} "
+            f"does not match config format_id={cfg.format_id!r}."
+        )
+
+    input_dim = int(ckpt.get("input_dim", cfg.vec_dim))
+    num_actions = int(ckpt.get("num_actions", cfg.num_actions))
+
+    # Basic compatibility checks
+    if input_dim != cfg.vec_dim:
+        raise ValueError(
+            f"Checkpoint input_dim={input_dim} does not match cfg.vec_dim={cfg.vec_dim}"
+        )
+    if num_actions != cfg.num_actions:
+        raise ValueError(
+            f"Checkpoint num_actions={num_actions} does not match cfg.num_actions={cfg.num_actions}"
+        )
+
+    model = BattleQNetwork(input_dim, num_actions)
+    model.load_state_dict(ckpt["model_state"])
+    model.to(cfg.device)
+    model.eval()
+
+    return model, ckpt
+
+
+class BattleDqnPolicy:
+    """
+    Policy wrapper around a BattleQNetwork.
+
+    This policy:
+    - Encodes Showdown requests into fixed-size state vectors
+    - Produces Q-values for a small discrete action set
+    - Chooses a greedy action (argmax over Q-values)
+    - Maps action indices to simple 'move N' commands
+    """
+
+    def __init__(self, cfg: BattleDqnPolicyConfig) -> None:
+        """Initialize policy by loading checkpoint.
+
+        Args:
+            cfg: Configuration.
+        """
+        self.cfg = cfg
+        self.model, self.ckpt = load_battle_dqn_checkpoint(cfg)
+        self.device = cfg.device
+        self.vec_dim = cfg.vec_dim
+        self.num_actions = cfg.num_actions
+
+    def _encode_request(self, request: Dict[str, Any]) -> torch.Tensor:
+        """
+        Convert a Showdown request dict to a 1D float tensor of shape (vec_dim,).
+
+        Args:
+            request: Showdown request dictionary.
+
+        Returns:
+            Tensor of shape (vec_dim,) on the configured device.
+        """
+        state_dict = encode_state_from_request(request)
+        vec = encode_battle_state_to_vec(state_dict, vec_dim=self.vec_dim)
+        x = torch.from_numpy(vec).float().to(self.device)
+        return x
+
+    def score_actions(self, request: Dict[str, Any]) -> torch.Tensor:
+        """
+        Return Q-values for all actions for a single request.
+
+        Args:
+            request: Showdown request dictionary.
+
+        Returns:
+            Q-values tensor of shape [num_actions] on the configured device.
+        """
+        x = self._encode_request(request).unsqueeze(0)  # [1, vec_dim]
+        with torch.no_grad():
+            q_values = self.model(x)  # [1, num_actions]
+        return q_values.squeeze(0)  # [num_actions]
+
+    def choose_action_argmax(self, request: Dict[str, Any]) -> Tuple[int, str]:
+        """
+        Choose the greedy action (argmax Q) and return (action_index, choice_str).
+
+        choice_str uses 'move N' with 1-based indexing, consistent with parse_move_choice().
+
+        Args:
+            request: Showdown request dictionary.
+
+        Returns:
+            Tuple of (action_index: int, choice_str: str) where choice_str is like "move 1".
+        """
+        q_values = self.score_actions(request)
+        action_index = int(torch.argmax(q_values).item())
+        if not (0 <= action_index < self.num_actions):
+            raise ValueError(
+                f"Invalid action_index {action_index} for num_actions={self.num_actions}"
+            )
+
+        # For now, we map 0..(num_actions-1) -> 'move 1'..'move num_actions'
+        # This is consistent with parse_move_choice() which maps 'move N' (1-indexed) to index N-1
+        choice_str = f"move {action_index + 1}"
+        return action_index, choice_str
+
+    def choose_showdown_command(self, request: Dict[str, Any]) -> str:
+        """
+        Convenience method: just return the Showdown command string.
+
+        Args:
+            request: Showdown request dictionary.
+
+        Returns:
+            Showdown choice string like "move 1".
+        """
+        _, choice = self.choose_action_argmax(request)
+        return choice
 
 
 if __name__ == "__main__":
