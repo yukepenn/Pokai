@@ -56,6 +56,12 @@ except ImportError:
     BattleDqnConfig = None  # type: ignore
     train_battle_dqn = None  # type: ignore
 
+try:
+    from projects.rl_battle.eval_battle_policies import BattleEvalConfig, run_battle_eval
+except ImportError:
+    BattleEvalConfig = None  # type: ignore
+    run_battle_eval = None  # type: ignore
+
 app = typer.Typer(help="Unified CLI for vgc-lab")
 
 
@@ -626,6 +632,80 @@ def train_battle_dqn_cmd(
     typer.echo(f"Saved DQN checkpoint to: {ckpt_path}")
 
 
+@app.command("battle-eval")
+def battle_eval_cmd(
+    format_id: str = typer.Option("gen9vgc2026regf", "--format-id", help="Battle format id"),
+    num_runs: int = typer.Option(3, "--num-runs", help="Number of evaluation runs"),
+    episodes_per_run: int = typer.Option(20, "--episodes-per-run", help="Episodes per run"),
+    p1_policy: str = typer.Option(
+        "python_external_v1",
+        "--p1-policy",
+        help="P1 top-level policy (node_random_v1 or python_external_v1)",
+    ),
+    p2_policy: str = typer.Option(
+        "node_random_v1",
+        "--p2-policy",
+        help="P2 top-level policy (node_random_v1 or python_external_v1)",
+    ),
+    p1_python_policy: str = typer.Option(
+        "dqn",
+        "--p1-python-policy",
+        help="P1 python policy kind when using 'python_external_v1' (random, bc, dqn)",
+    ),
+    p2_python_policy: str = typer.Option(
+        "random",
+        "--p2-python-policy",
+        help="P2 python policy kind when using 'python_external_v1' (random, bc, dqn)",
+    ),
+    seed: int = typer.Option(0, "--seed", help="Base random seed"),
+) -> None:
+    """
+    Evaluate battle policies over multiple runs of online self-play.
+
+    This is a convenience wrapper around run_online_selfplay that aggregates
+    results across several independent runs.
+    """
+    if BattleEvalConfig is None or run_battle_eval is None:
+        typer.echo("Error: BattleEvalConfig not available. Is projects.rl_battle installed?")
+        raise typer.Exit(1)
+
+    # Validate python policy kinds
+    valid_kinds = {"random", "bc", "dqn"}
+    if p1_python_policy not in valid_kinds:
+        typer.echo(f"Error: p1_python_policy must be one of {valid_kinds}, got {p1_python_policy!r}", err=True)
+        raise typer.Exit(1)
+    if p2_python_policy not in valid_kinds:
+        typer.echo(f"Error: p2_python_policy must be one of {valid_kinds}, got {p2_python_policy!r}", err=True)
+        raise typer.Exit(1)
+
+    cfg = BattleEvalConfig(
+        format_id=format_id,
+        num_runs=num_runs,
+        episodes_per_run=episodes_per_run,
+        p1_policy=p1_policy,
+        p2_policy=p2_policy,
+        p1_python_policy=p1_python_policy,  # type: ignore
+        p2_python_policy=p2_python_policy,  # type: ignore
+        seed=seed,
+        strict_invalid_choice=True,
+        debug=False,
+    )
+
+    typer.echo(f"Running battle evaluation: {num_runs} runs, {episodes_per_run} episodes per run...")
+    typer.echo(f"  p1_policy: {cfg.p1_policy}, p1_python_policy: {cfg.p1_python_policy}")
+    typer.echo(f"  p2_policy: {cfg.p2_policy}, p2_python_policy: {cfg.p2_python_policy}")
+
+    result = run_battle_eval(cfg)
+
+    typer.echo("\nBattle Eval Summary:")
+    typer.echo(f"  Total episodes: {result['total_episodes']}")
+    typer.echo(f"  Total errors:   {result['total_errors']}")
+    typer.echo(f"  P1 wins:        {result['total_p1_wins']}")
+    typer.echo(f"  P2 wins:        {result['total_p2_wins']}")
+    typer.echo(f"  Draws:          {result['total_draws']}")
+    typer.echo(f"  P1 win rate:    {result['p1_win_rate']:.3f}")
+
+
 @app.command("gen-battles-from-sets")
 def gen_battles_from_sets(
     n: int = typer.Argument(100, help="Number of battles to generate"),
@@ -847,6 +927,16 @@ def online_selfplay_cmd(
         "--p2-policy",
         help="Policy for p2: 'node_random_v1' or 'python_external_v1'",
     ),
+    p1_python_policy: str = typer.Option(
+        "random",
+        "--p1-python-policy",
+        help="Python policy kind for side 1 when using 'python_external_v1' (one of: random, bc, dqn)",
+    ),
+    p2_python_policy: str = typer.Option(
+        "random",
+        "--p2-python-policy",
+        help="Python policy kind for side 2 when using 'python_external_v1' (one of: random, bc, dqn)",
+    ),
     strict_invalid_choice: bool = typer.Option(
         True,
         "--strict/--no-strict",
@@ -861,16 +951,32 @@ def online_selfplay_cmd(
     """
     Run a few battles using the Python-driven online self-play bridge.
 
-    This is a smoke test for the Node <-> Python protocol, PreviewPolicy, and BattleBCPolicy.
+    This is a smoke test for the Node <-> Python protocol, PreviewPolicy, BattleBCPolicy, and BattleDqnPolicy.
     Battles are logged to the usual datasets (full_battles, trajectories).
+
+    Python policy kinds:
+      - random: RandomAgent
+      - bc: BattleBCPolicy (requires trained BC checkpoint)
+      - dqn: BattleDqnPolicy (requires trained DQN checkpoint)
     """
     from projects.rl_battle.online_selfplay import OnlineSelfPlayConfig, run_online_selfplay
+
+    # Validate python policy kinds
+    valid_kinds = {"random", "bc", "dqn"}
+    if p1_python_policy not in valid_kinds:
+        typer.echo(f"Error: p1_python_policy must be one of {valid_kinds}, got {p1_python_policy!r}", err=True)
+        raise typer.Exit(1)
+    if p2_python_policy not in valid_kinds:
+        typer.echo(f"Error: p2_python_policy must be one of {valid_kinds}, got {p2_python_policy!r}", err=True)
+        raise typer.Exit(1)
 
     cfg = OnlineSelfPlayConfig(
         num_episodes=num_episodes,
         format_id=format_id,
         p1_policy=p1_policy,
         p2_policy=p2_policy,
+        p1_python_policy=p1_python_policy,  # type: ignore
+        p2_python_policy=p2_python_policy,  # type: ignore
         seed=42,
         write_trajectories=True,
         strict_invalid_choice=strict_invalid_choice,
@@ -880,6 +986,10 @@ def online_selfplay_cmd(
     typer.echo(f"Running {num_episodes} online self-play battles...")
     typer.echo(f"  p1_policy: {cfg.p1_policy}")
     typer.echo(f"  p2_policy: {cfg.p2_policy}")
+    if cfg.p1_policy == "python_external_v1":
+        typer.echo(f"  p1_python_policy: {cfg.p1_python_policy}")
+    if cfg.p2_policy == "python_external_v1":
+        typer.echo(f"  p2_python_policy: {cfg.p2_python_policy}")
 
     try:
         summary = run_online_selfplay(cfg)

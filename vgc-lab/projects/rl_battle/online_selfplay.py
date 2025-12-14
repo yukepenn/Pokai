@@ -66,11 +66,16 @@ import sys
 import threading
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple, TypedDict
+from typing import Any, Dict, List, Literal, Optional, Tuple, TypedDict
 
 from vgc_lab.core import BattleStore, PROJECT_ROOT, SanitizeReason
 
-from .policy import BattleBCPolicy, BattleBCPolicyConfig
+from .policy import (
+    BattleBCPolicy,
+    BattleBCPolicyConfig,
+    BattleDqnPolicy,
+    BattleDqnPolicyConfig,
+)
 
 
 def _compute_required_slots(request: Dict[str, Any]) -> int:
@@ -763,6 +768,9 @@ class OnlineSelfPlaySummary(TypedDict):
     draws: int     # Number of episodes ending in tie or "unknown" winner
 
 
+PythonPolicyKind = Literal["random", "bc", "dqn"]
+
+
 @dataclass
 class OnlineSelfPlayConfig:
     """
@@ -771,18 +779,29 @@ class OnlineSelfPlayConfig:
     Used by scripts/cli.py online-selfplay with:
       - num_episodes
       - format_id
-      - p1_policy
-      - p2_policy
+      - p1_policy / p2_policy: Node-side policy types ("node_random_v1", "python_external_v1")
+      - p1_python_policy / p2_python_policy: Python-side policy kinds when using "python_external_v1"
+        (one of: "random", "bc", "dqn")
       - seed
       - write_trajectories
       - strict_invalid_choice
       - debug
+
+    Policy selection semantics:
+      - If p1_policy == "node_random_v1", p1_python_policy is ignored (Node handles it).
+      - If p1_policy == "python_external_v1", p1_python_policy determines which Python policy to use:
+        - "random": RandomAgent
+        - "bc": BattleBCPolicy
+        - "dqn": BattleDqnPolicy
+      - Same logic applies to p2_policy / p2_python_policy.
     """
 
     num_episodes: int = 3
     format_id: str = "gen9vgc2026regf"
     p1_policy: str = "python_external_v1"
     p2_policy: str = "node_random_v1"
+    p1_python_policy: PythonPolicyKind = "random"
+    p2_python_policy: PythonPolicyKind = "random"
     seed: int = 42
     write_trajectories: bool = True
     strict_invalid_choice: bool = True
@@ -791,33 +810,67 @@ class OnlineSelfPlayConfig:
 
 class PythonPolicyRouter:
     """
-    Route Showdown requests to Python-side policies (BattleBCPolicy / RandomAgent).
+    Route Showdown requests to Python-side policies (RandomAgent / BattleBCPolicy / BattleDqnPolicy).
 
     - For team preview: use RandomAgent.choose_team_preview() to pick bring-4.
-    - For move / force-switch: prefer BattleBCPolicy if available, otherwise
-      fall back to RandomAgent.choose_turn_action().
+    - For move / force-switch: route based on per-side python policy kind configured in cfg.
     """
 
-    def __init__(self, format_id: str, rng: Optional[random.Random] = None) -> None:
-        self.format_id = format_id
+    def __init__(
+        self,
+        cfg: OnlineSelfPlayConfig,
+        rng: Optional[random.Random] = None,
+    ) -> None:
+        """
+        Initialize router with configuration.
+
+        Args:
+            cfg: OnlineSelfPlayConfig with format_id and python policy kinds per side.
+            rng: Optional random number generator (defaults to new Random instance).
+        """
+        self.format_id = cfg.format_id
         self.rng = rng or random.Random()
+        self.p1_kind = cfg.p1_python_policy
+        self.p2_kind = cfg.p2_python_policy
+
+        # Always create RandomAgent
         self.random_agent = RandomAgent(self.rng)
 
-        # Try to load BattleBCPolicy; if it fails, fall back to RandomAgent.
-        try:
-            self.bc_policy = BattleBCPolicy(BattleBCPolicyConfig(format_id=format_id))
-            print(
-                f"[online-selfplay] Loaded BattleBCPolicy "
-                f"(format_id={format_id}, num_actions={self.bc_policy.num_actions})",
-                file=sys.stderr,
-            )
-        except Exception as e:  # noqa: BLE001
-            print(
-                "[online-selfplay] BattleBCPolicy not available, will fall back to "
-                f"RandomAgent. Reason: {e}",
-                file=sys.stderr,
-            )
-            self.bc_policy = None
+        # Optionally create BC policy if needed
+        self.bc_policy: Optional[BattleBCPolicy] = None
+        if self.p1_kind == "bc" or self.p2_kind == "bc":
+            try:
+                self.bc_policy = BattleBCPolicy(BattleBCPolicyConfig(format_id=cfg.format_id))
+                print(
+                    f"[online-selfplay] Loaded BattleBCPolicy "
+                    f"(format_id={cfg.format_id}, num_actions={self.bc_policy.num_actions})",
+                    file=sys.stderr,
+                )
+            except Exception as e:  # noqa: BLE001
+                print(
+                    "[online-selfplay] Failed to load BattleBCPolicy: "
+                    f"{e}. Will use RandomAgent fallback if BC is requested.",
+                    file=sys.stderr,
+                )
+
+        # Optionally create DQN policy if needed
+        self.dqn_policy: Optional[BattleDqnPolicy] = None
+        if self.p1_kind == "dqn" or self.p2_kind == "dqn":
+            try:
+                self.dqn_policy = BattleDqnPolicy(
+                    BattleDqnPolicyConfig(format_id=cfg.format_id, device="cpu")
+                )
+                print(
+                    f"[online-selfplay] Loaded BattleDqnPolicy "
+                    f"(format_id={cfg.format_id}, num_actions={self.dqn_policy.num_actions})",
+                    file=sys.stderr,
+                )
+            except Exception as e:  # noqa: BLE001
+                print(
+                    "[online-selfplay] Failed to load BattleDqnPolicy: "
+                    f"{e}. Will use RandomAgent fallback if DQN is requested.",
+                    file=sys.stderr,
+                )
 
     # ------------------------------------------------------------------
     # Internal helpers for different request types
@@ -827,14 +880,41 @@ class PythonPolicyRouter:
         """Use RandomAgent to choose bring-4 from the preview request."""
         return self.random_agent.choose_team_preview(request)
 
-    def _choose_move_like(self, request: Dict[str, Any]) -> str:
+    def _choose_move_like(self, request: Dict[str, Any], side: str) -> str:
         """
         Handle normal move / force-switch style requests.
 
-        Prefer BattleBCPolicy if available; otherwise RandomAgent.
+        Routes to the appropriate policy based on side and configured python policy kind.
         Note: sanitization happens at the protocol level in _run_single_episode.
+
+        Args:
+            request: Showdown request dict.
+            side: "p1" or "p2" to determine which policy kind to use.
         """
-        if self.bc_policy is not None:
+        # Determine policy kind for this side
+        if side == "p1":
+            kind = self.p1_kind
+        elif side == "p2":
+            kind = self.p2_kind
+        else:
+            print(
+                f"[online-selfplay] Unknown side {side!r}, falling back to RandomAgent",
+                file=sys.stderr,
+            )
+            return self.random_agent.choose_turn_action(request)
+
+        # Route based on policy kind
+        if kind == "random":
+            return self.random_agent.choose_turn_action(request)
+
+        elif kind == "bc":
+            if self.bc_policy is None:
+                print(
+                    "[online-selfplay] BC policy requested but not available, "
+                    "falling back to RandomAgent",
+                    file=sys.stderr,
+                )
+                return self.random_agent.choose_turn_action(request)
             try:
                 _, raw_choice = self.bc_policy.choose_action(request, temperature=0.0)
                 return raw_choice
@@ -844,9 +924,32 @@ class PythonPolicyRouter:
                     f"falling back to RandomAgent. Error: {e}",
                     file=sys.stderr,
                 )
+                return self.random_agent.choose_turn_action(request)
 
-        # Fallback: use RandomAgent's turn action logic
-        return self.random_agent.choose_turn_action(request)
+        elif kind == "dqn":
+            if self.dqn_policy is None:
+                print(
+                    "[online-selfplay] DQN policy requested but not available, "
+                    "falling back to RandomAgent",
+                    file=sys.stderr,
+                )
+                return self.random_agent.choose_turn_action(request)
+            try:
+                raw_choice = self.dqn_policy.choose_showdown_command(request)
+                return raw_choice
+            except Exception as e:  # noqa: BLE001
+                print(
+                    "[online-selfplay] BattleDqnPolicy error, "
+                    f"falling back to RandomAgent. Error: {e}",
+                    file=sys.stderr,
+                )
+                return self.random_agent.choose_turn_action(request)
+
+        else:
+            raise ValueError(
+                f"Unknown python policy kind: {kind!r} for side {side}. "
+                "Expected one of: 'random', 'bc', 'dqn'"
+            )
 
     # ------------------------------------------------------------------
     # Public API
@@ -864,16 +967,18 @@ class PythonPolicyRouter:
             "request": { ... Showdown request ... }
           }
         
-        This method routes to appropriate policy methods but does NOT sanitize.
-        Sanitization happens in _run_single_episode before sending to Node.
+        This method routes to appropriate policy methods based on side and configured
+        python policy kind, but does NOT sanitize. Sanitization happens in
+        _run_single_episode before sending to Node.
         """
         req_type = msg.get("request_type", "unknown")
         request = msg.get("request", {}) or {}
+        side = msg.get("side", "p1")  # Default to p1 if missing
 
         if req_type == "preview":
             return self._choose_team_preview(request)
         elif req_type in ("move", "force-switch"):
-            return self._choose_move_like(request)
+            return self._choose_move_like(request, side)
         elif req_type == "wait":
             return "pass"
         else:
@@ -1251,7 +1356,7 @@ def run_online_selfplay(cfg: OnlineSelfPlayConfig) -> OnlineSelfPlaySummary:
         - Battle trajectory to data/datasets/trajectories/trajectories.jsonl
     """
     store = BattleStore()
-    router = PythonPolicyRouter(format_id=cfg.format_id, rng=random.Random(cfg.seed))
+    router = PythonPolicyRouter(cfg=cfg, rng=random.Random(cfg.seed))
 
     episodes = 0  # Total attempted episodes
     errors = 0    # Failed episodes
