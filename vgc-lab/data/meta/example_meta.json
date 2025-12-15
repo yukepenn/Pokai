@@ -1,0 +1,8 @@
+{
+  "entries": [
+    {"team_id": "auto_top_0001", "weight": 0.3},
+    {"team_id": "auto_top_0002", "weight": 0.2},
+    {"team_id": "auto_top_0003", "weight": 0.5}
+  ]
+}
+

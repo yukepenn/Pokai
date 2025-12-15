@@ -1,0 +1,231 @@
+- id: auto_top_0001
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #1 (win_rate=0.828, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - chien_pao_auto_focussash_1
+  - dondozo_auto_leftovers_1
+  - dragonite_auto_loadeddice_1
+  - flutter_mane_main_booster
+  - glimmora_auto_powerherb_1
+  - tatsugiri_auto_safetygoggles_1
+- id: auto_top_0002
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #2 (win_rate=0.793, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - chien_pao_auto_focussash_1
+  - dragonite_auto_loadeddice_1
+  - gouging_fire_auto_boosterenergy_1
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - rillaboom_auto_assaultvest_1
+  - ting_lu_auto_rockyhelmet_1
+- id: auto_top_0003
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #3 (win_rate=0.759, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - porygon2_auto_eviolite_1
+  - ursaluna_auto_flame_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0004
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #4 (win_rate=0.759, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - farigiraf_auto_throatspray_1
+  - flutter_mane_main_booster
+  - lilligant_hisui_auto_focussash_1
+  - raging_bolt_auto_assaultvest_1
+  - torkoal_auto_choicespecs_1
+  - walking_wake_auto_life_1
+- id: auto_top_0005
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #5 (win_rate=0.724, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - chien_pao_auto_focussash_1
+  - dondozo_auto_leftovers_1
+  - dragonite_auto_loadeddice_1
+  - gholdengo_auto_metalcoat_1
+  - gouging_fire_auto_boosterenergy_1
+  - ting_lu_auto_rockyhelmet_1
+- id: auto_top_0006
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #6 (win_rate=0.690, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - chien_pao_auto_focussash_1
+  - gholdengo_auto_metalcoat_1
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - urshifu_rs_main_scarf
+- id: auto_top_0007
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #7 (win_rate=0.690, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - flutter_mane_main_booster
+  - gholdengo_auto_metalcoat_1
+  - landorus_therian_auto_choicescarf_1
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - raging_bolt_auto_assaultvest_1
+  - tornadus_main_sash
+- id: auto_top_0008
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #8 (win_rate=0.655, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - farigiraf_auto_throatspray_1
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - ursaluna_bloodmoon_auto_life_1
+  - urshifu_auto_focussash_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0009
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #9 (win_rate=0.655, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - farigiraf_auto_throatspray_1
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - ogerpon_cornerstone_auto_cornerstonemask_1
+  - raging_bolt_auto_assaultvest_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0010
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #10 (win_rate=0.655, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - grimmsnarl_auto_lightclay_1
+  - heatran_auto_leftovers_1
+  - iron_boulder_auto_choiceband_1
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - okidogi_auto_assaultvest_1
+  - roaring_moon_auto_boosterenergy_1
+- id: auto_top_0011
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #11 (win_rate=0.621, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - indeedee_f_auto_rockyhelmet_1
+  - iron_crown_auto_boosterenergy_1
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - regidrago_auto_dragonfang_1
+  - tornadus_main_sash
+  - urshifu_rs_main_scarf
+- id: auto_top_0012
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #12 (win_rate=0.586, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - raging_bolt_auto_assaultvest_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0013
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #13 (win_rate=0.586, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - gholdengo_auto_metalcoat_1
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - porygon2_auto_eviolite_1
+  - roaring_moon_auto_boosterenergy_1
+- id: auto_top_0014
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #14 (win_rate=0.552, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - cresselia_auto_rockyhelmet_1
+  - entei_auto_life_1
+  - flutter_mane_main_booster
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - raging_bolt_auto_assaultvest_1
+  - urshifu_auto_focussash_1
+- id: auto_top_0015
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #15 (win_rate=0.517, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - flutter_mane_main_booster
+  - landorus_main_lo_steel
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - tornadus_main_sash
+  - urshifu_rs_main_scarf
+- id: auto_top_0016
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #16 (win_rate=0.515, battles=879, records=22,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - amoonguss_main_water_sitrus
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - tornadus_main_sash
+  - urshifu_rs_main_scarf
+- id: auto_top_0017
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #17 (win_rate=0.483, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - farigiraf_auto_throatspray_1
+  - incineroar_main_goggles
+  - ogerpon_hearthflame_auto_hearthflamemask_1
+  - ursaluna_bloodmoon_auto_life_1
+  - urshifu_auto_focussash_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0018
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #18 (win_rate=0.448, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - arcanine_hisui_auto_choiceband_1
+  - articuno_auto_choicespecs_1
+  - landorus_main_lo_steel
+  - ninetales_alola_auto_lightclay_1
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - raging_bolt_auto_assaultvest_1
+- id: auto_top_0019
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #19 (win_rate=0.414, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - flutter_mane_main_booster
+  - incineroar_main_goggles
+  - landorus_main_lo_steel
+  - ogerpon_wellspring_auto_wellspringmask_1
+  - raging_bolt_auto_assaultvest_1
+  - urshifu_rs_main_scarf
+- id: auto_top_0020
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #20 (win_rate=0.379, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - farigiraf_auto_throatspray_1
+  - flutter_mane_main_booster
+  - hatterene_auto_covertcloak_1
+  - indeedee_f_auto_rockyhelmet_1
+  - raging_bolt_auto_assaultvest_1
+  - torkoal_auto_choicespecs_1
+- id: auto_top_0021
+  format: gen9vgc2026regf
+  description: 'Auto-discovered top team rank #21 (win_rate=0.345, battles=29, records=2,
+    min_battles=10, min_records=1)'
+  set_ids:
+  - annihilape_auto_choicescarf_1
+  - chien_pao_auto_focussash_1
+  - farigiraf_auto_throatspray_1
+  - gastrodon_auto_choicespecs_1
+  - gouging_fire_auto_boosterenergy_1
+  - rillaboom_auto_assaultvest_1

@@ -1,117 +1,237 @@
-"""
-Feature encoding utilities for RL/BC training.
+"""Feature extraction and encoding: vocab, bag-of-sets, and dataset iteration.
 
-This module provides simple encoder skeletons for converting raw data structures
-into feature representations suitable for machine learning models.
+This module consolidates:
+- team_encoding.py: Team encoding utilities for RL/ML integration
+- team_features.py: Feature extraction utilities for teams vs pool dataset
 """
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Tuple
+import json
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, Iterable, Iterator, List, Sequence
 
-from .core import BattleStep, BattleTrajectory
-from .datasets import TeamBuildEpisode
-from .catalog import PokemonSetDef
+from .catalog import SetCatalog
+
+# ============================================================================
+# Team Encoding
+# ============================================================================
 
 
-# --- In-battle encoders ---
+@dataclass
+class SetIdVocab:
+    """Mapping between set IDs and integer indices (0..N-1)."""
+
+    id_to_idx: Dict[str, int]
+    idx_to_id: List[str]
+
+    @classmethod
+    def from_catalog(cls, catalog: SetCatalog) -> "SetIdVocab":
+        """
+        Build a vocabulary from all set IDs in the catalog.
+
+        The order is deterministic (sorted).
+
+        Args:
+            catalog: SetCatalog instance.
+
+        Returns:
+            SetIdVocab instance.
+        """
+        ids = sorted(catalog.ids())
+        id_to_idx = {set_id: idx for idx, set_id in enumerate(ids)}
+        idx_to_id = ids.copy()
+
+        return cls(id_to_idx=id_to_idx, idx_to_id=idx_to_id)
+
+    @classmethod
+    def from_idx_to_id(cls, idx_to_id: List[str]) -> "SetIdVocab":
+        """
+        Build a vocabulary from a list of set IDs (by index order).
+
+        Args:
+            idx_to_id: List of set ID strings, where index i corresponds to the ID at position i.
+
+        Returns:
+            SetIdVocab instance.
+        """
+        id_to_idx = {set_id: idx for idx, set_id in enumerate(idx_to_id)}
+        return cls(id_to_idx=id_to_idx, idx_to_id=idx_to_id.copy())
+
+    def encode_ids(self, set_ids: Sequence[str]) -> List[int]:
+        """
+        Encode a sequence of set IDs to integer indices.
+
+        Args:
+            set_ids: Sequence of set ID strings.
+
+        Returns:
+            List of integer indices.
+
+        Raises:
+            KeyError: If any set ID is not in the vocabulary.
+        """
+        return [self.id_to_idx[set_id] for set_id in set_ids]
+
+    def decode_indices(self, indices: Sequence[int]) -> List[str]:
+        """
+        Decode a sequence of indices back to set IDs.
+
+        Args:
+            indices: Sequence of integer indices.
+
+        Returns:
+            List of set ID strings.
+
+        Raises:
+            IndexError: If any index is out of range.
+        """
+        return [self.idx_to_id[idx] for idx in indices]
+
+    def __len__(self) -> int:
+        """Return the vocabulary size."""
+        return len(self.idx_to_id)
 
 
-def encode_state_from_request(request: Dict[str, Any]) -> Dict[str, Any]:
+def one_hot_team(
+    indices: Sequence[int],
+    vocab_size: int,
+) -> List[List[int]]:
     """
-    Convert a Showdown request dict into a feature dict.
+    Convert a sequence of indices (team) into a list of one-hot vectors.
 
-    For now, we keep this as a thin wrapper around the raw request;
-    future work can add structured features here.
+    Each inner list has length vocab_size and contains 0/1 integers.
+
+    Args:
+        indices: Sequence of integer indices (e.g., a team of 6 set indices).
+        vocab_size: Size of the vocabulary (total number of possible sets).
+
+    Returns:
+        List of one-hot vectors, one per index in the input.
+
+    Raises:
+        ValueError: If any index is out of range [0, vocab_size).
     """
-    return {"raw_request": request}
+    result = []
+    for idx in indices:
+        if idx < 0 or idx >= vocab_size:
+            raise ValueError(
+                f"Index {idx} out of range [0, {vocab_size})"
+            )
+        one_hot = [0] * vocab_size
+        one_hot[idx] = 1
+        result.append(one_hot)
+    return result
 
 
-def encode_step(step: BattleStep) -> Tuple[Dict[str, Any], str]:
+def build_vocab_from_default_catalog() -> SetIdVocab:
     """
-    Encode a single BattleStep into (state_features, action_string).
+    Convenience helper: load SetCatalog.from_yaml() and build a SetIdVocab.
+
+    Returns:
+        SetIdVocab instance built from the default catalog.
     """
-    state = encode_state_from_request(step.request)
-    action = step.choice
-    return state, action
+    catalog = SetCatalog.from_yaml()
+    return SetIdVocab.from_catalog(catalog)
 
 
-def encode_trajectory_side(
-    traj: BattleTrajectory,
-    side: str = "p1",
-) -> List[Tuple[Dict[str, Any], str, float, bool]]:
+# ============================================================================
+# Team Features
+# ============================================================================
+
+from .config import PROJECT_ROOT
+
+DATASETS_ROOT = PROJECT_ROOT / "data" / "datasets"
+
+
+@dataclass
+class TeamsVsPoolRecord:
+    """A single record from the teams_vs_pool dataset."""
+
+    team_set_ids: List[str]
+    win_rate: float
+    n_battles_total: int
+    source: str
+    meta: Dict[str, object]
+
+
+def iter_teams_vs_pool_records(
+    path: Path,
+) -> Iterator[TeamsVsPoolRecord]:
     """
-    Encode a trajectory from a specific side's perspective ("p1" or "p2").
+    Iterate over records in a teams_vs_pool JSONL file.
 
-    Returns a list of (state, action, reward, done) tuples.
-    Currently uses only the final outcome as reward and marks all steps as done=True.
+    Expected fields in each JSON object:
+      - "team_set_ids": list[str]
+      - "win_rate": float
+      - "n_battles_total": int
+      - "source": str  (e.g., "random" or "catalog")
+      - plus any additional fields (stored in meta)
+
+    Args:
+        path: Path to the JSONL file.
+
+    Yields:
+        TeamsVsPoolRecord instances.
     """
-    if side == "p1":
-        steps = traj.steps_p1
-        reward = traj.reward_p1
-    elif side == "p2":
-        steps = traj.steps_p2
-        reward = traj.reward_p2
-    else:
-        raise ValueError(f"Invalid side: {side!r}, expected 'p1' or 'p2'.")
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
 
-    transitions: List[Tuple[Dict[str, Any], str, float, bool]] = []
-    for step in steps:
-        s, a = encode_step(step)
-        transitions.append((s, a, reward, True))
-    return transitions
+            obj = json.loads(line)
+            team_set_ids = obj.get("team_set_ids", [])
+            win_rate = float(obj.get("win_rate", 0.0))
+            n_battles_total = int(obj.get("n_battles_total", 0))
+            source = obj.get("source", "unknown")
+
+            meta = dict(obj)
+            # Remove main fields from meta to avoid duplication
+            for key in ("team_set_ids", "win_rate", "n_battles_total", "source"):
+                meta.pop(key, None)
+
+            yield TeamsVsPoolRecord(
+                team_set_ids=team_set_ids,
+                win_rate=win_rate,
+                n_battles_total=n_battles_total,
+                source=source,
+                meta=meta,
+            )
 
 
-def encode_trajectory(traj: BattleTrajectory) -> List[Tuple[Dict[str, Any], str, float, bool]]:
+def team_bag_of_sets_feature(
+    team_set_ids: List[str],
+    vocab: SetIdVocab,
+) -> List[int]:
     """
-    Simple BC-style encoding of a trajectory from p1's perspective.
+    Build a bag-of-sets feature vector for a team.
 
-    Returns a list of (state, action, reward, done) tuples.
+    - Dimension = len(vocab.idx_to_id)
+    - Each position i counts how many times that set appears in the team
+      (for now, it's usually 0 or 1).
+
+    Args:
+        team_set_ids: List of set ID strings.
+        vocab: SetIdVocab instance for encoding.
+
+    Returns:
+        List of integers (length = vocab size) representing bag-of-sets counts.
     """
-    return encode_trajectory_side(traj, side="p1")
+    vec = [0] * len(vocab.idx_to_id)
+    indices = vocab.encode_ids(team_set_ids)
+    for idx in indices:
+        if 0 <= idx < len(vec):
+            vec[idx] += 1
+    return vec
 
 
-def encode_trajectory_both_sides(traj: BattleTrajectory) -> List[Tuple[Dict[str, Any], str, float, bool]]:
+def build_default_vocab() -> SetIdVocab:
     """
-    Encode a trajectory from both sides' perspectives by concatenating p1 and p2 views.
+    Convenience: just call build_vocab_from_default_catalog().
+
+    Returns:
+        SetIdVocab instance built from the default catalog.
     """
-    return encode_trajectory_side(traj, "p1") + encode_trajectory_side(traj, "p2")
-
-
-# --- Team-building encoders ---
-
-
-def encode_team_from_set_ids(
-    set_ids: List[str],
-    set_dict: Dict[str, PokemonSetDef],
-) -> Dict[str, Any]:
-    """
-    Encode a 6-mon team specified by set_ids into a simple feature dict.
-
-    This is intentionally simple:
-      - species list
-      - items list
-      - raw set_ids for embedding in training code
-    """
-    species = [set_dict[sid].species for sid in set_ids]
-    items = [set_dict[sid].item for sid in set_ids]
-    return {
-        "set_ids": set_ids,
-        "species": species,
-        "items": items,
-    }
-
-
-def encode_team_build_episode(
-    ep: TeamBuildEpisode,
-    set_dict: Dict[str, PokemonSetDef],
-) -> Dict[str, Any]:
-    """
-    Encode a TeamBuildEpisode into features + reward for downstream training.
-    """
-    features = encode_team_from_set_ids(ep.chosen_set_ids, set_dict)
-    return {
-        "features": features,
-        "reward": ep.reward,
-    }
-
+    return build_vocab_from_default_catalog()
